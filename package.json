@@ -10,6 +10,7 @@
     "scrape": "node scripts/scrape.mjs"
   },
   "dependencies": {
+    "@astrojs/sitemap": "^3.7.2",
     "astro": "^5.7.10",
     "chart.js": "^4.4.8",
     "cheerio": "^1.0.0",
