@@ -1,0 +1,167 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import Footer from "../../components/Footer.astro";
+import { readFileSync } from "fs";
+import { join } from "path";
+
+const latestData = JSON.parse(
+  readFileSync(join(process.cwd(), "data", "latest.json"), "utf-8")
+);
+
+const fmt = (n: number) => n.toLocaleString("bg-BG");
+
+interface City {
+  city: string;
+  key: string;
+  stats: {
+    avgPricePerSqm: number;
+    medianPricePerSqm: number;
+    minPricePerSqm: number;
+    maxPricePerSqm: number;
+    neighbourhoodCount: number;
+  };
+  neighbourhoods: Neighbourhood[];
+}
+
+interface Neighbourhood {
+  name: string;
+  totalPricePerSqm: number | null;
+}
+
+const gapData = latestData.cities
+  .filter((c: City) => c.stats.maxPricePerSqm > 0 && c.stats.minPricePerSqm > 0)
+  .map((c: City) => {
+    const ratio = Math.round((c.stats.maxPricePerSqm / c.stats.minPricePerSqm) * 10) / 10;
+    const gap = c.stats.maxPricePerSqm - c.stats.minPricePerSqm;
+    const cheapest = c.neighbourhoods
+      .filter((n: Neighbourhood) => n.totalPricePerSqm)
+      .sort((a: Neighbourhood, b: Neighbourhood) => (a.totalPricePerSqm || 0) - (b.totalPricePerSqm || 0))[0];
+    const priciest = c.neighbourhoods
+      .filter((n: Neighbourhood) => n.totalPricePerSqm)
+      .sort((a: Neighbourhood, b: Neighbourhood) => (b.totalPricePerSqm || 0) - (a.totalPricePerSqm || 0))[0];
+    return { city: c.city, ratio, gap, cheapest, priciest, stats: c.stats };
+  })
+  .sort((a: { ratio: number }, b: { ratio: number }) => b.ratio - a.ratio);
+
+const topGap = gapData.slice(0, 5);
+
+const allNeighbourhoods = latestData.cities.flatMap((c: City) =>
+  c.neighbourhoods
+    .filter((n: Neighbourhood) => n.totalPricePerSqm)
+    .map((n: Neighbourhood) => ({ ...n, city: c.city }))
+);
+const top10Expensive = allNeighbourhoods
+  .sort((a: Neighbourhood, b: Neighbourhood) => (b.totalPricePerSqm || 0) - (a.totalPricePerSqm || 0))
+  .slice(0, 10);
+const top10Cheap = allNeighbourhoods
+  .sort((a: Neighbourhood, b: Neighbourhood) => (a.totalPricePerSqm || 0) - (b.totalPricePerSqm || 0))
+  .slice(0, 10);
+---
+
+<Layout
+  title="Пропастта между лукса и бюджета — ценови контрасти в България — Имоти БГ"
+  description="Колко е голяма разликата между най-скъпия и най-евтиния квартал? Анализ на ценовото неравенство в имотите."
+>
+  <article class="post">
+    <div class="wrap post__inner">
+      <a href="/blog" class="post__back">← Блог</a>
+      <header class="post__header">
+        <time class="post__date">17 март 2026</time>
+        <h1 class="post__title">Пропастта между лукса и бюджета — ценови контрасти в имотите</h1>
+      </header>
+      <div class="post__body">
+        <p>
+          Цените на имотите в България варират драматично — не само между градовете,
+          но и в рамките на един и същи град. Колко голяма е тази пропаст?
+        </p>
+
+        <h2>Градове с най-голям ценови контраст</h2>
+        <table class="post-table">
+          <thead><tr><th>Град</th><th>Най-евтин</th><th>Най-скъп</th><th>Разлика</th><th>Пъти</th></tr></thead>
+          <tbody>
+            {topGap.map((c: typeof gapData[0]) => (
+              <tr>
+                <td>{c.city}</td>
+                <td>{fmt(c.stats.minPricePerSqm)}</td>
+                <td>{fmt(c.stats.maxPricePerSqm)}</td>
+                <td>{fmt(c.gap)}</td>
+                <td><strong>{c.ratio}x</strong></td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+
+        <p>
+          {topGap[0]?.city} има най-голям ценови контраст — {topGap[0]?.ratio}x разлика
+          между най-евтиния ({topGap[0]?.cheapest?.name}, {fmt(topGap[0]?.cheapest?.totalPricePerSqm || 0)} EUR/м²)
+          и най-скъпия ({topGap[0]?.priciest?.name}, {fmt(topGap[0]?.priciest?.totalPricePerSqm || 0)} EUR/м²) квартал.
+        </p>
+
+        <h2>Топ 10 най-скъпи квартала в България</h2>
+        <table class="post-table">
+          <thead><tr><th>#</th><th>Квартал</th><th>Град</th><th>EUR/м²</th></tr></thead>
+          <tbody>
+            {top10Expensive.map((n: Neighbourhood & { city: string }, i: number) => (
+              <tr>
+                <td>{i + 1}</td>
+                <td>{n.name}</td>
+                <td>{n.city}</td>
+                <td><strong>{fmt(n.totalPricePerSqm || 0)}</strong></td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+
+        <h2>Топ 10 най-достъпни квартала в България</h2>
+        <table class="post-table">
+          <thead><tr><th>#</th><th>Квартал</th><th>Град</th><th>EUR/м²</th></tr></thead>
+          <tbody>
+            {top10Cheap.map((n: Neighbourhood & { city: string }, i: number) => (
+              <tr>
+                <td>{i + 1}</td>
+                <td>{n.name}</td>
+                <td>{n.city}</td>
+                <td><strong>{fmt(n.totalPricePerSqm || 0)}</strong></td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+
+        <p>
+          Разликата между най-скъпия ({top10Expensive[0]?.name}, {fmt(top10Expensive[0]?.totalPricePerSqm || 0)} EUR/м²)
+          и най-евтиния ({top10Cheap[0]?.name}, {fmt(top10Cheap[0]?.totalPricePerSqm || 0)} EUR/м²)
+          квартал в страната е {fmt((top10Expensive[0]?.totalPricePerSqm || 0) - (top10Cheap[0]?.totalPricePerSqm || 0))} EUR/м²
+          — за жилище от 70 м² това са над {fmt(((top10Expensive[0]?.totalPricePerSqm || 0) - (top10Cheap[0]?.totalPricePerSqm || 0)) * 70)} EUR разлика.
+        </p>
+
+        <p>Проверете пълните данни за всеки град на <a href="/">Имоти БГ</a>.</p>
+      </div>
+    </div>
+  </article>
+  <Footer scrapedAt={latestData.scrapedAt} />
+</Layout>
+
+<style>
+  .post { padding: 1.25rem 0 1rem; }
+  .post__inner { max-width: 680px; }
+  .post__back { font-size: 0.82rem; font-weight: 500; color: var(--text-muted); }
+  .post__back:hover { color: var(--accent); }
+  .post__header { margin: 1rem 0 1.5rem; }
+  .post__date { font-size: 0.78rem; color: var(--text-muted); font-weight: 500; }
+  .post__title { font-size: 1.35rem; font-weight: 700; line-height: 1.3; margin-top: 0.35rem; letter-spacing: -0.01em; }
+  .post__body { font-size: 0.92rem; line-height: 1.7; color: var(--text-secondary); }
+  .post__body h2 { font-size: 1.05rem; color: var(--text); margin-top: 1.75rem; margin-bottom: 0.5rem; }
+  .post__body p { margin-bottom: 1rem; }
+  .post__body strong { color: var(--text); }
+  .post-table { width: 100%; border-collapse: collapse; font-size: 0.85rem; margin: 0.75rem 0 1rem; }
+  .post-table th { text-align: left; padding: 0.5rem 0.65rem; font-size: 0.7rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.04em; color: var(--text-muted); border-bottom: 1px solid var(--border); }
+  .post-table td { padding: 0.45rem 0.65rem; border-bottom: 1px solid var(--border); }
+  .post-table th:last-child, .post-table td:last-child { text-align: right; }
+  .post-table tbody tr:hover { background: var(--surface-alt); }
+  @media (min-width: 768px) {
+    .post { padding: 1.75rem 0 1.5rem; }
+    .post__title { font-size: 1.6rem; }
+    .post__body { font-size: 0.95rem; }
+    .post__body h2 { font-size: 1.15rem; }
+  }
+</style>

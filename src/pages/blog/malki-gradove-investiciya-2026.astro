@@ -1,0 +1,136 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import Footer from "../../components/Footer.astro";
+import { readFileSync } from "fs";
+import { join } from "path";
+
+const latestData = JSON.parse(
+  readFileSync(join(process.cwd(), "data", "latest.json"), "utf-8")
+);
+
+const fmt = (n: number) => n.toLocaleString("bg-BG");
+
+interface City {
+  city: string;
+  key: string;
+  stats: {
+    avgPricePerSqm: number;
+    medianPricePerSqm: number;
+    minPricePerSqm: number;
+    maxPricePerSqm: number;
+    neighbourhoodCount: number;
+  };
+}
+
+const bigCityKeys = ["sofia", "varna", "burgas", "plovdiv"];
+const smallCities = latestData.cities
+  .filter((c: City) => !bigCityKeys.includes(c.key) && c.stats.avgPricePerSqm > 0)
+  .sort((a: City, b: City) => b.stats.avgPricePerSqm - a.stats.avgPricePerSqm);
+
+const sofia = latestData.cities.find((c: City) => c.key === "sofia");
+---
+
+<Layout
+  title="Имоти в малките градове — скрити възможности за инвестиция — Имоти БГ"
+  description="Анализ на цените на имотите в 12-те по-малки български града. Къде има потенциал за инвестиция?"
+>
+  <article class="post">
+    <div class="wrap post__inner">
+      <a href="/blog" class="post__back">← Блог</a>
+      <header class="post__header">
+        <time class="post__date">20 март 2026</time>
+        <h1 class="post__title">Имоти в малките градове — скрити възможности за инвестиция</h1>
+      </header>
+      <div class="post__body">
+        <p>
+          Докато всички погледи са насочени към София, Варна и Бургас, 12-те по-малки областни
+          центрове предлагат цени 2-3 пъти по-ниски и интересен потенциал за растеж.
+          Средната цена в София е {fmt(sofia?.stats.avgPricePerSqm || 0)} EUR/м² — ето как
+          се сравняват останалите градове.
+        </p>
+
+        <h2>Сравнение на {smallCities.length} по-малки града</h2>
+        <table class="post-table">
+          <thead><tr><th>Град</th><th>Квартали</th><th>Мин</th><th>Средна</th><th>Макс</th></tr></thead>
+          <tbody>
+            {smallCities.map((c: City) => (
+              <tr>
+                <td>{c.city}</td>
+                <td>{c.stats.neighbourhoodCount}</td>
+                <td>{fmt(c.stats.minPricePerSqm)}</td>
+                <td><strong>{fmt(c.stats.avgPricePerSqm)}</strong></td>
+                <td>{fmt(c.stats.maxPricePerSqm)}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+
+        <h2>Градове с най-голям диапазон на цените</h2>
+        <p>
+          Широк ценови диапазон обикновено означава, че градът има както евтини, така и премиум
+          квартали — знак за развиващ се пазар. Ето градовете с най-голяма разлика между минимум и максимум:
+        </p>
+        <table class="post-table">
+          <thead><tr><th>Град</th><th>Диапазон EUR/м²</th><th>Разлика</th></tr></thead>
+          <tbody>
+            {smallCities
+              .map((c: City) => ({ ...c, range: c.stats.maxPricePerSqm - c.stats.minPricePerSqm }))
+              .sort((a: City & { range: number }, b: City & { range: number }) => b.range - a.range)
+              .slice(0, 5)
+              .map((c: City & { range: number }) => (
+                <tr>
+                  <td>{c.city}</td>
+                  <td>{fmt(c.stats.minPricePerSqm)} – {fmt(c.stats.maxPricePerSqm)}</td>
+                  <td><strong>{fmt(c.range)}</strong></td>
+                </tr>
+              ))}
+          </tbody>
+        </table>
+
+        <h2>Защо да инвестираме в по-малък град?</h2>
+        <p>
+          <strong>По-нисък входен бариер:</strong> С бюджет от 40 000 – 60 000 EUR може да се
+          закупи двустаен апартамент в добро състояние, нещо немислимо в София.
+        </p>
+        <p>
+          <strong>По-висок наемен доход:</strong> Съотношението наем/цена често е по-добро в
+          по-малките градове, особено в университетските центрове като Велико Търново и Шумен.
+        </p>
+        <p>
+          <strong>Потенциал за растеж:</strong> Градове с развиваща се индустрия и подобряваща
+          се инфраструктура (нови пътища, IT паркове) имат потенциал за поскъпване.
+        </p>
+
+        <p>
+          Разгледайте цените по квартали за всеки град на <a href="/">началната ни страница</a>.
+        </p>
+      </div>
+    </div>
+  </article>
+  <Footer scrapedAt={latestData.scrapedAt} />
+</Layout>
+
+<style>
+  .post { padding: 1.25rem 0 1rem; }
+  .post__inner { max-width: 680px; }
+  .post__back { font-size: 0.82rem; font-weight: 500; color: var(--text-muted); }
+  .post__back:hover { color: var(--accent); }
+  .post__header { margin: 1rem 0 1.5rem; }
+  .post__date { font-size: 0.78rem; color: var(--text-muted); font-weight: 500; }
+  .post__title { font-size: 1.35rem; font-weight: 700; line-height: 1.3; margin-top: 0.35rem; letter-spacing: -0.01em; }
+  .post__body { font-size: 0.92rem; line-height: 1.7; color: var(--text-secondary); }
+  .post__body h2 { font-size: 1.05rem; color: var(--text); margin-top: 1.75rem; margin-bottom: 0.5rem; }
+  .post__body p { margin-bottom: 1rem; }
+  .post__body strong { color: var(--text); }
+  .post-table { width: 100%; border-collapse: collapse; font-size: 0.85rem; margin: 0.75rem 0 1rem; }
+  .post-table th { text-align: left; padding: 0.5rem 0.65rem; font-size: 0.7rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.04em; color: var(--text-muted); border-bottom: 1px solid var(--border); }
+  .post-table td { padding: 0.45rem 0.65rem; border-bottom: 1px solid var(--border); }
+  .post-table th:last-child, .post-table td:last-child { text-align: right; }
+  .post-table tbody tr:hover { background: var(--surface-alt); }
+  @media (min-width: 768px) {
+    .post { padding: 1.75rem 0 1.5rem; }
+    .post__title { font-size: 1.6rem; }
+    .post__body { font-size: 0.95rem; }
+    .post__body h2 { font-size: 1.15rem; }
+  }
+</style>

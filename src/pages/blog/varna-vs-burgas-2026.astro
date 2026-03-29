@@ -1,0 +1,135 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import Footer from "../../components/Footer.astro";
+import { readFileSync } from "fs";
+import { join } from "path";
+
+const latestData = JSON.parse(
+  readFileSync(join(process.cwd(), "data", "latest.json"), "utf-8")
+);
+
+const varna = latestData.cities.find((c: { key: string }) => c.key === "varna");
+const burgas = latestData.cities.find((c: { key: string }) => c.key === "burgas");
+
+const fmt = (n: number) => n.toLocaleString("bg-BG");
+
+const topVarna = varna?.neighbourhoods
+  ?.filter((n: { totalPricePerSqm: number | null }) => n.totalPricePerSqm)
+  .sort((a: { totalPricePerSqm: number }, b: { totalPricePerSqm: number }) => b.totalPricePerSqm - a.totalPricePerSqm)
+  .slice(0, 5) || [];
+
+const topBurgas = burgas?.neighbourhoods
+  ?.filter((n: { totalPricePerSqm: number | null }) => n.totalPricePerSqm)
+  .sort((a: { totalPricePerSqm: number }, b: { totalPricePerSqm: number }) => b.totalPricePerSqm - a.totalPricePerSqm)
+  .slice(0, 5) || [];
+
+const cheapVarna = varna?.neighbourhoods
+  ?.filter((n: { totalPricePerSqm: number | null }) => n.totalPricePerSqm)
+  .sort((a: { totalPricePerSqm: number }, b: { totalPricePerSqm: number }) => a.totalPricePerSqm - b.totalPricePerSqm)
+  .slice(0, 3) || [];
+
+const cheapBurgas = burgas?.neighbourhoods
+  ?.filter((n: { totalPricePerSqm: number | null }) => n.totalPricePerSqm)
+  .sort((a: { totalPricePerSqm: number }, b: { totalPricePerSqm: number }) => a.totalPricePerSqm - b.totalPricePerSqm)
+  .slice(0, 3) || [];
+---
+
+<Layout
+  title="Варна или Бургас — къде да купим имот на морето? — Имоти БГ"
+  description="Сравнение на цените на имоти в двата най-големи морски града на България — Варна и Бургас."
+>
+  <article class="post">
+    <div class="wrap post__inner">
+      <a href="/blog" class="post__back">← Блог</a>
+      <header class="post__header">
+        <time class="post__date">27 март 2026</time>
+        <h1 class="post__title">Варна или Бургас — къде да купим имот на морето?</h1>
+      </header>
+      <div class="post__body">
+        <p>
+          Двата най-големи морски града на България привличат както местни купувачи, така и чуждестранни инвеститори.
+          Но кой от тях предлага по-добра стойност за парите? Нека сравним цифрите.
+        </p>
+
+        <h2>Общо сравнение</h2>
+        <p>
+          <strong>Варна</strong> е по-скъпият от двата града със средна цена от <strong>{fmt(varna?.stats.avgPricePerSqm || 0)} EUR/м²</strong>
+          и {varna?.stats.neighbourhoodCount} квартала. <strong>Бургас</strong> предлага по-достъпни цени — средно <strong>{fmt(burgas?.stats.avgPricePerSqm || 0)} EUR/м²</strong>
+          с {burgas?.stats.neighbourhoodCount} квартала. Разликата е {fmt((varna?.stats.avgPricePerSqm || 0) - (burgas?.stats.avgPricePerSqm || 0))} EUR/м²
+          в полза на Бургас.
+        </p>
+
+        <h2>Най-скъпите квартали във Варна</h2>
+        <table class="post-table">
+          <thead><tr><th>Квартал</th><th>EUR/м²</th></tr></thead>
+          <tbody>
+            {topVarna.map((n: { name: string; totalPricePerSqm: number }) => (
+              <tr><td>{n.name}</td><td><strong>{fmt(n.totalPricePerSqm)}</strong></td></tr>
+            ))}
+          </tbody>
+        </table>
+
+        <h2>Най-скъпите квартали в Бургас</h2>
+        <table class="post-table">
+          <thead><tr><th>Квартал</th><th>EUR/м²</th></tr></thead>
+          <tbody>
+            {topBurgas.map((n: { name: string; totalPricePerSqm: number }) => (
+              <tr><td>{n.name}</td><td><strong>{fmt(n.totalPricePerSqm)}</strong></td></tr>
+            ))}
+          </tbody>
+        </table>
+
+        <p>
+          Премиум кварталите на Варна достигат до {fmt(topVarna[0]?.totalPricePerSqm || 0)} EUR/м²,
+          докато в Бургас максимумът е {fmt(topBurgas[0]?.totalPricePerSqm || 0)} EUR/м².
+          Това прави Бургас значително по-достъпен дори в елитния сегмент.
+        </p>
+
+        <h2>Къде е по-евтино?</h2>
+        <p>
+          За купувачи с по-скромен бюджет, Бургас предлага квартали с цени от {fmt(cheapBurgas[0]?.totalPricePerSqm || 0)} EUR/м²
+          ({cheapBurgas[0]?.name}), докато най-достъпните варненски квартали започват от {fmt(cheapVarna[0]?.totalPricePerSqm || 0)} EUR/м²
+          ({cheapVarna[0]?.name}).
+        </p>
+
+        <h2>Кой град да изберем?</h2>
+        <p>
+          <strong>Варна</strong> е по-добрият избор за тези, които търсят по-развита инфраструктура, университетска среда
+          и по-голямо разнообразие от квартали. <strong>Бургас</strong> привлича с по-ниски цени, близостта до Слънчев бряг
+          и Несебър, и по-спокоен темп на живот. И двата града предлагат отличен потенциал за наемен доход
+          през летния сезон.
+        </p>
+
+        <p>
+          Следете актуалните цени на <a href="/">нашата начална страница</a> за ежедневни актуализации.
+        </p>
+      </div>
+    </div>
+  </article>
+  <Footer scrapedAt={latestData.scrapedAt} />
+</Layout>
+
+<style>
+  .post { padding: 1.25rem 0 1rem; }
+  .post__inner { max-width: 680px; }
+  .post__back { font-size: 0.82rem; font-weight: 500; color: var(--text-muted); }
+  .post__back:hover { color: var(--accent); }
+  .post__header { margin: 1rem 0 1.5rem; }
+  .post__date { font-size: 0.78rem; color: var(--text-muted); font-weight: 500; }
+  .post__title { font-size: 1.35rem; font-weight: 700; line-height: 1.3; margin-top: 0.35rem; letter-spacing: -0.01em; }
+  .post__body { font-size: 0.92rem; line-height: 1.7; color: var(--text-secondary); }
+  .post__body h2 { font-size: 1.05rem; color: var(--text); margin-top: 1.75rem; margin-bottom: 0.5rem; }
+  .post__body p { margin-bottom: 1rem; }
+  .post__body strong { color: var(--text); }
+  .post-table { width: 100%; border-collapse: collapse; font-size: 0.85rem; margin: 0.75rem 0 1rem; }
+  .post-table th { text-align: left; padding: 0.5rem 0.65rem; font-size: 0.7rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.04em; color: var(--text-muted); border-bottom: 1px solid var(--border); }
+  .post-table td { padding: 0.45rem 0.65rem; border-bottom: 1px solid var(--border); }
+  .post-table th:last-child, .post-table td:last-child { text-align: right; }
+  .post-table tbody tr:hover { background: var(--surface-alt); }
+  @media (min-width: 768px) {
+    .post { padding: 1.75rem 0 1.5rem; }
+    .post__title { font-size: 1.6rem; }
+    .post__body { font-size: 0.95rem; }
+    .post__body h2 { font-size: 1.15rem; }
+  }
+</style>

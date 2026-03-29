@@ -1,0 +1,158 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import Footer from "../../components/Footer.astro";
+import { readFileSync } from "fs";
+import { join } from "path";
+
+const latestData = JSON.parse(
+  readFileSync(join(process.cwd(), "data", "latest.json"), "utf-8")
+);
+
+const fmt = (n: number) => n.toLocaleString("bg-BG");
+
+interface Neighbourhood {
+  name: string;
+  threeRoom: { price: number | null; pricePerSqm: number | null };
+  totalPricePerSqm: number | null;
+}
+
+interface City {
+  city: string;
+  key: string;
+  stats: { avgPricePerSqm: number; neighbourhoodCount: number };
+  neighbourhoods: Neighbourhood[];
+}
+
+const cityThreeRoom = latestData.cities
+  .map((c: City) => {
+    const withData = c.neighbourhoods.filter((n: Neighbourhood) => n.threeRoom.price);
+    const avgPrice = withData.length
+      ? Math.round(withData.reduce((s: number, n: Neighbourhood) => s + (n.threeRoom.price || 0), 0) / withData.length)
+      : 0;
+    const avgSqm = withData.length
+      ? Math.round(withData.reduce((s: number, n: Neighbourhood) => s + (n.threeRoom.pricePerSqm || 0), 0) / withData.length)
+      : 0;
+    return { city: c.city, key: c.key, avgPrice, avgSqm, count: withData.length };
+  })
+  .filter((c: { avgPrice: number }) => c.avgPrice > 0)
+  .sort((a: { avgPrice: number }, b: { avgPrice: number }) => b.avgPrice - a.avgPrice);
+
+const sofia = latestData.cities.find((c: City) => c.key === "sofia");
+const cheapThreeRoom = sofia?.neighbourhoods
+  ?.filter((n: Neighbourhood) => n.threeRoom.price)
+  .sort((a: Neighbourhood, b: Neighbourhood) => (a.threeRoom.price || 0) - (b.threeRoom.price || 0))
+  .slice(0, 10) || [];
+
+const topThreeRoom = sofia?.neighbourhoods
+  ?.filter((n: Neighbourhood) => n.threeRoom.price)
+  .sort((a: Neighbourhood, b: Neighbourhood) => (b.threeRoom.price || 0) - (a.threeRoom.price || 0))
+  .slice(0, 5) || [];
+---
+
+<Layout
+  title="Тристайни апартаменти — къде е най-изгодно за семейство? — Имоти БГ"
+  description="Сравнение на цените на тристайни апартаменти в 16 български града. Къде може да намерите семейно жилище на добра цена?"
+>
+  <article class="post">
+    <div class="wrap post__inner">
+      <a href="/blog" class="post__back">← Блог</a>
+      <header class="post__header">
+        <time class="post__date">14 март 2026</time>
+        <h1 class="post__title">Тристайни апартаменти — къде е най-изгодно за семейство?</h1>
+      </header>
+      <div class="post__body">
+        <p>
+          Тристайните апартаменти са класическият избор за семейства с деца. Но цените
+          варират значително — от под 50 000 EUR в по-малките градове до над 500 000 EUR
+          в елитните столични квартали. Ето пълната картина.
+        </p>
+
+        <h2>Средна цена на тристаен апартамент по градове</h2>
+        <table class="post-table">
+          <thead><tr><th>Град</th><th>Квартали</th><th>Средна цена</th><th>EUR/м²</th></tr></thead>
+          <tbody>
+            {cityThreeRoom.map((c: typeof cityThreeRoom[0]) => (
+              <tr>
+                <td>{c.city}</td>
+                <td>{c.count}</td>
+                <td><strong>{fmt(c.avgPrice)} €</strong></td>
+                <td>{fmt(c.avgSqm)}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+
+        <p>
+          Разликата е поразителна: средният тристаен в {cityThreeRoom[0]?.city} струва {fmt(cityThreeRoom[0]?.avgPrice)} EUR,
+          докато в {cityThreeRoom[cityThreeRoom.length - 1]?.city} цената е едва {fmt(cityThreeRoom[cityThreeRoom.length - 1]?.avgPrice)} EUR
+          — {Math.round(cityThreeRoom[0]?.avgPrice / cityThreeRoom[cityThreeRoom.length - 1]?.avgPrice)}x разлика.
+        </p>
+
+        <h2>Топ 5 най-скъпи квартала за тристайни в София</h2>
+        <table class="post-table">
+          <thead><tr><th>Квартал</th><th>Цена</th><th>EUR/м²</th></tr></thead>
+          <tbody>
+            {topThreeRoom.map((n: Neighbourhood) => (
+              <tr>
+                <td>{n.name}</td>
+                <td><strong>{fmt(n.threeRoom.price || 0)} €</strong></td>
+                <td>{fmt(n.threeRoom.pricePerSqm || 0)}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+
+        <h2>Най-достъпните тристайни в София</h2>
+        <table class="post-table">
+          <thead><tr><th>Квартал</th><th>Цена</th><th>EUR/м²</th></tr></thead>
+          <tbody>
+            {cheapThreeRoom.map((n: Neighbourhood) => (
+              <tr>
+                <td>{n.name}</td>
+                <td><strong>{fmt(n.threeRoom.price || 0)} €</strong></td>
+                <td>{fmt(n.threeRoom.pricePerSqm || 0)}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+
+        <h2>Практически съвети</h2>
+        <p>
+          За семейства с бюджет до 150 000 EUR, реалистичните опции в София са в периферните
+          квартали. Алтернативата е да разгледате градове като Пловдив, Стара Загора или Русе,
+          където тристаен апартамент в добър квартал може да се намери за 60 000 – 100 000 EUR.
+        </p>
+        <p>
+          Запазете интересните квартали в <a href="/favorites">Любими</a> и следете
+          промените в цените на <a href="/">Имоти БГ</a>.
+        </p>
+      </div>
+    </div>
+  </article>
+  <Footer scrapedAt={latestData.scrapedAt} />
+</Layout>
+
+<style>
+  .post { padding: 1.25rem 0 1rem; }
+  .post__inner { max-width: 680px; }
+  .post__back { font-size: 0.82rem; font-weight: 500; color: var(--text-muted); }
+  .post__back:hover { color: var(--accent); }
+  .post__header { margin: 1rem 0 1.5rem; }
+  .post__date { font-size: 0.78rem; color: var(--text-muted); font-weight: 500; }
+  .post__title { font-size: 1.35rem; font-weight: 700; line-height: 1.3; margin-top: 0.35rem; letter-spacing: -0.01em; }
+  .post__body { font-size: 0.92rem; line-height: 1.7; color: var(--text-secondary); }
+  .post__body h2 { font-size: 1.05rem; color: var(--text); margin-top: 1.75rem; margin-bottom: 0.5rem; }
+  .post__body p { margin-bottom: 1rem; }
+  .post__body strong { color: var(--text); }
+  .post-table { width: 100%; border-collapse: collapse; font-size: 0.85rem; margin: 0.75rem 0 1rem; }
+  .post-table th { text-align: left; padding: 0.5rem 0.65rem; font-size: 0.7rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.04em; color: var(--text-muted); border-bottom: 1px solid var(--border); }
+  .post-table td { padding: 0.45rem 0.65rem; border-bottom: 1px solid var(--border); }
+  .post-table th:last-child, .post-table td:last-child { text-align: right; }
+  .post-table tbody tr:hover { background: var(--surface-alt); }
+  @media (min-width: 768px) {
+    .post { padding: 1.75rem 0 1.5rem; }
+    .post__title { font-size: 1.6rem; }
+    .post__body { font-size: 0.95rem; }
+    .post__body h2 { font-size: 1.15rem; }
+  }
+</style>

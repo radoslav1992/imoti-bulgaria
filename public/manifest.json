@@ -1,0 +1,30 @@
+{
+  "name": "Имоти БГ — Средни цени на имоти",
+  "short_name": "Имоти БГ",
+  "description": "Актуални средни цени на недвижими имоти по градове и квартали в България.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#fafaf8",
+  "theme_color": "#fafaf8",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/icon-192.svg",
+      "sizes": "192x192",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/icon-512.svg",
+      "sizes": "512x512",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}

@@ -1,0 +1,313 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import { readFileSync } from "fs";
+import { join } from "path";
+
+const latestData = JSON.parse(
+  readFileSync(join(process.cwd(), "data", "latest.json"), "utf-8")
+);
+const dataJson = JSON.stringify(latestData);
+---
+
+<Layout title="Любими — Имоти БГ">
+  <header class="hero">
+    <div class="wrap">
+      <h1 class="hero__title">Любими</h1>
+      <p class="hero__sub">Запазените ви градове и квартали</p>
+    </div>
+  </header>
+
+  <main>
+    <div class="wrap">
+      <div id="fav-empty" class="fav-empty" style="display:none">
+        <div class="fav-empty__icon">☆</div>
+        <p class="fav-empty__text">Нямате добавени любими.</p>
+        <p class="fav-empty__hint">Натиснете ☆ до град или квартал в <a href="/">Цени</a> за да го запазите тук.</p>
+      </div>
+
+      <section id="fav-cities-section" style="display:none">
+        <details class="collapse" open>
+          <summary>
+            <h2 id="fav-cities-title">Любими градове</h2>
+            <span class="collapse__chevron" aria-hidden="true"></span>
+          </summary>
+          <div class="fav-list" id="fav-cities"></div>
+        </details>
+      </section>
+
+      <section id="fav-nh-section" style="display:none">
+        <details class="collapse" open>
+          <summary>
+            <h2 id="fav-nh-title">Любими квартали</h2>
+            <span class="collapse__chevron" aria-hidden="true"></span>
+          </summary>
+          <div class="fav-list" id="fav-neighbourhoods"></div>
+        </details>
+      </section>
+    </div>
+  </main>
+
+  <Footer scrapedAt={latestData.scrapedAt} />
+</Layout>
+
+<script is:inline define:vars={{ dataJson }}>
+  var favPageData = JSON.parse(dataJson);
+  var FAV_STORAGE_KEY = "imoti-bg-favorites";
+
+  function favGetFavs() {
+    try { return JSON.parse(localStorage.getItem(FAV_STORAGE_KEY)) || { cities: [], neighbourhoods: [] }; }
+    catch(e) { return { cities: [], neighbourhoods: [] }; }
+  }
+
+  function favSaveFavs(favs) {
+    localStorage.setItem(FAV_STORAGE_KEY, JSON.stringify(favs));
+  }
+
+  function favFmt(n) {
+    return n ? n.toLocaleString("bg-BG") : "—";
+  }
+
+  function favRender() {
+    var favs = favGetFavs();
+    var emptyEl = document.getElementById("fav-empty");
+    var citiesSection = document.getElementById("fav-cities-section");
+    var nhSection = document.getElementById("fav-nh-section");
+    var citiesContainer = document.getElementById("fav-cities");
+    var nhContainer = document.getElementById("fav-neighbourhoods");
+
+    var hasCities = favs.cities.length > 0;
+    var hasNh = favs.neighbourhoods.length > 0;
+
+    if (!hasCities && !hasNh) {
+      emptyEl.style.display = "block";
+      citiesSection.style.display = "none";
+      nhSection.style.display = "none";
+      return;
+    }
+
+    emptyEl.style.display = "none";
+
+    if (hasCities) {
+      citiesSection.style.display = "block";
+      document.getElementById("fav-cities-title").textContent = "Любими градове (" + favs.cities.length + ")";
+
+      var html = "";
+      favs.cities.forEach(function(cityKey) {
+        var city = favPageData.cities.find(function(c) { return c.key === cityKey; });
+        if (!city) return;
+        html += '<div class="fav-item">'
+          + '<div class="fav-item__body">'
+            + '<span class="fav-item__name">' + city.city + '</span>'
+            + '<span class="fav-item__meta">' + city.stats.neighbourhoodCount + ' квартала</span>'
+          + '</div>'
+          + '<span class="fav-item__price">' + favFmt(city.stats.avgPricePerSqm) + ' €/м²</span>'
+          + '<button class="fav-btn is-fav" data-remove-city="' + cityKey + '" type="button" aria-label="Премахни от любими">★</button>'
+        + '</div>';
+      });
+      citiesContainer.innerHTML = html;
+
+      citiesContainer.querySelectorAll("[data-remove-city]").forEach(function(btn) {
+        btn.addEventListener("click", function() {
+          var key = btn.getAttribute("data-remove-city");
+          var f = favGetFavs();
+          f.cities = f.cities.filter(function(c) { return c !== key; });
+          favSaveFavs(f);
+          favRender();
+        });
+      });
+    } else {
+      citiesSection.style.display = "none";
+    }
+
+    if (hasNh) {
+      nhSection.style.display = "block";
+      document.getElementById("fav-nh-title").textContent = "Любими квартали (" + favs.neighbourhoods.length + ")";
+
+      var grouped = {};
+      favs.neighbourhoods.forEach(function(fav) {
+        if (!grouped[fav.city]) grouped[fav.city] = [];
+        grouped[fav.city].push(fav.name);
+      });
+
+      var html = "";
+      Object.keys(grouped).forEach(function(cityKey) {
+        var city = favPageData.cities.find(function(c) { return c.key === cityKey; });
+        if (!city) return;
+
+        html += '<div class="fav-group">';
+        html += '<div class="fav-group__header">' + city.city + '</div>';
+
+        grouped[cityKey].forEach(function(nhName) {
+          var nh = city.neighbourhoods.find(function(n) { return n.name === nhName; });
+          if (!nh) return;
+          html += '<div class="fav-item">'
+            + '<div class="fav-item__body">'
+              + '<span class="fav-item__name">' + nh.name + '</span>'
+              + '<span class="fav-item__types">'
+                + '<span>1-ст: ' + favFmt(nh.oneRoom.pricePerSqm) + '</span>'
+                + '<span>2-ст: ' + favFmt(nh.twoRoom.pricePerSqm) + '</span>'
+                + '<span>3-ст: ' + favFmt(nh.threeRoom.pricePerSqm) + '</span>'
+              + '</span>'
+            + '</div>'
+            + '<span class="fav-item__price">' + favFmt(nh.totalPricePerSqm) + ' €/м²</span>'
+            + '<button class="fav-btn is-fav" data-remove-nh="' + nhName + '" data-remove-nh-city="' + cityKey + '" type="button" aria-label="Премахни от любими">★</button>'
+          + '</div>';
+        });
+
+        html += '</div>';
+      });
+
+      nhContainer.innerHTML = html;
+
+      nhContainer.querySelectorAll("[data-remove-nh]").forEach(function(btn) {
+        btn.addEventListener("click", function() {
+          var name = btn.getAttribute("data-remove-nh");
+          var ck = btn.getAttribute("data-remove-nh-city");
+          var f = favGetFavs();
+          f.neighbourhoods = f.neighbourhoods.filter(function(n) { return !(n.city === ck && n.name === name); });
+          favSaveFavs(f);
+          favRender();
+        });
+      });
+    } else {
+      nhSection.style.display = "none";
+    }
+  }
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", favRender);
+  } else {
+    favRender();
+  }
+</script>
+
+<style>
+  .hero {
+    padding: 1.25rem 0 0.5rem;
+  }
+
+  .hero__title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+  }
+
+  .hero__sub {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    margin-top: 0.15rem;
+  }
+
+  .fav-empty {
+    text-align: center;
+    padding: 3rem 1rem;
+  }
+
+  .fav-empty__icon {
+    font-size: 2.5rem;
+    color: var(--text-muted);
+    margin-bottom: 0.75rem;
+  }
+
+  .fav-empty__text {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--text);
+    margin-bottom: 0.35rem;
+  }
+
+  .fav-empty__hint {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+  }
+
+  section {
+    margin-bottom: 1rem;
+  }
+
+  @media (min-width: 768px) {
+    .hero {
+      padding: 1.75rem 0 0.75rem;
+    }
+
+    .hero__title {
+      font-size: 1.5rem;
+    }
+  }
+</style>
+
+<style is:global>
+  .fav-list {
+    padding: 0 1rem;
+  }
+
+  .fav-group__header {
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: var(--text-muted);
+    padding: 0.6rem 0 0.3rem;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .fav-item {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.65rem 0;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .fav-item:last-child {
+    border-bottom: none;
+  }
+
+  .fav-item__body {
+    flex: 1;
+    min-width: 0;
+  }
+
+  .fav-item__name {
+    font-size: 0.88rem;
+    font-weight: 600;
+    color: var(--text);
+    display: block;
+  }
+
+  .fav-item__meta {
+    font-size: 0.72rem;
+    color: var(--text-muted);
+  }
+
+  .fav-item__types {
+    display: flex;
+    gap: 0.75rem;
+    font-size: 0.72rem;
+    color: var(--text-muted);
+    margin-top: 0.15rem;
+  }
+
+  .fav-item__price {
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: var(--text);
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+
+  @media (min-width: 768px) {
+    .fav-item {
+      padding: 0.75rem 0;
+    }
+
+    .fav-item:hover {
+      background: var(--surface-alt);
+      margin: 0 -1rem;
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+  }
+</style>

@@ -1,0 +1,171 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import Footer from "../../components/Footer.astro";
+import { readFileSync } from "fs";
+import { join } from "path";
+
+const latestData = JSON.parse(
+  readFileSync(join(process.cwd(), "data", "latest.json"), "utf-8")
+);
+
+const articles = [
+  {
+    slug: "ceni-na-imoti-bulgaria-2026",
+    title: "Къде са най-скъпите и най-евтините квартали в България през 2026?",
+    excerpt:
+      "Анализ на средните цени на жилища по градове и квартали — кои райони поскъпват най-бързо и къде все още може да се намери изгодна покупка.",
+    date: "2026-03-29",
+  },
+  {
+    slug: "varna-vs-burgas-2026",
+    title: "Варна или Бургас — къде да купим имот на морето?",
+    excerpt:
+      "Сравнение на цените в двата най-големи морски града. Кой предлага по-добра стойност за парите и какъв е потенциалът за наемен доход?",
+    date: "2026-03-27",
+  },
+  {
+    slug: "ednostaini-apartamenti-ceni-2026",
+    title: "Колко струва едностаен апартамент в България през 2026?",
+    excerpt:
+      "Подробен анализ на цените на едностайните апартаменти по градове и квартали — най-търсеният тип имот за млади купувачи и инвеститори.",
+    date: "2026-03-25",
+  },
+  {
+    slug: "evtini-kvartali-sofia-2026",
+    title: "15 достъпни квартала в София за първо жилище",
+    excerpt:
+      "Кои квартали в София предлагат цени под медианата? Практичен гид за купувачи на първо жилище с ограничен бюджет.",
+    date: "2026-03-23",
+  },
+  {
+    slug: "malki-gradove-investiciya-2026",
+    title: "Имоти в малките градове — скрити възможности за инвестиция",
+    excerpt:
+      "12 областни центъра с цени 2-3 пъти по-ниски от столицата. Къде има потенциал за растеж и по-висок наемен доход?",
+    date: "2026-03-20",
+  },
+  {
+    slug: "razlikata-luksozni-evtini-kvartali-2026",
+    title: "Пропастта между лукса и бюджета — ценови контрасти в имотите",
+    excerpt:
+      "Топ 10 най-скъпи и най-евтини квартала в цяла България. Колко голяма е разликата и какво я определя?",
+    date: "2026-03-17",
+  },
+  {
+    slug: "tristaini-apartamenti-sravnenie-2026",
+    title: "Тристайни апартаменти — къде е най-изгодно за семейство?",
+    excerpt:
+      "Средни цени на тристайни апартаменти в 16 града. Сравнение за семейства, които търсят баланс между цена и качество на живот.",
+    date: "2026-03-14",
+  },
+];
+---
+
+<Layout title="Блог — Имоти БГ" description="Статии и анализи за пазара на недвижими имоти в България.">
+  <main class="blog-list">
+    <div class="wrap">
+      <h1 class="blog-list__title">Блог</h1>
+      <p class="blog-list__desc">Анализи и прозрения за пазара на имоти в България</p>
+
+      <div class="articles">
+        {
+          articles.map((a) => (
+            <a href={`/blog/${a.slug}`} class="article-card card">
+              <time class="article-card__date">
+                {new Date(a.date).toLocaleDateString("bg-BG", {
+                  day: "numeric",
+                  month: "long",
+                  year: "numeric",
+                })}
+              </time>
+              <h2 class="article-card__title">{a.title}</h2>
+              <p class="article-card__excerpt">{a.excerpt}</p>
+              <span class="article-card__read">Прочети →</span>
+            </a>
+          ))
+        }
+      </div>
+    </div>
+  </main>
+  <Footer scrapedAt={latestData.scrapedAt} />
+</Layout>
+
+<style>
+  .blog-list {
+    padding: 1.25rem 0;
+  }
+
+  .blog-list__title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 0.25rem;
+  }
+
+  .blog-list__desc {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    margin-bottom: 1.5rem;
+  }
+
+  .articles {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .article-card {
+    display: block;
+    color: var(--text);
+    transition: border-color 0.15s;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  .article-card:hover {
+    border-color: var(--accent);
+    text-decoration: none;
+  }
+
+  .article-card__date {
+    font-size: 0.72rem;
+    color: var(--text-muted);
+    font-weight: 500;
+  }
+
+  .article-card__title {
+    font-size: 1rem;
+    font-weight: 700;
+    margin: 0.3rem 0 0.4rem;
+    line-height: 1.35;
+  }
+
+  .article-card__excerpt {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    line-height: 1.5;
+    margin-bottom: 0.6rem;
+  }
+
+  .article-card__read {
+    font-size: 0.82rem;
+    font-weight: 600;
+    color: var(--accent);
+  }
+
+  @media (min-width: 768px) {
+    .blog-list {
+      padding: 1.75rem 0;
+    }
+
+    .blog-list__title {
+      font-size: 1.5rem;
+    }
+
+    .articles {
+      max-width: 680px;
+    }
+
+    .article-card__title {
+      font-size: 1.1rem;
+    }
+  }
+</style>

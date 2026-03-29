@@ -1,0 +1,126 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import Footer from "../../components/Footer.astro";
+import { readFileSync } from "fs";
+import { join } from "path";
+
+const latestData = JSON.parse(
+  readFileSync(join(process.cwd(), "data", "latest.json"), "utf-8")
+);
+
+const fmt = (n: number) => n.toLocaleString("bg-BG");
+
+interface Neighbourhood {
+  name: string;
+  oneRoom: { price: number | null; pricePerSqm: number | null };
+  twoRoom: { price: number | null; pricePerSqm: number | null };
+  threeRoom: { price: number | null; pricePerSqm: number | null };
+  totalPricePerSqm: number | null;
+}
+
+const sofia = latestData.cities.find((c: { key: string }) => c.key === "sofia");
+const median = sofia?.stats.medianPricePerSqm || 0;
+
+const belowMedian = sofia?.neighbourhoods
+  ?.filter((n: Neighbourhood) => n.totalPricePerSqm && n.totalPricePerSqm < median)
+  .sort((a: Neighbourhood, b: Neighbourhood) => (a.totalPricePerSqm || 0) - (b.totalPricePerSqm || 0)) || [];
+
+const top15 = belowMedian.slice(0, 15);
+const midRange = sofia?.neighbourhoods
+  ?.filter((n: Neighbourhood) => n.totalPricePerSqm && n.totalPricePerSqm >= median * 0.85 && n.totalPricePerSqm <= median * 1.15)
+  .sort((a: Neighbourhood, b: Neighbourhood) => (a.totalPricePerSqm || 0) - (b.totalPricePerSqm || 0))
+  .slice(0, 10) || [];
+---
+
+<Layout
+  title="15 достъпни квартала в София за първо жилище — Имоти БГ"
+  description="Кои квартали в София предлагат цени под медианата и са подходящи за първо жилище или инвестиция?"
+>
+  <article class="post">
+    <div class="wrap post__inner">
+      <a href="/blog" class="post__back">← Блог</a>
+      <header class="post__header">
+        <time class="post__date">23 март 2026</time>
+        <h1 class="post__title">15 достъпни квартала в София за първо жилище</h1>
+      </header>
+      <div class="post__body">
+        <p>
+          Средната цена в София от {fmt(sofia?.stats.avgPricePerSqm || 0)} EUR/м² може да звучи обезсърчаващо
+          за начинаещи купувачи. Но медианата е {fmt(median)} EUR/м², а {belowMedian.length} квартала
+          предлагат цени под нея. Ето кои са най-достъпните.
+        </p>
+
+        <h2>Най-достъпните 15 квартала</h2>
+        <table class="post-table">
+          <thead><tr><th>#</th><th>Квартал</th><th>2-ст (EUR/м²)</th><th>Общо EUR/м²</th></tr></thead>
+          <tbody>
+            {top15.map((n: Neighbourhood, i: number) => (
+              <tr>
+                <td>{i + 1}</td>
+                <td>{n.name}</td>
+                <td>{n.twoRoom.pricePerSqm ? fmt(n.twoRoom.pricePerSqm) : "—"}</td>
+                <td><strong>{fmt(n.totalPricePerSqm || 0)}</strong></td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+
+        <p>
+          Повечето от тези квартали са в периферията на града, но предлагат добра
+          транспортна свързаност с метро или градски транспорт. Цената на двустаен апартамент
+          в тях може да бъде 2-3 пъти по-ниска от тази в центъра.
+        </p>
+
+        <h2>Квартали около медианата — баланс цена/локация</h2>
+        <p>
+          Ако търсите по-добро местоположение без да плащате премиум цени, тези квартали
+          с цени около медианата от {fmt(median)} EUR/м² са добър компромис:
+        </p>
+        <table class="post-table">
+          <thead><tr><th>Квартал</th><th>EUR/м²</th></tr></thead>
+          <tbody>
+            {midRange.map((n: Neighbourhood) => (
+              <tr><td>{n.name}</td><td><strong>{fmt(n.totalPricePerSqm || 0)}</strong></td></tr>
+            ))}
+          </tbody>
+        </table>
+
+        <h2>Съвети за купувачи</h2>
+        <p>
+          При избор на квартал обърнете внимание не само на цената, но и на: близост до метро,
+          наличие на училища и паркове, планове за ново строителство в района, и потенциал
+          за поскъпване. Районите с активно строителство и нова инфраструктура често предлагат
+          най-добрата стойност в дългосрочен план.
+        </p>
+
+        <p>Вижте <a href="/">пълния списък с цени</a> за всички {sofia?.stats.neighbourhoodCount} квартала в София.</p>
+      </div>
+    </div>
+  </article>
+  <Footer scrapedAt={latestData.scrapedAt} />
+</Layout>
+
+<style>
+  .post { padding: 1.25rem 0 1rem; }
+  .post__inner { max-width: 680px; }
+  .post__back { font-size: 0.82rem; font-weight: 500; color: var(--text-muted); }
+  .post__back:hover { color: var(--accent); }
+  .post__header { margin: 1rem 0 1.5rem; }
+  .post__date { font-size: 0.78rem; color: var(--text-muted); font-weight: 500; }
+  .post__title { font-size: 1.35rem; font-weight: 700; line-height: 1.3; margin-top: 0.35rem; letter-spacing: -0.01em; }
+  .post__body { font-size: 0.92rem; line-height: 1.7; color: var(--text-secondary); }
+  .post__body h2 { font-size: 1.05rem; color: var(--text); margin-top: 1.75rem; margin-bottom: 0.5rem; }
+  .post__body p { margin-bottom: 1rem; }
+  .post__body strong { color: var(--text); }
+  .post-table { width: 100%; border-collapse: collapse; font-size: 0.85rem; margin: 0.75rem 0 1rem; }
+  .post-table th { text-align: left; padding: 0.5rem 0.65rem; font-size: 0.7rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.04em; color: var(--text-muted); border-bottom: 1px solid var(--border); }
+  .post-table td { padding: 0.45rem 0.65rem; border-bottom: 1px solid var(--border); }
+  .post-table th:last-child, .post-table td:last-child { text-align: right; }
+  .post-table tbody tr:hover { background: var(--surface-alt); }
+  @media (min-width: 768px) {
+    .post { padding: 1.75rem 0 1.5rem; }
+    .post__title { font-size: 1.6rem; }
+    .post__body { font-size: 0.95rem; }
+    .post__body h2 { font-size: 1.15rem; }
+  }
+</style>

@@ -1,0 +1,42 @@
+---
+import "../styles/global.css";
+import Nav from "../components/Nav.astro";
+
+interface Props {
+  title?: string;
+  description?: string;
+}
+
+const {
+  title = "Имоти БГ — Средни цени на имоти в България",
+  description = "Актуални средни цени на недвижими имоти по градове и квартали в България.",
+} = Astro.props;
+---
+
+<!doctype html>
+<html lang="bg">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content={description} />
+    <meta name="theme-color" content="#fafaf8" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content="Имоти БГ" />
+    <title>{title}</title>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="apple-touch-icon" href="/icons/icon-192.svg" />
+    <link rel="manifest" href="/manifest.json" />
+  </head>
+  <body>
+    <Nav />
+    <slot />
+    <script is:inline>
+      if ("serviceWorker" in navigator) {
+        window.addEventListener("load", () => {
+          navigator.serviceWorker.register("/sw.js").catch(() => {});
+        });
+      }
+    </script>
+  </body>
+</html>

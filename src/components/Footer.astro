@@ -1,0 +1,36 @@
+---
+interface Props {
+  scrapedAt: string;
+}
+
+const { scrapedAt } = Astro.props;
+const formattedTime = new Date(scrapedAt).toLocaleString("bg-BG", {
+  dateStyle: "long",
+  timeStyle: "short",
+});
+---
+
+<footer class="footer">
+  <div class="wrap footer__inner">
+    <p>Имоти БГ · Обновено на {formattedTime}</p>
+    <p>Източник на данни: imot.bg/средни-цени</p>
+  </div>
+</footer>
+
+<style>
+  .footer {
+    border-top: 1px solid var(--border);
+    padding: 1.25rem 0;
+    margin-top: 1rem;
+  }
+
+  .footer__inner {
+    text-align: center;
+  }
+
+  .footer p {
+    font-size: 0.72rem;
+    color: var(--text-muted);
+    line-height: 1.7;
+  }
+</style>

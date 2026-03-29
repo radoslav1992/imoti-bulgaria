@@ -1,0 +1,18 @@
+{
+  "name": "real-estate-pricing-bg",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "Дневни цени и статистики на имоти в България, извлечени от imot.bg",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "scrape": "node scripts/scrape.mjs"
+  },
+  "dependencies": {
+    "astro": "^5.7.10",
+    "chart.js": "^4.4.8",
+    "cheerio": "^1.0.0",
+    "iconv-lite": "^0.6.3"
+  }
+}

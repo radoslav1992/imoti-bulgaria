@@ -1,0 +1,312 @@
+---
+interface Props {
+  dataJson: string;
+}
+
+const { dataJson } = Astro.props;
+---
+
+<section class="nh-section" id="neighbourhoods">
+  <div class="wrap">
+    <details class="collapse" open>
+      <summary>
+        <h2 id="nh-title">Квартали</h2>
+        <span class="collapse__chevron" aria-hidden="true"></span>
+      </summary>
+
+      <div class="nh-controls">
+        <select id="nh-city" aria-label="Град"></select>
+        <select id="nh-sort" aria-label="Сортиране">
+          <option value="total-desc">EUR/м² ↓</option>
+          <option value="total-asc">EUR/м² ↑</option>
+          <option value="name-asc">А-Я</option>
+        </select>
+      </div>
+
+      <div id="nh-list"></div>
+
+      <div class="nh-empty" id="nh-empty" style="display:none">
+        Изберете град за да видите квартали.
+      </div>
+    </details>
+  </div>
+</section>
+
+<script is:inline define:vars={{ dataJson }}>
+  var nhData = JSON.parse(dataJson);
+  var nhSelectedCity = null;
+  var NH_STORAGE_KEY = "imoti-bg-favorites";
+
+  function nhGetFavs() {
+    try { return JSON.parse(localStorage.getItem(NH_STORAGE_KEY)) || { cities: [], neighbourhoods: [] }; }
+    catch(e) { return { cities: [], neighbourhoods: [] }; }
+  }
+
+  function nhSaveFavs(favs) {
+    localStorage.setItem(NH_STORAGE_KEY, JSON.stringify(favs));
+  }
+
+  function nhFmt(n) {
+    return n ? n.toLocaleString("bg-BG") : "—";
+  }
+
+  function nhIsFavNeighbourhood(cityKey, name) {
+    var favs = nhGetFavs();
+    return favs.neighbourhoods.some(function(f) { return f.city === cityKey && f.name === name; });
+  }
+
+  function nhToggleFavNeighbourhood(cityKey, name) {
+    var favs = nhGetFavs();
+    var idx = -1;
+    for (var i = 0; i < favs.neighbourhoods.length; i++) {
+      if (favs.neighbourhoods[i].city === cityKey && favs.neighbourhoods[i].name === name) { idx = i; break; }
+    }
+    if (idx === -1) { favs.neighbourhoods.push({ city: cityKey, name: name }); }
+    else { favs.neighbourhoods.splice(idx, 1); }
+    nhSaveFavs(favs);
+  }
+
+  function nhRender(cityKey, sortBy) {
+    var city = nhData.cities.find(function(c) { return c.key === cityKey; });
+    var container = document.getElementById("nh-list");
+    var empty = document.getElementById("nh-empty");
+    var title = document.getElementById("nh-title");
+
+    if (!city || !city.neighbourhoods.length) {
+      container.innerHTML = "";
+      empty.style.display = "block";
+      return;
+    }
+
+    empty.style.display = "none";
+    title.textContent = "Квартали — " + city.city;
+
+    var sorted = city.neighbourhoods.slice();
+    var sortFns = {
+      "total-desc": function(a, b) { return (b.totalPricePerSqm || 0) - (a.totalPricePerSqm || 0); },
+      "total-asc": function(a, b) { return (a.totalPricePerSqm || 999999) - (b.totalPricePerSqm || 999999); },
+      "name-asc": function(a, b) { return a.name.localeCompare(b.name, "bg"); },
+    };
+    sorted.sort(sortFns[sortBy] || sortFns["total-desc"]);
+
+    var max = 0;
+    for (var i = 0; i < sorted.length; i++) {
+      if ((sorted[i].totalPricePerSqm || 0) > max) max = sorted[i].totalPricePerSqm;
+    }
+
+    var html = "";
+    for (var i = 0; i < sorted.length; i++) {
+      var n = sorted[i];
+      var pct = n.totalPricePerSqm ? Math.round((n.totalPricePerSqm / max) * 100) : 0;
+      var isFav = nhIsFavNeighbourhood(cityKey, n.name);
+      html += '<div class="nh-row">'
+        + '<div class="nh-row__main">'
+          + '<span class="nh-row__name">' + n.name + '</span>'
+          + '<div class="nh-row__right">'
+            + '<span class="nh-row__total">' + nhFmt(n.totalPricePerSqm) + '</span>'
+            + '<button class="fav-btn' + (isFav ? ' is-fav' : '') + '" data-fav-nh="' + n.name + '" data-fav-nh-city="' + cityKey + '" type="button" aria-label="Добави в любими">'
+              + (isFav ? '★' : '☆')
+            + '</button>'
+          + '</div>'
+        + '</div>'
+        + '<div class="nh-row__bar"><div class="nh-row__fill" style="width:' + pct + '%"></div></div>'
+        + '<div class="nh-row__types">'
+          + '<span class="nh-row__type"><span class="nh-row__type-label">1-ст</span> ' + nhFmt(n.oneRoom.pricePerSqm) + '</span>'
+          + '<span class="nh-row__type"><span class="nh-row__type-label">2-ст</span> ' + nhFmt(n.twoRoom.pricePerSqm) + '</span>'
+          + '<span class="nh-row__type"><span class="nh-row__type-label">3-ст</span> ' + nhFmt(n.threeRoom.pricePerSqm) + '</span>'
+        + '</div>'
+      + '</div>';
+    }
+
+    container.innerHTML = html;
+
+    container.querySelectorAll("[data-fav-nh]").forEach(function(btn) {
+      btn.addEventListener("click", function() {
+        var name = btn.getAttribute("data-fav-nh");
+        var ck = btn.getAttribute("data-fav-nh-city");
+        nhToggleFavNeighbourhood(ck, name);
+        var nowFav = nhIsFavNeighbourhood(ck, name);
+        btn.textContent = nowFav ? "★" : "☆";
+        btn.classList.toggle("is-fav", nowFav);
+      });
+    });
+  }
+
+  function nhInit() {
+    var citySelect = document.getElementById("nh-city");
+    var sortSelect = document.getElementById("nh-sort");
+
+    nhData.cities
+      .filter(function(c) { return c.neighbourhoods.length > 0; })
+      .sort(function(a, b) { return b.stats.avgPricePerSqm - a.stats.avgPricePerSqm; })
+      .forEach(function(c, i) {
+        var opt = document.createElement("option");
+        opt.value = c.key;
+        opt.textContent = c.city;
+        if (i === 0) opt.selected = true;
+        citySelect.appendChild(opt);
+      });
+
+    nhSelectedCity = citySelect.value;
+    nhRender(nhSelectedCity, sortSelect.value);
+
+    citySelect.addEventListener("change", function() {
+      nhSelectedCity = citySelect.value;
+      nhRender(nhSelectedCity, sortSelect.value);
+    });
+
+    sortSelect.addEventListener("change", function() {
+      nhRender(nhSelectedCity, sortSelect.value);
+    });
+
+    document.querySelectorAll(".city-card").forEach(function(btn) {
+      btn.addEventListener("click", function() {
+        var key = btn.dataset.city;
+        citySelect.value = key;
+        nhSelectedCity = key;
+        document.querySelectorAll(".city-card").forEach(function(b) { b.removeAttribute("aria-pressed"); });
+        btn.setAttribute("aria-pressed", "true");
+        nhRender(key, sortSelect.value);
+        var details = document.getElementById("neighbourhoods").querySelector(".collapse");
+        if (details && !details.open) details.open = true;
+        document.getElementById("neighbourhoods").scrollIntoView({ behavior: "smooth" });
+      });
+    });
+  }
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", nhInit);
+  } else {
+    nhInit();
+  }
+</script>
+
+<style is:global>
+  .nh-section {
+    padding: 1rem 0;
+  }
+
+  .nh-controls {
+    display: flex;
+    gap: 0.35rem;
+    padding: 0 1rem 0.65rem;
+  }
+
+  .nh-controls select {
+    flex: 1;
+  }
+
+  .nh-section .nh-empty {
+    padding: 2rem;
+    text-align: center;
+    color: var(--text-muted);
+    font-size: 0.9rem;
+  }
+
+  .nh-row {
+    padding: 0.65rem 0;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .nh-row:last-child {
+    border-bottom: none;
+  }
+
+  .nh-row__main {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 0.5rem;
+    margin-bottom: 0.3rem;
+  }
+
+  .nh-row__right {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    flex-shrink: 0;
+  }
+
+  .nh-row__name {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--text);
+    min-width: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .nh-row__total {
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: var(--text);
+    white-space: nowrap;
+  }
+
+  .nh-row__bar {
+    height: 3px;
+    background: var(--surface-alt);
+    border-radius: 2px;
+    overflow: hidden;
+    margin-bottom: 0.3rem;
+  }
+
+  .nh-row__fill {
+    height: 100%;
+    background: var(--accent);
+    border-radius: 2px;
+  }
+
+  .nh-row__types {
+    display: flex;
+    gap: 0.75rem;
+    font-size: 0.72rem;
+    color: var(--text-muted);
+  }
+
+  .nh-row__type-label {
+    font-weight: 600;
+    color: var(--text-secondary);
+  }
+
+  #nh-list {
+    padding: 0 1rem;
+  }
+
+  @media (min-width: 768px) {
+    .nh-controls select {
+      flex: none;
+    }
+
+    .nh-row {
+      display: grid;
+      grid-template-columns: 1fr 200px 180px;
+      align-items: center;
+      gap: 1rem;
+      padding: 0.5rem 0;
+    }
+
+    .nh-row__main {
+      margin-bottom: 0;
+    }
+
+    .nh-row__bar {
+      margin-bottom: 0;
+      height: 5px;
+    }
+
+    .nh-row__types {
+      justify-content: flex-end;
+      gap: 1rem;
+      font-size: 0.78rem;
+    }
+
+    .nh-row:hover {
+      background: var(--surface-alt);
+      margin: 0 -1rem;
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+  }
+</style>

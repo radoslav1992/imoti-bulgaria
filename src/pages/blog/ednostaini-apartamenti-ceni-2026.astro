@@ -1,0 +1,139 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import Footer from "../../components/Footer.astro";
+import { readFileSync } from "fs";
+import { join } from "path";
+
+interface Neighbourhood {
+  name: string;
+  oneRoom: { price: number | null; pricePerSqm: number | null };
+  totalPricePerSqm: number | null;
+}
+
+interface City {
+  city: string;
+  key: string;
+  stats: { avgPricePerSqm: number; neighbourhoodCount: number };
+  neighbourhoods: Neighbourhood[];
+}
+
+const latestData = JSON.parse(
+  readFileSync(join(process.cwd(), "data", "latest.json"), "utf-8")
+);
+
+const fmt = (n: number) => n.toLocaleString("bg-BG");
+
+const cityOneRoom = latestData.cities
+  .map((c: City) => {
+    const withData = c.neighbourhoods.filter((n) => n.oneRoom.pricePerSqm);
+    const avg = withData.length
+      ? Math.round(withData.reduce((s: number, n: Neighbourhood) => s + (n.oneRoom.pricePerSqm || 0), 0) / withData.length)
+      : 0;
+    return { city: c.city, key: c.key, avg, count: withData.length };
+  })
+  .filter((c: { avg: number }) => c.avg > 0)
+  .sort((a: { avg: number }, b: { avg: number }) => b.avg - a.avg);
+
+const sofia = latestData.cities.find((c: City) => c.key === "sofia");
+const cheapOneRoom = sofia?.neighbourhoods
+  ?.filter((n: Neighbourhood) => n.oneRoom.pricePerSqm)
+  .sort((a: Neighbourhood, b: Neighbourhood) => (a.oneRoom.pricePerSqm || 0) - (b.oneRoom.pricePerSqm || 0))
+  .slice(0, 5) || [];
+
+const expensiveOneRoom = sofia?.neighbourhoods
+  ?.filter((n: Neighbourhood) => n.oneRoom.pricePerSqm)
+  .sort((a: Neighbourhood, b: Neighbourhood) => (b.oneRoom.pricePerSqm || 0) - (a.oneRoom.pricePerSqm || 0))
+  .slice(0, 5) || [];
+---
+
+<Layout
+  title="Колко струва едностаен апартамент в България през 2026? — Имоти БГ"
+  description="Подробен анализ на цените на едностайните апартаменти по градове и квартали в България."
+>
+  <article class="post">
+    <div class="wrap post__inner">
+      <a href="/blog" class="post__back">← Блог</a>
+      <header class="post__header">
+        <time class="post__date">25 март 2026</time>
+        <h1 class="post__title">Колко струва едностаен апартамент в България през 2026?</h1>
+      </header>
+      <div class="post__body">
+        <p>
+          Едностайните апартаменти са най-търсеният тип имот за млади хора, студенти и инвеститори, търсещи наемен доход.
+          Нека разгледаме как се разпределят цените в различните градове.
+        </p>
+
+        <h2>Средна цена на м² за едностайни по градове</h2>
+        <table class="post-table">
+          <thead><tr><th>Град</th><th>Квартали с данни</th><th>EUR/м²</th></tr></thead>
+          <tbody>
+            {cityOneRoom.map((c: { city: string; count: number; avg: number }) => (
+              <tr>
+                <td>{c.city}</td>
+                <td>{c.count}</td>
+                <td><strong>{fmt(c.avg)}</strong></td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+
+        <p>
+          Разликата между най-скъпия ({cityOneRoom[0]?.city}) и най-евтиния ({cityOneRoom[cityOneRoom.length - 1]?.city}) град
+          е {fmt(cityOneRoom[0]?.avg - cityOneRoom[cityOneRoom.length - 1]?.avg)} EUR/м² — значителна сума при покупка на 40-50 м² жилище.
+        </p>
+
+        <h2>Най-скъпите квартали за едностайни в София</h2>
+        <table class="post-table">
+          <thead><tr><th>Квартал</th><th>EUR/м²</th></tr></thead>
+          <tbody>
+            {expensiveOneRoom.map((n: Neighbourhood) => (
+              <tr><td>{n.name}</td><td><strong>{fmt(n.oneRoom.pricePerSqm || 0)}</strong></td></tr>
+            ))}
+          </tbody>
+        </table>
+
+        <h2>Най-достъпните квартали за едностайни в София</h2>
+        <table class="post-table">
+          <thead><tr><th>Квартал</th><th>EUR/м²</th></tr></thead>
+          <tbody>
+            {cheapOneRoom.map((n: Neighbourhood) => (
+              <tr><td>{n.name}</td><td><strong>{fmt(n.oneRoom.pricePerSqm || 0)}</strong></td></tr>
+            ))}
+          </tbody>
+        </table>
+
+        <p>
+          За начинаещи купувачи с бюджет около 50 000 – 70 000 EUR, периферните квартали на София
+          или по-малките областни градове предлагат реални възможности за покупка на първо жилище.
+          Следете цените на <a href="/">Имоти БГ</a> за ежедневни актуализации.
+        </p>
+      </div>
+    </div>
+  </article>
+  <Footer scrapedAt={latestData.scrapedAt} />
+</Layout>
+
+<style>
+  .post { padding: 1.25rem 0 1rem; }
+  .post__inner { max-width: 680px; }
+  .post__back { font-size: 0.82rem; font-weight: 500; color: var(--text-muted); }
+  .post__back:hover { color: var(--accent); }
+  .post__header { margin: 1rem 0 1.5rem; }
+  .post__date { font-size: 0.78rem; color: var(--text-muted); font-weight: 500; }
+  .post__title { font-size: 1.35rem; font-weight: 700; line-height: 1.3; margin-top: 0.35rem; letter-spacing: -0.01em; }
+  .post__body { font-size: 0.92rem; line-height: 1.7; color: var(--text-secondary); }
+  .post__body h2 { font-size: 1.05rem; color: var(--text); margin-top: 1.75rem; margin-bottom: 0.5rem; }
+  .post__body p { margin-bottom: 1rem; }
+  .post__body strong { color: var(--text); }
+  .post-table { width: 100%; border-collapse: collapse; font-size: 0.85rem; margin: 0.75rem 0 1rem; }
+  .post-table th { text-align: left; padding: 0.5rem 0.65rem; font-size: 0.7rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.04em; color: var(--text-muted); border-bottom: 1px solid var(--border); }
+  .post-table td { padding: 0.45rem 0.65rem; border-bottom: 1px solid var(--border); }
+  .post-table th:last-child, .post-table td:last-child { text-align: right; }
+  .post-table tbody tr:hover { background: var(--surface-alt); }
+  @media (min-width: 768px) {
+    .post { padding: 1.75rem 0 1.5rem; }
+    .post__title { font-size: 1.6rem; }
+    .post__body { font-size: 0.95rem; }
+    .post__body h2 { font-size: 1.15rem; }
+  }
+</style>

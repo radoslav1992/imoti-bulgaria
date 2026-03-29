@@ -1,0 +1,207 @@
+---
+interface CityData {
+  city: string;
+  key: string;
+  stats: {
+    avgPricePerSqm: number;
+    medianPricePerSqm: number;
+    minPricePerSqm: number;
+    maxPricePerSqm: number;
+    neighbourhoodCount: number;
+  };
+}
+
+interface Props {
+  cities: CityData[];
+}
+
+const { cities } = Astro.props;
+
+const sorted = [...cities]
+  .filter((c) => c.stats.avgPricePerSqm > 0)
+  .sort((a, b) => b.stats.avgPricePerSqm - a.stats.avgPricePerSqm);
+
+const fmt = (n: number) => n.toLocaleString("bg-BG");
+---
+
+<section class="cities" id="cities">
+  <div class="wrap">
+    <details class="collapse" open>
+      <summary>
+        <h2>Средна цена по градове (EUR/м²)</h2>
+        <span class="collapse__chevron" aria-hidden="true"></span>
+      </summary>
+      <div class="city-grid">
+        {
+          sorted.map((c, i) => (
+            <div class="city-row">
+              <button class="city-card card" data-city={c.key} type="button">
+                <div class="city-card__rank">{i + 1}</div>
+                <div class="city-card__body">
+                  <div class="city-card__name">{c.city}</div>
+                  <div class="city-card__meta">
+                    {c.stats.neighbourhoodCount} квартала
+                  </div>
+                </div>
+                <div class="city-card__price">{fmt(c.stats.avgPricePerSqm)} €</div>
+              </button>
+              <button
+                class="fav-btn"
+                type="button"
+                data-fav-city={c.key}
+                aria-label={`Добави ${c.city} в любими`}
+              >☆</button>
+            </div>
+          ))
+        }
+      </div>
+    </details>
+  </div>
+</section>
+
+<script is:inline>
+  (function() {
+    var STORAGE_KEY = "imoti-bg-favorites";
+
+    function getFavs() {
+      try { return JSON.parse(localStorage.getItem(STORAGE_KEY)) || { cities: [], neighbourhoods: [] }; }
+      catch(e) { return { cities: [], neighbourhoods: [] }; }
+    }
+
+    function saveFavs(favs) {
+      localStorage.setItem(STORAGE_KEY, JSON.stringify(favs));
+    }
+
+    function syncCityStars() {
+      var favs = getFavs();
+      document.querySelectorAll("[data-fav-city]").forEach(function(btn) {
+        var key = btn.getAttribute("data-fav-city");
+        var isFav = favs.cities.indexOf(key) !== -1;
+        btn.textContent = isFav ? "★" : "☆";
+        btn.classList.toggle("is-fav", isFav);
+      });
+    }
+
+    document.querySelectorAll("[data-fav-city]").forEach(function(btn) {
+      btn.addEventListener("click", function(e) {
+        e.stopPropagation();
+        var key = btn.getAttribute("data-fav-city");
+        var favs = getFavs();
+        var idx = favs.cities.indexOf(key);
+        if (idx === -1) { favs.cities.push(key); }
+        else { favs.cities.splice(idx, 1); }
+        saveFavs(favs);
+        syncCityStars();
+      });
+    });
+
+    syncCityStars();
+  })();
+</script>
+
+<style>
+  .cities {
+    padding: 1rem 0 0.75rem;
+  }
+
+  .city-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    padding: 0.25rem 0.75rem 0.75rem;
+  }
+
+  .city-row {
+    display: flex;
+    align-items: center;
+    gap: 0.35rem;
+  }
+
+  .city-card {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    padding: 0.7rem 0.75rem;
+    cursor: pointer;
+    border: 1px solid var(--border);
+    background: var(--surface);
+    font-family: var(--font);
+    text-align: left;
+    width: 100%;
+    transition: background 0.15s;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  .city-card:hover,
+  .city-card:active,
+  .city-card[aria-pressed="true"] {
+    background: var(--accent-light);
+    border-color: var(--accent);
+  }
+
+  .city-card__rank {
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: var(--surface-alt);
+    color: var(--text-secondary);
+    font-size: 0.68rem;
+    font-weight: 700;
+    flex-shrink: 0;
+  }
+
+  .city-card[aria-pressed="true"] .city-card__rank {
+    background: var(--accent);
+    color: white;
+  }
+
+  .city-card__body {
+    flex: 1;
+    min-width: 0;
+  }
+
+  .city-card__name {
+    font-size: 0.88rem;
+    font-weight: 600;
+    color: var(--text);
+  }
+
+  .city-card__meta {
+    font-size: 0.72rem;
+    color: var(--text-muted);
+  }
+
+  .city-card__price {
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: var(--text);
+    white-space: nowrap;
+  }
+
+  @media (min-width: 768px) {
+    .cities {
+      padding: 1.5rem 0 1rem;
+    }
+
+    .city-grid {
+      gap: 0.4rem;
+      padding: 0.25rem 1rem 1rem;
+    }
+
+    .city-card {
+      padding: 0.85rem 1rem;
+      gap: 0.75rem;
+    }
+
+    .city-card__name {
+      font-size: 0.92rem;
+    }
+
+    .city-card__price {
+      font-size: 1rem;
+    }
+  }
+</style>

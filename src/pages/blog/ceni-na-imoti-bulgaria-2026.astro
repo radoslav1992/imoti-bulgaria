@@ -1,0 +1,234 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import Footer from "../../components/Footer.astro";
+import { readFileSync } from "fs";
+import { join } from "path";
+
+const latestData = JSON.parse(
+  readFileSync(join(process.cwd(), "data", "latest.json"), "utf-8")
+);
+
+const sofia = latestData.cities.find((c: { key: string }) => c.key === "sofia");
+const varna = latestData.cities.find((c: { key: string }) => c.key === "varna");
+const plovdiv = latestData.cities.find((c: { key: string }) => c.key === "plovdiv");
+
+const topSofia = sofia?.neighbourhoods
+  ?.filter((n: { totalPricePerSqm: number | null }) => n.totalPricePerSqm)
+  .sort((a: { totalPricePerSqm: number }, b: { totalPricePerSqm: number }) => b.totalPricePerSqm - a.totalPricePerSqm)
+  .slice(0, 5) || [];
+
+const cheapSofia = sofia?.neighbourhoods
+  ?.filter((n: { totalPricePerSqm: number | null }) => n.totalPricePerSqm)
+  .sort((a: { totalPricePerSqm: number }, b: { totalPricePerSqm: number }) => a.totalPricePerSqm - b.totalPricePerSqm)
+  .slice(0, 5) || [];
+
+const fmt = (n: number) => n.toLocaleString("bg-BG");
+---
+
+<Layout
+  title="Къде са най-скъпите и най-евтините квартали в България през 2026? — Имоти БГ"
+  description="Анализ на средните цени на жилища по градове и квартали в България. Кои райони поскъпват и къде има изгодни покупки."
+>
+  <article class="post">
+    <div class="wrap post__inner">
+      <a href="/blog" class="post__back">← Блог</a>
+
+      <header class="post__header">
+        <time class="post__date">29 март 2026</time>
+        <h1 class="post__title">Къде са най-скъпите и най-евтините квартали в България през 2026?</h1>
+      </header>
+
+      <div class="post__body">
+        <p>
+          Пазарът на недвижими имоти в България продължава да се развива динамично.
+          По данни от imot.bg, средните цени варират значително — от под 500 EUR/м² в
+          по-малките градове до над 5 000 EUR/м² в елитните столични квартали.
+        </p>
+
+        <h2>Най-скъпите градове</h2>
+        <p>
+          <strong>София</strong> остава безспорен лидер със средна цена от
+          <strong>{fmt(sofia?.stats.avgPricePerSqm || 0)} EUR/м²</strong>,
+          следвана от <strong>Варна</strong> ({fmt(varna?.stats.avgPricePerSqm || 0)} EUR/м²)
+          и <strong>Пловдив</strong> ({fmt(plovdiv?.stats.avgPricePerSqm || 0)} EUR/м²).
+          Интересен факт е, че Бургас изпреварва Пловдив по средна цена на квадратен метър,
+          благодарение на крайбрежните си квартали.
+        </p>
+
+        <h2>Топ 5 най-скъпи квартала в София</h2>
+        <table class="post-table">
+          <thead>
+            <tr>
+              <th>Квартал</th>
+              <th>EUR/м²</th>
+            </tr>
+          </thead>
+          <tbody>
+            {topSofia.map((n: { name: string; totalPricePerSqm: number }) => (
+              <tr>
+                <td>{n.name}</td>
+                <td><strong>{fmt(n.totalPricePerSqm)}</strong></td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+
+        <p>
+          Район Докторски паметник, Изгрев и ж.гр.Южен парк формират тройката
+          на най-скъпите квартали. Тези райони привличат с централна локация,
+          зелени площи и луксозно ново строителство.
+        </p>
+
+        <h2>Топ 5 най-достъпни квартала в София</h2>
+        <table class="post-table">
+          <thead>
+            <tr>
+              <th>Квартал</th>
+              <th>EUR/м²</th>
+            </tr>
+          </thead>
+          <tbody>
+            {cheapSofia.map((n: { name: string; totalPricePerSqm: number }) => (
+              <tr>
+                <td>{n.name}</td>
+                <td><strong>{fmt(n.totalPricePerSqm)}</strong></td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+
+        <p>
+          За купувачи с по-ограничен бюджет, кварталите в периферията на София
+          предлагат значително по-ниски цени. Разликата между най-скъпия и
+          най-евтиния квартал е {fmt((topSofia[0]?.totalPricePerSqm || 0) - (cheapSofia[0]?.totalPricePerSqm || 0))} EUR/м²
+          — почти {Math.round((topSofia[0]?.totalPricePerSqm || 1) / (cheapSofia[0]?.totalPricePerSqm || 1))}x разлика.
+        </p>
+
+        <h2>Извън столицата</h2>
+        <p>
+          За тези, които търсят баланс между качество на живот и цена, градове
+          като Велико Търново, Стара Загора и Русе предлагат добри възможности
+          с цени между 1 200 и 1 500 EUR/м². Добрич и Пазарджик остават сред
+          най-достъпните с цени под 1 000 EUR/м².
+        </p>
+
+        <h2>Какво следва?</h2>
+        <p>
+          Следете нашата <a href="/">страница с цени</a> за ежедневни актуализации
+          и сравнения по квартали. Данните се обновяват автоматично всеки ден,
+          така че винаги имате достъп до най-актуалната информация.
+        </p>
+      </div>
+    </div>
+  </article>
+  <Footer scrapedAt={latestData.scrapedAt} />
+</Layout>
+
+<style>
+  .post {
+    padding: 1.25rem 0 1rem;
+  }
+
+  .post__inner {
+    max-width: 680px;
+  }
+
+  .post__back {
+    font-size: 0.82rem;
+    font-weight: 500;
+    color: var(--text-muted);
+  }
+
+  .post__back:hover {
+    color: var(--accent);
+  }
+
+  .post__header {
+    margin: 1rem 0 1.5rem;
+  }
+
+  .post__date {
+    font-size: 0.78rem;
+    color: var(--text-muted);
+    font-weight: 500;
+  }
+
+  .post__title {
+    font-size: 1.35rem;
+    font-weight: 700;
+    line-height: 1.3;
+    margin-top: 0.35rem;
+    letter-spacing: -0.01em;
+  }
+
+  .post__body {
+    font-size: 0.92rem;
+    line-height: 1.7;
+    color: var(--text-secondary);
+  }
+
+  .post__body h2 {
+    font-size: 1.05rem;
+    color: var(--text);
+    margin-top: 1.75rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .post__body p {
+    margin-bottom: 1rem;
+  }
+
+  .post__body strong {
+    color: var(--text);
+  }
+
+  .post-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.85rem;
+    margin: 0.75rem 0 1rem;
+  }
+
+  .post-table th {
+    text-align: left;
+    padding: 0.5rem 0.65rem;
+    font-size: 0.7rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: var(--text-muted);
+    border-bottom: 1px solid var(--border);
+  }
+
+  .post-table td {
+    padding: 0.45rem 0.65rem;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .post-table th:last-child,
+  .post-table td:last-child {
+    text-align: right;
+  }
+
+  .post-table tbody tr:hover {
+    background: var(--surface-alt);
+  }
+
+  @media (min-width: 768px) {
+    .post {
+      padding: 1.75rem 0 1.5rem;
+    }
+
+    .post__title {
+      font-size: 1.6rem;
+    }
+
+    .post__body {
+      font-size: 0.95rem;
+    }
+
+    .post__body h2 {
+      font-size: 1.15rem;
+    }
+  }
+</style>

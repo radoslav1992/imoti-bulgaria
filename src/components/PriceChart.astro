@@ -1,0 +1,211 @@
+---
+interface Props {
+  historyJson: string;
+}
+
+const { historyJson } = Astro.props;
+---
+
+<section class="chart-section" id="chart">
+  <div class="wrap">
+    <details class="collapse" open>
+      <summary>
+        <h2>Тенденции</h2>
+        <span class="collapse__chevron" aria-hidden="true"></span>
+      </summary>
+      <div class="chart-content">
+        <div class="chart-box">
+          <canvas id="price-chart"></canvas>
+        </div>
+        <p class="chart-note">Средна цена EUR/м² по градове</p>
+      </div>
+    </details>
+  </div>
+</section>
+
+<script is:inline define:vars={{ historyJson }}>
+  const COLORS = [
+    "#e8832a", "#2d8a4e", "#c53030", "#2563eb",
+    "#7c3aed", "#0891b2", "#be185d", "#d97706",
+    "#4f46e5", "#059669", "#dc2626", "#0d9488",
+    "#9333ea", "#ca8a04", "#e11d48", "#0284c7",
+  ];
+
+  const FONT = "DM Sans, system-ui, sans-serif";
+  let chart = null;
+  const history = JSON.parse(historyJson);
+
+  function buildBarChart(canvas) {
+    const entry = history[0];
+    if (!entry) return;
+
+    const cities = [...entry.cities]
+      .filter((c) => c.avgPricePerSqm > 0)
+      .sort((a, b) => b.avgPricePerSqm - a.avgPricePerSqm);
+
+    chart = new Chart(canvas, {
+      type: "bar",
+      data: {
+        labels: cities.map((c) => c.city),
+        datasets: [{
+          data: cities.map((c) => c.avgPricePerSqm),
+          backgroundColor: cities.map((_, i) => COLORS[i % COLORS.length] + "cc"),
+          borderColor: cities.map((_, i) => COLORS[i % COLORS.length]),
+          borderWidth: 1,
+          borderRadius: 4,
+        }],
+      },
+      options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        indexAxis: "y",
+        plugins: {
+          legend: { display: false },
+          tooltip: {
+            backgroundColor: "#1a1a1a",
+            titleFont: { family: FONT, weight: "600" },
+            bodyFont: { family: FONT },
+            cornerRadius: 6,
+            padding: 10,
+            callbacks: {
+              label: (ctx) => `${ctx.parsed.x?.toLocaleString("bg-BG")} EUR/м²`,
+            },
+          },
+        },
+        scales: {
+          x: {
+            grid: { color: "#f0f0ec" },
+            ticks: { font: { family: FONT, size: 11 }, color: "#9b9b9b" },
+          },
+          y: {
+            grid: { display: false },
+            ticks: { font: { family: FONT, size: 11, weight: "500" }, color: "#1a1a1a" },
+          },
+        },
+      },
+    });
+  }
+
+  function buildLineChart(canvas) {
+    const labels = history.map((h) => h.date);
+    const allCities = history[0].cities || [];
+
+    const datasets = allCities
+      .filter((c) => c.avgPricePerSqm > 0)
+      .map((c, i) => ({
+        label: c.city,
+        data: history.map((h) => {
+          const found = h.cities.find((x) => x.key === c.key);
+          return found ? found.avgPricePerSqm : null;
+        }),
+        borderColor: COLORS[i % COLORS.length],
+        backgroundColor: "transparent",
+        borderWidth: 2,
+        pointRadius: history.length > 30 ? 0 : 3,
+        pointHoverRadius: 5,
+        tension: 0.3,
+      }));
+
+    chart = new Chart(canvas, {
+      type: "line",
+      data: { labels, datasets },
+      options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        interaction: { mode: "index", intersect: false },
+        plugins: {
+          legend: {
+            position: "bottom",
+            labels: {
+              padding: 12,
+              usePointStyle: true,
+              pointStyleWidth: 8,
+              font: { family: FONT, size: 11, weight: "500" },
+            },
+          },
+          tooltip: {
+            backgroundColor: "#1a1a1a",
+            titleFont: { family: FONT, weight: "600" },
+            bodyFont: { family: FONT },
+            cornerRadius: 6,
+            padding: 10,
+            callbacks: {
+              label: (ctx) =>
+                `${ctx.dataset.label}: ${ctx.parsed.y?.toLocaleString("bg-BG")} EUR/м²`,
+            },
+          },
+        },
+        scales: {
+          x: {
+            grid: { display: false },
+            ticks: { font: { family: FONT, size: 11 }, color: "#9b9b9b" },
+          },
+          y: {
+            grid: { color: "#f0f0ec" },
+            ticks: {
+              font: { family: FONT, size: 11 },
+              color: "#9b9b9b",
+              callback: (v) => v.toLocaleString("bg-BG"),
+            },
+          },
+        },
+      },
+    });
+  }
+
+  function buildChart() {
+    const canvas = document.getElementById("price-chart");
+    if (!canvas || history.length === 0) return;
+
+    if (chart) chart.destroy();
+
+    if (history.length < 3) {
+      buildBarChart(canvas);
+    } else {
+      buildLineChart(canvas);
+    }
+  }
+
+  function init() {
+    if (typeof Chart === "undefined") {
+      const s = document.createElement("script");
+      s.src = "https://cdn.jsdelivr.net/npm/chart.js@4/dist/chart.umd.min.js";
+      s.onload = buildChart;
+      document.head.appendChild(s);
+    } else {
+      buildChart();
+    }
+  }
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", init);
+  } else {
+    init();
+  }
+</script>
+
+<style>
+  .chart-section {
+    padding: 0 0 1.25rem;
+  }
+
+  .chart-content {
+    padding: 0 1rem 1rem;
+  }
+
+  .chart-box {
+    height: 380px;
+  }
+
+  .chart-note {
+    font-size: 0.72rem;
+    color: var(--text-muted);
+    margin-top: 0.4rem;
+  }
+
+  @media (min-width: 768px) {
+    .chart-box {
+      height: 440px;
+    }
+  }
+</style>
