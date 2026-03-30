@@ -115,5 +115,122 @@
         "neighbourhoodCount": 15
       }
     ]
+  },
+  {
+    "date": "2026-03-30",
+    "cities": [
+      {
+        "city": "София",
+        "key": "sofia",
+        "avgPricePerSqm": 2569,
+        "medianPricePerSqm": 2493,
+        "neighbourhoodCount": 143
+      },
+      {
+        "city": "Пловдив",
+        "key": "plovdiv",
+        "avgPricePerSqm": 1585,
+        "medianPricePerSqm": 1499,
+        "neighbourhoodCount": 37
+      },
+      {
+        "city": "Варна",
+        "key": "varna",
+        "avgPricePerSqm": 2074,
+        "medianPricePerSqm": 1966,
+        "neighbourhoodCount": 68
+      },
+      {
+        "city": "Бургас",
+        "key": "burgas",
+        "avgPricePerSqm": 1695,
+        "medianPricePerSqm": 1675,
+        "neighbourhoodCount": 24
+      },
+      {
+        "city": "Русе",
+        "key": "ruse",
+        "avgPricePerSqm": 1237,
+        "medianPricePerSqm": 1302,
+        "neighbourhoodCount": 27
+      },
+      {
+        "city": "Стара Загора",
+        "key": "stara-zagora",
+        "avgPricePerSqm": 1300,
+        "medianPricePerSqm": 1245,
+        "neighbourhoodCount": 26
+      },
+      {
+        "city": "Плевен",
+        "key": "pleven",
+        "avgPricePerSqm": 1284,
+        "medianPricePerSqm": 1343,
+        "neighbourhoodCount": 11
+      },
+      {
+        "city": "Благоевград",
+        "key": "blagoevgrad",
+        "avgPricePerSqm": 1153,
+        "medianPricePerSqm": 1066,
+        "neighbourhoodCount": 13
+      },
+      {
+        "city": "Велико Търново",
+        "key": "veliko-tarnovo",
+        "avgPricePerSqm": 1454,
+        "medianPricePerSqm": 1361,
+        "neighbourhoodCount": 11
+      },
+      {
+        "city": "Шумен",
+        "key": "shumen",
+        "avgPricePerSqm": 1527,
+        "medianPricePerSqm": 1573,
+        "neighbourhoodCount": 20
+      },
+      {
+        "city": "Добрич",
+        "key": "dobrich",
+        "avgPricePerSqm": 979,
+        "medianPricePerSqm": 967,
+        "neighbourhoodCount": 21
+      },
+      {
+        "city": "Пазарджик",
+        "key": "pazardzhik",
+        "avgPricePerSqm": 995,
+        "medianPricePerSqm": 1002,
+        "neighbourhoodCount": 13
+      },
+      {
+        "city": "Хасково",
+        "key": "haskovo",
+        "avgPricePerSqm": 1005,
+        "medianPricePerSqm": 985,
+        "neighbourhoodCount": 19
+      },
+      {
+        "city": "Сливен",
+        "key": "sliven",
+        "avgPricePerSqm": 1120,
+        "medianPricePerSqm": 1121,
+        "neighbourhoodCount": 12
+      },
+      {
+        "city": "Перник",
+        "key": "pernik",
+        "avgPricePerSqm": 1331,
+        "medianPricePerSqm": 1265,
+        "neighbourhoodCount": 20
+      },
+      {
+        "city": "Ямбол",
+        "key": "yambol",
+        "avgPricePerSqm": 1266,
+        "medianPricePerSqm": 1322,
+        "neighbourhoodCount": 15
+      }
+    ]
   }
 ]
