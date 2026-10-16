@@ -1,6 +1,6 @@
 {
-  "date": "2026-10-15",
-  "scrapedAt": "2026-10-15T10:41:17.887Z",
+  "date": "2026-10-16",
+  "scrapedAt": "2026-10-16T10:28:11.321Z",
   "source": "imot.bg/sredni-ceni",
   "cities": [
     {
@@ -8,11 +8,11 @@
       "key": "sofia",
       "slug": "sofiya",
       "stats": {
-        "avgPricePerSqm": 2593,
-        "medianPricePerSqm": 2514,
-        "minPricePerSqm": 1207,
-        "maxPricePerSqm": 5567,
-        "neighbourhoodCount": 142
+        "avgPricePerSqm": 2578,
+        "medianPricePerSqm": 2505,
+        "minPricePerSqm": 1152,
+        "maxPricePerSqm": 5657,
+        "neighbourhoodCount": 144
       },
       "neighbourhoods": [
         {
@@ -23,31 +23,31 @@
             "pricePerSqm": null
           },
           "twoRoom": {
-            "price": 201879,
-            "pricePerSqm": 2798
+            "price": 201628,
+            "pricePerSqm": 2762
           },
           "threeRoom": {
             "price": 302324,
             "pricePerSqm": 2401
           },
-          "totalPricePerSqm": 2798
+          "totalPricePerSqm": 2762
         },
         {
           "name": "Банишора",
           "link": "//www.imot.bg/sredni-ceni/prodazhbi-sofiya/banishora",
           "oneRoom": {
-            "price": 115245,
-            "pricePerSqm": 2670
+            "price": 112739,
+            "pricePerSqm": 2637
           },
           "twoRoom": {
-            "price": 165351,
-            "pricePerSqm": 2513
+            "price": 164349,
+            "pricePerSqm": 2505
           },
           "threeRoom": {
-            "price": 269483,
-            "pricePerSqm": 2343
+            "price": 269393,
+            "pricePerSqm": 2349
           },
-          "totalPricePerSqm": 2470
+          "totalPricePerSqm": 2453
         },
         {
           "name": "Белите брези",
@@ -57,12 +57,12 @@
             "pricePerSqm": 3218
           },
           "twoRoom": {
-            "price": 215458,
-            "pricePerSqm": 3285
+            "price": 217462,
+            "pricePerSqm": 3282
           },
           "threeRoom": {
-            "price": 315671,
-            "pricePerSqm": 3096
+            "price": 309658,
+            "pricePerSqm": 3077
           },
           "totalPricePerSqm": 3077
         },
@@ -70,18 +70,18 @@
           "name": "Бенковски",
           "link": "//www.imot.bg/sredni-ceni/prodazhbi-sofiya/benkovski",
           "oneRoom": {
-            "price": null,
-            "pricePerSqm": null
+            "price": 52110,
+            "pricePerSqm": 2004
           },
           "twoRoom": {
-            "price": 136690,
-            "pricePerSqm": 2164
+            "price": 148652,
+            "pricePerSqm": 2167
           },
           "threeRoom": {
-            "price": 200626,
-            "pricePerSqm": 2204
+            "price": 199704,
+            "pricePerSqm": 2125
           },
-          "totalPricePerSqm": 2170
+          "totalPricePerSqm": 2164
         },
         {
           "name": "Борово",
@@ -91,14 +91,14 @@
             "pricePerSqm": 2846
           },
           "twoRoom": {
-            "price": 210948,
-            "pricePerSqm": 3096
+            "price": 207431,
+            "pricePerSqm": 3110
           },
           "threeRoom": {
             "price": 285607,
-            "pricePerSqm": 2979
+            "pricePerSqm": 2992
           },
-          "totalPricePerSqm": 3017
+          "totalPricePerSqm": 3011
         },
         {
           "name": "Ботунец",
@@ -108,14 +108,14 @@
             "pricePerSqm": null
           },
           "twoRoom": {
-            "price": 73155,
-            "pricePerSqm": 1302
+            "price": 65138,
+            "pricePerSqm": 1129
           },
           "threeRoom": {
-            "price": 97205,
+            "price": 95202,
             "pricePerSqm": 1184
           },
-          "totalPricePerSqm": 1207
+          "totalPricePerSqm": 1181
         },
         {
           "name": "Ботунец 2",
@@ -125,14 +125,14 @@
             "pricePerSqm": 1224
           },
           "twoRoom": {
-            "price": 72153,
-            "pricePerSqm": 1224
+            "price": 64637,
+            "pricePerSqm": 1167
           },
           "threeRoom": {
             "price": 105123,
             "pricePerSqm": 1051
           },
-          "totalPricePerSqm": 1224
+          "totalPricePerSqm": 1152
         },
         {
           "name": "Бояна",
@@ -142,14 +142,14 @@
             "pricePerSqm": 2579
           },
           "twoRoom": {
-            "price": 217677,
-            "pricePerSqm": 2901
+            "price": 216943,
+            "pricePerSqm": 2900
           },
           "threeRoom": {
-            "price": 360767,
-            "pricePerSqm": 2925
+            "price": 369003,
+            "pricePerSqm": 2937
           },
-          "totalPricePerSqm": 2890
+          "totalPricePerSqm": 2888
         },
         {
           "name": "Бъкстон",
@@ -159,31 +159,31 @@
             "pricePerSqm": 6012
           },
           "twoRoom": {
-            "price": 192910,
-            "pricePerSqm": 2892
+            "price": 200326,
+            "pricePerSqm": 2856
           },
           "threeRoom": {
             "price": 287611,
-            "pricePerSqm": 2895
+            "pricePerSqm": 2861
           },
-          "totalPricePerSqm": 2846
+          "totalPricePerSqm": 2839
         },
         {
           "name": "Витоша",
           "link": "//www.imot.bg/sredni-ceni/prodazhbi-sofiya/vitosha",
           "oneRoom": {
-            "price": 114424,
-            "pricePerSqm": 2573
+            "price": 120406,
+            "pricePerSqm": 2505
           },
           "twoRoom": {
-            "price": 204559,
-            "pricePerSqm": 2876
+            "price": 205437,
+            "pricePerSqm": 2890
           },
           "threeRoom": {
-            "price": 346336,
-            "pricePerSqm": 2908
+            "price": 346737,
+            "pricePerSqm": 2926
           },
-          "totalPricePerSqm": 2837
+          "totalPricePerSqm": 2863
         },
         {
           "name": "Военна рампа",
@@ -193,14 +193,14 @@
             "pricePerSqm": null
           },
           "twoRoom": {
-            "price": 160341,
-            "pricePerSqm": 1925
+            "price": 175373,
+            "pricePerSqm": 2168
           },
           "threeRoom": {
             "price": null,
             "pricePerSqm": null
           },
-          "totalPricePerSqm": 1925
+          "totalPricePerSqm": 2168
         },
         {
           "name": "Враждебна",
@@ -214,8 +214,8 @@
             "pricePerSqm": 2146
           },
           "threeRoom": {
-            "price": 212896,
-            "pricePerSqm": 1985
+            "price": 200426,
+            "pricePerSqm": 1967
           },
           "totalPricePerSqm": 2004
         },
@@ -223,11 +223,11 @@
           "name": "Връбница 1",
           "link": "//www.imot.bg/sredni-ceni/prodazhbi-sofiya/vrabnitsa-1",
           "oneRoom": {
-            "price": 123713,
-            "pricePerSqm": 2807
+            "price": null,
+            "pricePerSqm": null
           },
           "twoRoom": {
-            "price": 152324,
+            "price": 149317,
             "pricePerSqm": 2456
           },
           "threeRoom": {
@@ -240,18 +240,18 @@
           "name": "Връбница 2",
           "link": "//www.imot.bg/sredni-ceni/prodazhbi-sofiya/vrabnitsa-2",
           "oneRoom": {
-            "price": 107729,
-            "pricePerSqm": 2793
+            "price": 120255,
+            "pricePerSqm": 2642
           },
           "twoRoom": {
-            "price": 157535,
+            "price": 155164,
             "pricePerSqm": 2324
           },
           "threeRoom": {
-            "price": 238081,
-            "pricePerSqm": 2376
+            "price": 239409,
+            "pricePerSqm": 2405
           },
-          "totalPricePerSqm": 2376
+          "totalPricePerSqm": 2347
         },
         {
           "name": "Гевгелийски",
@@ -268,7 +268,7 @@
             "price": 202430,
             "pricePerSqm": 2530
           },
-          "totalPricePerSqm": 2734
+          "totalPricePerSqm": 2714
         },
         {
           "name": "Гео Милев",
@@ -278,14 +278,14 @@
             "pricePerSqm": 3238
           },
           "twoRoom": {
-            "price": 239509,
+            "price": 237004,
             "pricePerSqm": 3407
           },
           "threeRoom": {
-            "price": 295628,
-            "pricePerSqm": 3259
+            "price": 298134,
+            "pricePerSqm": 3196
           },
-          "totalPricePerSqm": 3280
+          "totalPricePerSqm": 3241
         },
         {
           "name": "Горна баня",
@@ -295,31 +295,31 @@
             "pricePerSqm": 1503
           },
           "twoRoom": {
-            "price": 164846,
+            "price": 174270,
             "pricePerSqm": 2219
           },
           "threeRoom": {
-            "price": 265554,
-            "pricePerSqm": 2752
+            "price": 266278,
+            "pricePerSqm": 2765
           },
-          "totalPricePerSqm": 2546
+          "totalPricePerSqm": 2667
         },
         {
           "name": "Горубляне",
           "link": "//www.imot.bg/sredni-ceni/prodazhbi-sofiya/gorublyane",
           "oneRoom": {
-            "price": 100046,
+            "price": 99795,
             "pricePerSqm": 2057
           },
           "twoRoom": {
-            "price": 150800,
-            "pricePerSqm": 2284
+            "price": 150319,
+            "pricePerSqm": 2235
           },
           "threeRoom": {
-            "price": 230440,
-            "pricePerSqm": 1995
+            "price": 231492,
+            "pricePerSqm": 2003
           },
-          "totalPricePerSqm": 2134
+          "totalPricePerSqm": 2102
         },
         {
           "name": "Гоце Делчев",
@@ -330,13 +330,13 @@
           },
           "twoRoom": {
             "price": 220469,
-            "pricePerSqm": 3364
+            "pricePerSqm": 3340
           },
           "threeRoom": {
-            "price": 360266,
-            "pricePerSqm": 3135
+            "price": 363773,
+            "pricePerSqm": 3128
           },
-          "totalPricePerSqm": 3223
+          "totalPricePerSqm": 3206
         },
         {
           "name": "Градина",
@@ -363,14 +363,14 @@
             "pricePerSqm": 3283
           },
           "twoRoom": {
-            "price": 251535,
-            "pricePerSqm": 3288
+            "price": 250533,
+            "pricePerSqm": 3238
           },
           "threeRoom": {
-            "price": 387825,
-            "pricePerSqm": 3164
+            "price": 373294,
+            "pricePerSqm": 3162
           },
-          "totalPricePerSqm": 3212
+          "totalPricePerSqm": 3195
         },
         {
           "name": "Докторски паметник",
@@ -381,13 +381,13 @@
           },
           "twoRoom": {
             "price": 350746,
-            "pricePerSqm": 5657
+            "pricePerSqm": 5812
           },
           "threeRoom": {
             "price": 530127,
-            "pricePerSqm": 5469
+            "pricePerSqm": 5539
           },
-          "totalPricePerSqm": 5567
+          "totalPricePerSqm": 5657
         },
         {
           "name": "Драгалевци",
@@ -397,14 +397,14 @@
             "pricePerSqm": 2381
           },
           "twoRoom": {
-            "price": 224394,
-            "pricePerSqm": 2850
+            "price": 222097,
+            "pricePerSqm": 2845
           },
           "threeRoom": {
             "price": 380810,
-            "pricePerSqm": 2881
+            "pricePerSqm": 2863
           },
-          "totalPricePerSqm": 2879
+          "totalPricePerSqm": 2852
         },
         {
           "name": "Дружба 1",
@@ -414,12 +414,12 @@
             "pricePerSqm": 2517
           },
           "twoRoom": {
-            "price": 208042,
-            "pricePerSqm": 2630
+            "price": 206840,
+            "pricePerSqm": 2636
           },
           "threeRoom": {
-            "price": 297633,
-            "pricePerSqm": 2579
+            "price": 296911,
+            "pricePerSqm": 2580
           },
           "totalPricePerSqm": 2615
         },
@@ -427,18 +427,18 @@
           "name": "Дружба 2",
           "link": "//www.imot.bg/sredni-ceni/prodazhbi-sofiya/druzhba-2",
           "oneRoom": {
-            "price": 123214,
+            "price": 119754,
             "pricePerSqm": 2149
           },
           "twoRoom": {
-            "price": 191747,
-            "pricePerSqm": 2656
+            "price": 190405,
+            "pricePerSqm": 2651
           },
           "threeRoom": {
-            "price": 300518,
-            "pricePerSqm": 2518
+            "price": 299807,
+            "pricePerSqm": 2501
           },
-          "totalPricePerSqm": 2585
+          "totalPricePerSqm": 2540
         },
         {
           "name": "Дървеница",
@@ -448,14 +448,14 @@
             "pricePerSqm": 2064
           },
           "twoRoom": {
-            "price": 183891,
-            "pricePerSqm": 2528
+            "price": 195415,
+            "pricePerSqm": 2585
           },
           "threeRoom": {
-            "price": 288112,
-            "pricePerSqm": 2468
+            "price": 285607,
+            "pricePerSqm": 2501
           },
-          "totalPricePerSqm": 2473
+          "totalPricePerSqm": 2505
         },
         {
           "name": "Експериментален",
@@ -478,18 +478,18 @@
           "name": "Западен парк",
           "link": "//www.imot.bg/sredni-ceni/prodazhbi-sofiya/zapaden-park",
           "oneRoom": {
-            "price": 110234,
-            "pricePerSqm": 2405
+            "price": 140298,
+            "pricePerSqm": 2805
           },
           "twoRoom": {
-            "price": 160341,
-            "pricePerSqm": 2679
+            "price": 149818,
+            "pricePerSqm": 2686
           },
           "threeRoom": {
             "price": 175317,
-            "pricePerSqm": 2827
+            "pricePerSqm": 2795
           },
-          "totalPricePerSqm": 2686
+          "totalPricePerSqm": 2688
         },
         {
           "name": "Захарна фабрика",
@@ -504,9 +504,9 @@
           },
           "threeRoom": {
             "price": 170312,
-            "pricePerSqm": 2453
+            "pricePerSqm": 2419
           },
-          "totalPricePerSqm": 2625
+          "totalPricePerSqm": 2592
         },
         {
           "name": "Зона Б-18",
@@ -516,14 +516,14 @@
             "pricePerSqm": 3755
           },
           "twoRoom": {
-            "price": 196668,
-            "pricePerSqm": 2613
+            "price": 192910,
+            "pricePerSqm": 2593
           },
           "threeRoom": {
-            "price": 310640,
-            "pricePerSqm": 2645
+            "price": 310645,
+            "pricePerSqm": 2649
           },
-          "totalPricePerSqm": 2588
+          "totalPricePerSqm": 2587
         },
         {
           "name": "Зона Б-19",
@@ -533,8 +533,8 @@
             "pricePerSqm": 2038
           },
           "twoRoom": {
-            "price": 204735,
-            "pricePerSqm": 2585
+            "price": 200426,
+            "pricePerSqm": 2577
           },
           "threeRoom": {
             "price": 260835,
@@ -550,14 +550,14 @@
             "pricePerSqm": 2900
           },
           "twoRoom": {
-            "price": 192198,
-            "pricePerSqm": 2624
+            "price": 195315,
+            "pricePerSqm": 2666
           },
           "threeRoom": {
-            "price": 300078,
-            "pricePerSqm": 2820
+            "price": 300439,
+            "pricePerSqm": 2823
           },
-          "totalPricePerSqm": 2655
+          "totalPricePerSqm": 2675
         },
         {
           "name": "Зона Б-5-3",
@@ -567,14 +567,14 @@
             "pricePerSqm": null
           },
           "twoRoom": {
-            "price": 260554,
-            "pricePerSqm": 3391
+            "price": 250533,
+            "pricePerSqm": 3127
           },
           "threeRoom": {
-            "price": 357761,
-            "pricePerSqm": 3201
+            "price": 283603,
+            "pricePerSqm": 3127
           },
-          "totalPricePerSqm": 3204
+          "totalPricePerSqm": 3127
         },
         {
           "name": "Иван Вазов",
@@ -588,7 +588,7 @@
             "pricePerSqm": 4342
           },
           "threeRoom": {
-            "price": 393837,
+            "price": 390831,
             "pricePerSqm": 4171
           },
           "totalPricePerSqm": 4208
@@ -608,24 +608,24 @@
             "price": 470813,
             "pricePerSqm": 4198
           },
-          "totalPricePerSqm": 4293
+          "totalPricePerSqm": 4401
         },
         {
           "name": "Изток",
           "link": "//www.imot.bg/sredni-ceni/prodazhbi-sofiya/iztok",
           "oneRoom": {
-            "price": 151321,
-            "pricePerSqm": 4376
+            "price": 190405,
+            "pricePerSqm": 4247
           },
           "twoRoom": {
-            "price": 265565,
-            "pricePerSqm": 4219
+            "price": 280596,
+            "pricePerSqm": 4231
           },
           "threeRoom": {
-            "price": 429914,
-            "pricePerSqm": 4338
+            "price": 427910,
+            "pricePerSqm": 4297
           },
-          "totalPricePerSqm": 4256
+          "totalPricePerSqm": 4231
         },
         {
           "name": "Илинден",
@@ -635,8 +635,8 @@
             "pricePerSqm": 3349
           },
           "twoRoom": {
-            "price": 180373,
-            "pricePerSqm": 2648
+            "price": 180378,
+            "pricePerSqm": 2634
           },
           "threeRoom": {
             "price": 230490,
@@ -652,14 +652,14 @@
             "pricePerSqm": null
           },
           "twoRoom": {
-            "price": 99521,
-            "pricePerSqm": 2038
+            "price": 84078,
+            "pricePerSqm": 1681
           },
           "threeRoom": {
             "price": 261065,
             "pricePerSqm": 2395
           },
-          "totalPricePerSqm": 2395
+          "totalPricePerSqm": 2038
         },
         {
           "name": "Карпузица",
@@ -670,28 +670,28 @@
           },
           "twoRoom": {
             "price": 180383,
-            "pricePerSqm": 2490
+            "pricePerSqm": 2478
           },
           "threeRoom": {
             "price": 270575,
             "pricePerSqm": 2375
           },
-          "totalPricePerSqm": 2401
+          "totalPricePerSqm": 2396
         },
         {
           "name": "Княжево",
           "link": "//www.imot.bg/sredni-ceni/prodazhbi-sofiya/knyazhevo",
           "oneRoom": {
-            "price": 125846,
-            "pricePerSqm": 3454
+            "price": 125796,
+            "pricePerSqm": 3452
           },
           "twoRoom": {
-            "price": 190837,
-            "pricePerSqm": 2707
+            "price": 193515,
+            "pricePerSqm": 2708
           },
           "threeRoom": {
-            "price": 258853,
-            "pricePerSqm": 2405
+            "price": 258049,
+            "pricePerSqm": 2304
           },
           "totalPricePerSqm": 2290
         },
@@ -700,17 +700,17 @@
           "link": "//www.imot.bg/sredni-ceni/prodazhbi-sofiya/krasna-polyana-1",
           "oneRoom": {
             "price": 115144,
-            "pricePerSqm": 2467
+            "pricePerSqm": 2452
           },
           "twoRoom": {
             "price": 126268,
-            "pricePerSqm": 2477
+            "pricePerSqm": 2449
           },
           "threeRoom": {
-            "price": 198923,
-            "pricePerSqm": 2259
+            "price": 198422,
+            "pricePerSqm": 2086
           },
-          "totalPricePerSqm": 2449
+          "totalPricePerSqm": 2441
         },
         {
           "name": "Красна поляна 2",
@@ -720,48 +720,48 @@
             "pricePerSqm": 2502
           },
           "twoRoom": {
-            "price": 145259,
+            "price": 140298,
             "pricePerSqm": 2633
           },
           "threeRoom": {
             "price": 192802,
             "pricePerSqm": 2209
           },
-          "totalPricePerSqm": 2252
+          "totalPricePerSqm": 2266
         },
         {
           "name": "Красна поляна 3",
           "link": "//www.imot.bg/sredni-ceni/prodazhbi-sofiya/krasna-polyana-3",
           "oneRoom": {
-            "price": 143554,
+            "price": 148314,
             "pricePerSqm": 3026
           },
           "twoRoom": {
-            "price": 150470,
+            "price": 155330,
             "pricePerSqm": 2678
           },
           "threeRoom": {
-            "price": 207441,
-            "pricePerSqm": 2196
+            "price": 202430,
+            "pricePerSqm": 2247
           },
-          "totalPricePerSqm": 2416
+          "totalPricePerSqm": 2487
         },
         {
           "name": "Красно село",
           "link": "//www.imot.bg/sredni-ceni/prodazhbi-sofiya/krasno-selo",
           "oneRoom": {
             "price": 170361,
-            "pricePerSqm": 3035
+            "pricePerSqm": 2829
           },
           "twoRoom": {
-            "price": 208192,
-            "pricePerSqm": 3103
+            "price": 205938,
+            "pricePerSqm": 3094
           },
           "threeRoom": {
-            "price": 310675,
-            "pricePerSqm": 2963
+            "price": 315671,
+            "pricePerSqm": 2964
           },
-          "totalPricePerSqm": 2956
+          "totalPricePerSqm": 2949
         },
         {
           "name": "Кремиковци",
@@ -788,21 +788,21 @@
             "pricePerSqm": 3143
           },
           "twoRoom": {
-            "price": 238106,
+            "price": 236904,
             "pricePerSqm": 3217
           },
           "threeRoom": {
-            "price": 370367,
-            "pricePerSqm": 3227
+            "price": 372792,
+            "pricePerSqm": 3265
           },
-          "totalPricePerSqm": 3240
+          "totalPricePerSqm": 3246
         },
         {
           "name": "Лагера",
           "link": "//www.imot.bg/sredni-ceni/prodazhbi-sofiya/lagera",
           "oneRoom": {
-            "price": 131279,
-            "pricePerSqm": 4014
+            "price": 127270,
+            "pricePerSqm": 3785
           },
           "twoRoom": {
             "price": 198422,
@@ -810,9 +810,9 @@
           },
           "threeRoom": {
             "price": 320682,
-            "pricePerSqm": 3092
+            "pricePerSqm": 3057
           },
-          "totalPricePerSqm": 3070
+          "totalPricePerSqm": 3057
         },
         {
           "name": "Левски",
@@ -822,48 +822,48 @@
             "pricePerSqm": 2243
           },
           "twoRoom": {
-            "price": 140210,
-            "pricePerSqm": 2140
+            "price": 140789,
+            "pricePerSqm": 2139
           },
           "threeRoom": {
             "price": 205437,
-            "pricePerSqm": 1918
+            "pricePerSqm": 1913
           },
-          "totalPricePerSqm": 2030
+          "totalPricePerSqm": 2012
         },
         {
           "name": "Левски В",
           "link": "//www.imot.bg/sredni-ceni/prodazhbi-sofiya/levski-v",
           "oneRoom": {
-            "price": 124565,
-            "pricePerSqm": 2207
+            "price": 122861,
+            "pricePerSqm": 2118
           },
           "twoRoom": {
-            "price": 141295,
-            "pricePerSqm": 2176
+            "price": 140797,
+            "pricePerSqm": 2096
           },
           "threeRoom": {
             "price": 202064,
-            "pricePerSqm": 1954
+            "pricePerSqm": 1944
           },
-          "totalPricePerSqm": 2011
+          "totalPricePerSqm": 1954
         },
         {
           "name": "Левски Г",
           "link": "//www.imot.bg/sredni-ceni/prodazhbi-sofiya/levski-g",
           "oneRoom": {
-            "price": 94200,
-            "pricePerSqm": 1922
+            "price": 116247,
+            "pricePerSqm": 2395
           },
           "twoRoom": {
-            "price": 147062,
-            "pricePerSqm": 2231
+            "price": 146311,
+            "pricePerSqm": 2250
           },
           "threeRoom": {
             "price": 211339,
             "pricePerSqm": 2098
           },
-          "totalPricePerSqm": 2110
+          "totalPricePerSqm": 2146
         },
         {
           "name": "Летище София",
@@ -880,24 +880,24 @@
             "price": 295628,
             "pricePerSqm": 2548
           },
-          "totalPricePerSqm": 2548
+          "totalPricePerSqm": 2271
         },
         {
           "name": "Лозенец",
           "link": "//www.imot.bg/sredni-ceni/prodazhbi-sofiya/lozenets",
           "oneRoom": {
-            "price": 129525,
-            "pricePerSqm": 4448
+            "price": 123262,
+            "pricePerSqm": 4533
           },
           "twoRoom": {
-            "price": 299297,
-            "pricePerSqm": 4138
+            "price": 300639,
+            "pricePerSqm": 4145
           },
           "threeRoom": {
-            "price": 469999,
-            "pricePerSqm": 4093
+            "price": 468155,
+            "pricePerSqm": 4109
           },
-          "totalPricePerSqm": 4047
+          "totalPricePerSqm": 4083
         },
         {
           "name": "Люлин - център",
@@ -907,31 +907,31 @@
             "pricePerSqm": 1850
           },
           "twoRoom": {
-            "price": 152200,
+            "price": 154374,
             "pricePerSqm": 2113
           },
           "threeRoom": {
-            "price": 245522,
-            "pricePerSqm": 1930
+            "price": 242579,
+            "pricePerSqm": 1970
           },
-          "totalPricePerSqm": 1994
+          "totalPricePerSqm": 2004
         },
         {
           "name": "Люлин 1",
           "link": "//www.imot.bg/sredni-ceni/prodazhbi-sofiya/lyulin-1",
           "oneRoom": {
-            "price": 110735,
+            "price": 110234,
             "pricePerSqm": 2405
           },
           "twoRoom": {
             "price": 130277,
-            "pricePerSqm": 2124
+            "pricePerSqm": 2112
           },
           "threeRoom": {
-            "price": 164349,
-            "pricePerSqm": 1920
+            "price": 172867,
+            "pricePerSqm": 1944
           },
-          "totalPricePerSqm": 2124
+          "totalPricePerSqm": 2113
         },
         {
           "name": "Люлин 10",
@@ -941,14 +941,14 @@
             "pricePerSqm": 1876
           },
           "twoRoom": {
-            "price": 150190,
+            "price": 150319,
             "pricePerSqm": 1865
           },
           "threeRoom": {
-            "price": 206439,
-            "pricePerSqm": 1956
+            "price": 207966,
+            "pricePerSqm": 1953
           },
-          "totalPricePerSqm": 1922
+          "totalPricePerSqm": 1904
         },
         {
           "name": "Люлин 2",
@@ -958,14 +958,14 @@
             "pricePerSqm": 2302
           },
           "twoRoom": {
-            "price": 148980,
-            "pricePerSqm": 2217
+            "price": 160039,
+            "pricePerSqm": 2226
           },
           "threeRoom": {
-            "price": 194813,
-            "pricePerSqm": 1918
+            "price": 194213,
+            "pricePerSqm": 1962
           },
-          "totalPricePerSqm": 2018
+          "totalPricePerSqm": 2037
         },
         {
           "name": "Люлин 3",
@@ -976,81 +976,81 @@
           },
           "twoRoom": {
             "price": 133534,
-            "pricePerSqm": 2250
+            "pricePerSqm": 2246
           },
           "threeRoom": {
-            "price": 182889,
-            "pricePerSqm": 2142
+            "price": 183891,
+            "pricePerSqm": 2133
           },
-          "totalPricePerSqm": 2263
+          "totalPricePerSqm": 2184
         },
         {
           "name": "Люлин 4",
           "link": "//www.imot.bg/sredni-ceni/prodazhbi-sofiya/lyulin-4",
           "oneRoom": {
             "price": 91945,
-            "pricePerSqm": 2567
+            "pricePerSqm": 2531
           },
           "twoRoom": {
-            "price": 145208,
-            "pricePerSqm": 2277
+            "price": 143755,
+            "pricePerSqm": 2332
           },
           "threeRoom": {
             "price": 200425,
-            "pricePerSqm": 2109
+            "pricePerSqm": 2102
           },
-          "totalPricePerSqm": 2338
+          "totalPricePerSqm": 2356
         },
         {
           "name": "Люлин 5",
           "link": "//www.imot.bg/sredni-ceni/prodazhbi-sofiya/lyulin-5",
           "oneRoom": {
-            "price": 97206,
-            "pricePerSqm": 2266
+            "price": 98108,
+            "pricePerSqm": 2232
           },
           "twoRoom": {
-            "price": 130692,
-            "pricePerSqm": 1962
+            "price": 130276,
+            "pricePerSqm": 2000
           },
           "threeRoom": {
             "price": 200891,
-            "pricePerSqm": 1781
+            "pricePerSqm": 1783
           },
-          "totalPricePerSqm": 1883
+          "totalPricePerSqm": 1911
         },
         {
           "name": "Люлин 6",
           "link": "//www.imot.bg/sredni-ceni/prodazhbi-sofiya/lyulin-6",
           "oneRoom": {
-            "price": 112739,
-            "pricePerSqm": 2614
+            "price": 95202,
+            "pricePerSqm": 2579
           },
           "twoRoom": {
-            "price": 149317,
-            "pricePerSqm": 2133
+            "price": 147213,
+            "pricePerSqm": 2101
           },
           "threeRoom": {
-            "price": 200425,
-            "pricePerSqm": 2029
+            "price": 199633,
+            "pricePerSqm": 2009
           },
-          "totalPricePerSqm": 2101
+          "totalPricePerSqm": 2069
         },
         {
           "name": "Люлин 7",
           "link": "//www.imot.bg/sredni-ceni/prodazhbi-sofiya/lyulin-7",
           "oneRoom": {
-            "price": 110184,
-            "pricePerSqm": 2687
+            "price": 110234,
+            "pricePerSqm": 2747
           },
           "twoRoom": {
-            "price": 156713,
-            "pricePerSqm": 2450
+            "price": 159940,
+            "pricePerSqm": 2550
           },
           "threeRoom": {
-            "price": 185394,
-            "pricePerSqm": 2233
+            "price": 187007,
+            "pricePerSqm": 2200
           },
-          "totalPricePerSqm": 2374
+          "totalPricePerSqm": 2520
         },
         {
           "name": "Люлин 8",
@@ -1064,95 +1064,95 @@
             "pricePerSqm": 2210
           },
           "threeRoom": {
-            "price": 225939,
-            "pricePerSqm": 2060
+            "price": 225909,
+            "pricePerSqm": 2058
           },
-          "totalPricePerSqm": 2062
+          "totalPricePerSqm": 2060
         },
         {
           "name": "Люлин 9",
           "link": "//www.imot.bg/sredni-ceni/prodazhbi-sofiya/lyulin-9",
           "oneRoom": {
-            "price": 92196,
-            "pricePerSqm": 2142
+            "price": 99662,
+            "pricePerSqm": 2231
           },
           "twoRoom": {
             "price": 145309,
-            "pricePerSqm": 2158
+            "pricePerSqm": 2217
           },
           "threeRoom": {
-            "price": 182298,
+            "price": 183390,
             "pricePerSqm": 1845
           },
-          "totalPricePerSqm": 1963
+          "totalPricePerSqm": 1937
         },
         {
           "name": "Малинова долина",
           "link": "//www.imot.bg/sredni-ceni/prodazhbi-sofiya/malinova-dolina",
           "oneRoom": {
-            "price": 109481,
-            "pricePerSqm": 2467
+            "price": 109731,
+            "pricePerSqm": 2477
           },
           "twoRoom": {
-            "price": 175172,
-            "pricePerSqm": 2465
+            "price": 174988,
+            "pricePerSqm": 2468
           },
           "threeRoom": {
-            "price": 265514,
-            "pricePerSqm": 2390
+            "price": 265565,
+            "pricePerSqm": 2394
           },
-          "totalPricePerSqm": 2417
+          "totalPricePerSqm": 2419
         },
         {
           "name": "Манастирски ливади",
           "link": "//www.imot.bg/sredni-ceni/prodazhbi-sofiya/manastirski-livadi",
           "oneRoom": {
             "price": 190004,
-            "pricePerSqm": 3759
+            "pricePerSqm": 3367
           },
           "twoRoom": {
-            "price": 225479,
-            "pricePerSqm": 3017
+            "price": 228486,
+            "pricePerSqm": 3050
           },
           "threeRoom": {
-            "price": 339790,
-            "pricePerSqm": 2861
+            "price": 342618,
+            "pricePerSqm": 2865
           },
-          "totalPricePerSqm": 2903
+          "totalPricePerSqm": 2910
         },
         {
           "name": "Медицинска академия",
           "link": "//www.imot.bg/sredni-ceni/prodazhbi-sofiya/meditsinska-akademiya",
           "oneRoom": {
-            "price": 196417,
-            "pricePerSqm": 4226
+            "price": 186396,
+            "pricePerSqm": 4076
           },
           "twoRoom": {
-            "price": 270575,
-            "pricePerSqm": 3854
+            "price": 275586,
+            "pricePerSqm": 4164
           },
           "threeRoom": {
-            "price": 350265,
-            "pricePerSqm": 3791
+            "price": 370788,
+            "pricePerSqm": 3835
           },
-          "totalPricePerSqm": 3827
+          "totalPricePerSqm": 3925
         },
         {
           "name": "Младост 1",
           "link": "//www.imot.bg/sredni-ceni/prodazhbi-sofiya/mladost-1",
           "oneRoom": {
             "price": 125767,
-            "pricePerSqm": 3373
+            "pricePerSqm": 3376
           },
           "twoRoom": {
-            "price": 199424,
-            "pricePerSqm": 3055
+            "price": 200425,
+            "pricePerSqm": 3073
           },
           "threeRoom": {
             "price": 296931,
-            "pricePerSqm": 2725
+            "pricePerSqm": 2703
           },
-          "totalPricePerSqm": 2886
+          "totalPricePerSqm": 2896
         },
         {
           "name": "Младост 1А",
@@ -1162,14 +1162,14 @@
             "pricePerSqm": 3374
           },
           "twoRoom": {
-            "price": 210447,
-            "pricePerSqm": 2964
+            "price": 197420,
+            "pricePerSqm": 2838
           },
           "threeRoom": {
             "price": 278041,
             "pricePerSqm": 2930
           },
-          "totalPricePerSqm": 2953
+          "totalPricePerSqm": 2930
         },
         {
           "name": "Младост 2",
@@ -1180,13 +1180,13 @@
           },
           "twoRoom": {
             "price": 184392,
-            "pricePerSqm": 2756
+            "pricePerSqm": 2758
           },
           "threeRoom": {
-            "price": 274844,
-            "pricePerSqm": 2764
+            "price": 275586,
+            "pricePerSqm": 2767
           },
-          "totalPricePerSqm": 2761
+          "totalPricePerSqm": 2767
         },
         {
           "name": "Младост 3",
@@ -1197,13 +1197,13 @@
           },
           "twoRoom": {
             "price": 204434,
-            "pricePerSqm": 2890
+            "pricePerSqm": 2914
           },
           "threeRoom": {
-            "price": 360409,
-            "pricePerSqm": 3102
+            "price": 381426,
+            "pricePerSqm": 3077
           },
-          "totalPricePerSqm": 2992
+          "totalPricePerSqm": 3037
         },
         {
           "name": "Младост 4",
@@ -1213,14 +1213,14 @@
             "pricePerSqm": 3084
           },
           "twoRoom": {
-            "price": 198221,
-            "pricePerSqm": 2731
+            "price": 198008,
+            "pricePerSqm": 2739
           },
           "threeRoom": {
-            "price": 300639,
-            "pricePerSqm": 2373
+            "price": 300499,
+            "pricePerSqm": 2370
           },
-          "totalPricePerSqm": 2504
+          "totalPricePerSqm": 2491
         },
         {
           "name": "Модерно предградие",
@@ -1231,11 +1231,11 @@
           },
           "twoRoom": {
             "price": 121380,
-            "pricePerSqm": 1803
+            "pricePerSqm": 1782
           },
           "threeRoom": {
             "price": 182852,
-            "pricePerSqm": 1597
+            "pricePerSqm": 1603
           },
           "totalPricePerSqm": 1605
         },
@@ -1247,62 +1247,62 @@
             "pricePerSqm": 3206
           },
           "twoRoom": {
-            "price": 199624,
-            "pricePerSqm": 3076
+            "price": 210447,
+            "pricePerSqm": 3105
           },
           "threeRoom": {
-            "price": 273080,
-            "pricePerSqm": 3109
+            "price": 280586,
+            "pricePerSqm": 3301
           },
-          "totalPricePerSqm": 3109
+          "totalPricePerSqm": 3120
         },
         {
           "name": "Надежда 1",
           "link": "//www.imot.bg/sredni-ceni/prodazhbi-sofiya/nadezhda-1",
           "oneRoom": {
-            "price": 120155,
+            "price": 120055,
             "pricePerSqm": 2662
           },
           "twoRoom": {
-            "price": 158336,
-            "pricePerSqm": 2581
+            "price": 149818,
+            "pricePerSqm": 2487
           },
           "threeRoom": {
-            "price": 241696,
-            "pricePerSqm": 2378
+            "price": 226481,
+            "pricePerSqm": 2371
           },
-          "totalPricePerSqm": 2385
+          "totalPricePerSqm": 2380
         },
         {
           "name": "Надежда 2",
           "link": "//www.imot.bg/sredni-ceni/prodazhbi-sofiya/nadezhda-2",
           "oneRoom": {
-            "price": 96204,
+            "price": 97206,
             "pricePerSqm": 2382
           },
           "twoRoom": {
-            "price": 155320,
-            "pricePerSqm": 2488
+            "price": 149307,
+            "pricePerSqm": 2427
           },
           "threeRoom": {
-            "price": 233396,
-            "pricePerSqm": 2423
+            "price": 235484,
+            "pricePerSqm": 2415
           },
-          "totalPricePerSqm": 2417
+          "totalPricePerSqm": 2409
         },
         {
           "name": "Надежда 3",
           "link": "//www.imot.bg/sredni-ceni/prodazhbi-sofiya/nadezhda-3",
           "oneRoom": {
             "price": 125166,
-            "pricePerSqm": 2794
+            "pricePerSqm": 2679
           },
           "twoRoom": {
-            "price": 135964,
-            "pricePerSqm": 2037
+            "price": 140198,
+            "pricePerSqm": 2106
           },
           "threeRoom": {
-            "price": 200426,
+            "price": 202931,
             "pricePerSqm": 2113
           },
           "totalPricePerSqm": 2106
@@ -1311,16 +1311,16 @@
           "name": "Надежда 4",
           "link": "//www.imot.bg/sredni-ceni/prodazhbi-sofiya/nadezhda-4",
           "oneRoom": {
-            "price": 120155,
+            "price": 130277,
             "pricePerSqm": 2832
           },
           "twoRoom": {
-            "price": 149317,
+            "price": 160341,
             "pricePerSqm": 2312
           },
           "threeRoom": {
-            "price": 238001,
-            "pricePerSqm": 2339
+            "price": 235501,
+            "pricePerSqm": 2336
           },
           "totalPricePerSqm": 2312
         },
@@ -1332,12 +1332,12 @@
             "pricePerSqm": 1877
           },
           "twoRoom": {
-            "price": 127895,
-            "pricePerSqm": 1732
+            "price": 128968,
+            "pricePerSqm": 1761
           },
           "threeRoom": {
-            "price": 180283,
-            "pricePerSqm": 1684
+            "price": 180433,
+            "pricePerSqm": 1679
           },
           "totalPricePerSqm": 1761
         },
@@ -1349,12 +1349,12 @@
             "pricePerSqm": 1992
           },
           "twoRoom": {
-            "price": 126644,
-            "pricePerSqm": 1701
+            "price": 126268,
+            "pricePerSqm": 1689
           },
           "threeRoom": {
-            "price": 199792,
-            "pricePerSqm": 1988
+            "price": 199358,
+            "pricePerSqm": 1957
           },
           "totalPricePerSqm": 1878
         },
@@ -1362,18 +1362,18 @@
           "name": "Обеля 2",
           "link": "//www.imot.bg/sredni-ceni/prodazhbi-sofiya/obelya-2",
           "oneRoom": {
-            "price": 110224,
-            "pricePerSqm": 2296
+            "price": 114739,
+            "pricePerSqm": 2345
           },
           "twoRoom": {
-            "price": 128773,
-            "pricePerSqm": 1927
+            "price": 125166,
+            "pricePerSqm": 1883
           },
           "threeRoom": {
-            "price": 189290,
-            "pricePerSqm": 1936
+            "price": 190308,
+            "pricePerSqm": 1925
           },
-          "totalPricePerSqm": 1942
+          "totalPricePerSqm": 1924
         },
         {
           "name": "Оборище",
@@ -1383,12 +1383,12 @@
             "pricePerSqm": 3804
           },
           "twoRoom": {
-            "price": 299637,
-            "pricePerSqm": 4086
+            "price": 298635,
+            "pricePerSqm": 4184
           },
           "threeRoom": {
             "price": 400852,
-            "pricePerSqm": 3991
+            "pricePerSqm": 3970
           },
           "totalPricePerSqm": 4008
         },
@@ -1400,29 +1400,29 @@
             "pricePerSqm": 2494
           },
           "twoRoom": {
-            "price": 170943,
-            "pricePerSqm": 2405
+            "price": 171899,
+            "pricePerSqm": 2404
           },
           "threeRoom": {
-            "price": 249265,
-            "pricePerSqm": 2220
+            "price": 249530,
+            "pricePerSqm": 2250
           },
-          "totalPricePerSqm": 2301
+          "totalPricePerSqm": 2304
         },
         {
           "name": "Овча купел 1",
           "link": "//www.imot.bg/sredni-ceni/prodazhbi-sofiya/ovcha-kupel-1",
           "oneRoom": {
-            "price": 117249,
-            "pricePerSqm": 2856
+            "price": 130277,
+            "pricePerSqm": 2755
           },
           "twoRoom": {
-            "price": 161142,
-            "pricePerSqm": 2290
+            "price": 162458,
+            "pricePerSqm": 2303
           },
           "threeRoom": {
-            "price": 241660,
-            "pricePerSqm": 2144
+            "price": 245521,
+            "pricePerSqm": 2134
           },
           "totalPricePerSqm": 2241
         },
@@ -1430,18 +1430,18 @@
           "name": "Овча купел 2",
           "link": "//www.imot.bg/sredni-ceni/prodazhbi-sofiya/ovcha-kupel-2",
           "oneRoom": {
-            "price": 124264,
-            "pricePerSqm": 2705
+            "price": 125266,
+            "pricePerSqm": 2672
           },
           "twoRoom": {
-            "price": 152173,
-            "pricePerSqm": 2244
+            "price": 152353,
+            "pricePerSqm": 2261
           },
           "threeRoom": {
-            "price": 226025,
-            "pricePerSqm": 2136
+            "price": 225479,
+            "pricePerSqm": 2128
           },
-          "totalPricePerSqm": 2179
+          "totalPricePerSqm": 2180
         },
         {
           "name": "Орландовци",
@@ -1452,13 +1452,13 @@
           },
           "twoRoom": {
             "price": 138143,
-            "pricePerSqm": 2099
+            "pricePerSqm": 2084
           },
           "threeRoom": {
-            "price": 203043,
-            "pricePerSqm": 1985
+            "price": 199993,
+            "pricePerSqm": 1968
           },
-          "totalPricePerSqm": 2040
+          "totalPricePerSqm": 2029
         },
         {
           "name": "ПЗ Илиянци",
@@ -1485,14 +1485,14 @@
             "pricePerSqm": null
           },
           "twoRoom": {
-            "price": 424402,
-            "pricePerSqm": 4330
+            "price": 410122,
+            "pricePerSqm": 4876
           },
           "threeRoom": {
-            "price": 592237,
-            "pricePerSqm": 3702
+            "price": 579399,
+            "pricePerSqm": 3804
           },
-          "totalPricePerSqm": 3663
+          "totalPricePerSqm": 3907
         },
         {
           "name": "Павлово",
@@ -1502,14 +1502,14 @@
             "pricePerSqm": 2775
           },
           "twoRoom": {
-            "price": 184392,
-            "pricePerSqm": 2347
+            "price": 195415,
+            "pricePerSqm": 2304
           },
           "threeRoom": {
-            "price": 282563,
+            "price": 283083,
             "pricePerSqm": 2668
           },
-          "totalPricePerSqm": 2675
+          "totalPricePerSqm": 2668
         },
         {
           "name": "Подуяне",
@@ -1519,14 +1519,14 @@
             "pricePerSqm": null
           },
           "twoRoom": {
-            "price": 202180,
-            "pricePerSqm": 2751
+            "price": 203472,
+            "pricePerSqm": 2705
           },
           "threeRoom": {
-            "price": 310660,
+            "price": 300639,
             "pricePerSqm": 2513
           },
-          "totalPricePerSqm": 2596
+          "totalPricePerSqm": 2611
         },
         {
           "name": "Полигона",
@@ -1536,20 +1536,20 @@
             "pricePerSqm": 2818
           },
           "twoRoom": {
-            "price": 221006,
-            "pricePerSqm": 2708
+            "price": 221972,
+            "pricePerSqm": 2715
           },
           "threeRoom": {
-            "price": 344933,
-            "pricePerSqm": 2583
+            "price": 345542,
+            "pricePerSqm": 2580
           },
-          "totalPricePerSqm": 2715
+          "totalPricePerSqm": 2721
         },
         {
           "name": "Разсадника",
           "link": "//www.imot.bg/sredni-ceni/prodazhbi-sofiya/razsadnika",
           "oneRoom": {
-            "price": 136791,
+            "price": 134686,
             "pricePerSqm": 3014
           },
           "twoRoom": {
@@ -1557,25 +1557,25 @@
             "pricePerSqm": 2696
           },
           "threeRoom": {
-            "price": 217462,
-            "pricePerSqm": 2444
+            "price": 216460,
+            "pricePerSqm": 2506
           },
-          "totalPricePerSqm": 2587
+          "totalPricePerSqm": 2620
         },
         {
           "name": "Редута",
           "link": "//www.imot.bg/sredni-ceni/prodazhbi-sofiya/reduta",
           "oneRoom": {
-            "price": 122260,
-            "pricePerSqm": 2520
+            "price": 115245,
+            "pricePerSqm": 2505
           },
           "twoRoom": {
             "price": 227025,
-            "pricePerSqm": 3109
+            "pricePerSqm": 3072
           },
           "threeRoom": {
-            "price": 330703,
-            "pricePerSqm": 2995
+            "price": 325692,
+            "pricePerSqm": 3020
           },
           "totalPricePerSqm": 2995
         },
@@ -1601,17 +1601,17 @@
           "link": "//www.imot.bg/sredni-ceni/prodazhbi-sofiya/sveta-troitsa",
           "oneRoom": {
             "price": 130277,
-            "pricePerSqm": 2846
+            "pricePerSqm": 2821
           },
           "twoRoom": {
-            "price": 177377,
-            "pricePerSqm": 2685
+            "price": 172867,
+            "pricePerSqm": 2676
           },
           "threeRoom": {
             "price": 239509,
-            "pricePerSqm": 2667
+            "pricePerSqm": 2620
           },
-          "totalPricePerSqm": 2687
+          "totalPricePerSqm": 2672
         },
         {
           "name": "Свобода",
@@ -1622,47 +1622,47 @@
           },
           "twoRoom": {
             "price": 129275,
-            "pricePerSqm": 2121
+            "pricePerSqm": 2195
           },
           "threeRoom": {
-            "price": 180373,
-            "pricePerSqm": 1988
+            "price": 168638,
+            "pricePerSqm": 1886
           },
-          "totalPricePerSqm": 2104
+          "totalPricePerSqm": 2150
         },
         {
           "name": "Сердика",
           "link": "//www.imot.bg/sredni-ceni/prodazhbi-sofiya/serdika",
           "oneRoom": {
-            "price": 99915,
-            "pricePerSqm": 2584
+            "price": 104772,
+            "pricePerSqm": 2605
           },
           "twoRoom": {
-            "price": 162345,
-            "pricePerSqm": 2419
+            "price": 159838,
+            "pricePerSqm": 2408
           },
           "threeRoom": {
             "price": 250533,
-            "pricePerSqm": 2275
+            "pricePerSqm": 2304
           },
-          "totalPricePerSqm": 2397
+          "totalPricePerSqm": 2400
         },
         {
           "name": "Симеоново",
           "link": "//www.imot.bg/sredni-ceni/prodazhbi-sofiya/simeonovo",
           "oneRoom": {
-            "price": 160316,
+            "price": 160291,
             "pricePerSqm": 3023
           },
           "twoRoom": {
-            "price": 198618,
-            "pricePerSqm": 2613
+            "price": 206439,
+            "pricePerSqm": 2623
           },
           "threeRoom": {
-            "price": 372079,
-            "pricePerSqm": 3000
+            "price": 338219,
+            "pricePerSqm": 2804
           },
-          "totalPricePerSqm": 2745
+          "totalPricePerSqm": 2718
         },
         {
           "name": "Славия",
@@ -1672,14 +1672,14 @@
             "pricePerSqm": null
           },
           "twoRoom": {
-            "price": 177294,
-            "pricePerSqm": 2467
+            "price": 178826,
+            "pricePerSqm": 2458
           },
           "threeRoom": {
-            "price": 270066,
-            "pricePerSqm": 2408
+            "price": 267584,
+            "pricePerSqm": 2421
           },
-          "totalPricePerSqm": 2467
+          "totalPricePerSqm": 2448
         },
         {
           "name": "Слатина",
@@ -1689,63 +1689,63 @@
             "pricePerSqm": 2567
           },
           "twoRoom": {
-            "price": 180383,
-            "pricePerSqm": 2737
+            "price": 177376,
+            "pricePerSqm": 2750
           },
           "threeRoom": {
-            "price": 245522,
+            "price": 240506,
             "pricePerSqm": 2663
           },
-          "totalPricePerSqm": 2686
+          "totalPricePerSqm": 2698
         },
         {
           "name": "Стрелбище",
           "link": "//www.imot.bg/sredni-ceni/prodazhbi-sofiya/strelbishte",
           "oneRoom": {
-            "price": 193471,
-            "pricePerSqm": 2727
+            "price": 216460,
+            "pricePerSqm": 2609
           },
           "twoRoom": {
-            "price": 239309,
+            "price": 242816,
             "pricePerSqm": 3211
           },
           "threeRoom": {
             "price": 360617,
-            "pricePerSqm": 3534
+            "pricePerSqm": 3571
           },
-          "totalPricePerSqm": 3391
+          "totalPricePerSqm": 3471
         },
         {
           "name": "Студентски град",
           "link": "//www.imot.bg/sredni-ceni/prodazhbi-sofiya/studentski-grad",
           "oneRoom": {
-            "price": 130276,
-            "pricePerSqm": 3015
+            "price": 130277,
+            "pricePerSqm": 2981
           },
           "twoRoom": {
-            "price": 186319,
-            "pricePerSqm": 2787
+            "price": 187799,
+            "pricePerSqm": 2783
           },
           "threeRoom": {
-            "price": 265565,
-            "pricePerSqm": 2505
+            "price": 269827,
+            "pricePerSqm": 2510
           },
-          "totalPricePerSqm": 2704
+          "totalPricePerSqm": 2707
         },
         {
           "name": "Сухата река",
           "link": "//www.imot.bg/sredni-ceni/prodazhbi-sofiya/suhata-reka",
           "oneRoom": {
-            "price": 105138,
-            "pricePerSqm": 2744
+            "price": 104136,
+            "pricePerSqm": 2795
           },
           "twoRoom": {
-            "price": 164349,
+            "price": 165351,
             "pricePerSqm": 2583
           },
           "threeRoom": {
-            "price": 255293,
-            "pricePerSqm": 2509
+            "price": 249781,
+            "pricePerSqm": 2508
           },
           "totalPricePerSqm": 2509
         },
@@ -1758,7 +1758,7 @@
           },
           "twoRoom": {
             "price": 115124,
-            "pricePerSqm": 1781
+            "pricePerSqm": 1709
           },
           "threeRoom": {
             "price": 165351,
@@ -1774,12 +1774,12 @@
             "pricePerSqm": 2407
           },
           "twoRoom": {
-            "price": 153927,
+            "price": 153597,
             "pricePerSqm": 2405
           },
           "threeRoom": {
-            "price": 195415,
-            "pricePerSqm": 2442
+            "price": 195410,
+            "pricePerSqm": 2417
           },
           "totalPricePerSqm": 2405
         },
@@ -1795,10 +1795,10 @@
             "pricePerSqm": null
           },
           "threeRoom": {
-            "price": 180383,
-            "pricePerSqm": 1840
+            "price": 185394,
+            "pricePerSqm": 1891
           },
-          "totalPricePerSqm": 1840
+          "totalPricePerSqm": 1891
         },
         {
           "name": "Триъгълника",
@@ -1808,14 +1808,31 @@
             "pricePerSqm": null
           },
           "twoRoom": {
-            "price": 200426,
-            "pricePerSqm": 2938
+            "price": 169811,
+            "pricePerSqm": 2606
           },
           "threeRoom": {
-            "price": 247521,
-            "pricePerSqm": 2623
+            "price": 243017,
+            "pricePerSqm": 2172
           },
-          "totalPricePerSqm": 2741
+          "totalPricePerSqm": 2283
+        },
+        {
+          "name": "Факултета",
+          "link": "//www.imot.bg/sredni-ceni/prodazhbi-sofiya/fakulteta",
+          "oneRoom": {
+            "price": null,
+            "pricePerSqm": null
+          },
+          "twoRoom": {
+            "price": null,
+            "pricePerSqm": null
+          },
+          "threeRoom": {
+            "price": null,
+            "pricePerSqm": null
+          },
+          "totalPricePerSqm": 1645
         },
         {
           "name": "Филиповци",
@@ -1829,44 +1846,44 @@
             "pricePerSqm": null
           },
           "threeRoom": {
-            "price": 145309,
-            "pricePerSqm": 2235
+            "price": 181335,
+            "pricePerSqm": 2162
           },
-          "totalPricePerSqm": 2235
+          "totalPricePerSqm": 2162
         },
         {
           "name": "Фондови жилища",
           "link": "//www.imot.bg/sredni-ceni/prodazhbi-sofiya/fondovi-zhilishta",
           "oneRoom": {
-            "price": 110234,
-            "pricePerSqm": 2563
+            "price": 105223,
+            "pricePerSqm": 2447
           },
           "twoRoom": {
             "price": 131068,
             "pricePerSqm": 2669
           },
           "threeRoom": {
-            "price": 218464,
+            "price": 210447,
             "pricePerSqm": 2299
           },
-          "totalPricePerSqm": 2554
+          "totalPricePerSqm": 2505
         },
         {
           "name": "Хаджи Димитър",
           "link": "//www.imot.bg/sredni-ceni/prodazhbi-sofiya/hadzhi-dimitar",
           "oneRoom": {
-            "price": 126769,
-            "pricePerSqm": 2781
+            "price": 123763,
+            "pricePerSqm": 2750
           },
           "twoRoom": {
-            "price": 168358,
-            "pricePerSqm": 2650
+            "price": 169761,
+            "pricePerSqm": 2628
           },
           "threeRoom": {
             "price": 249530,
             "pricePerSqm": 2622
           },
-          "totalPricePerSqm": 2647
+          "totalPricePerSqm": 2644
         },
         {
           "name": "Хиподрума",
@@ -1876,29 +1893,29 @@
             "pricePerSqm": 4641
           },
           "twoRoom": {
-            "price": 235500,
-            "pricePerSqm": 3559
+            "price": 234498,
+            "pricePerSqm": 3585
           },
           "threeRoom": {
             "price": 332290,
             "pricePerSqm": 3303
           },
-          "totalPricePerSqm": 3322
+          "totalPricePerSqm": 3323
         },
         {
           "name": "Хладилника",
           "link": "//www.imot.bg/sredni-ceni/prodazhbi-sofiya/hladilnika",
           "oneRoom": {
-            "price": 164349,
-            "pricePerSqm": 3735
+            "price": null,
+            "pricePerSqm": null
           },
           "twoRoom": {
-            "price": 285974,
-            "pricePerSqm": 3768
+            "price": 285607,
+            "pricePerSqm": 3708
           },
           "threeRoom": {
-            "price": 456671,
-            "pricePerSqm": 3580
+            "price": 458575,
+            "pricePerSqm": 3584
           },
           "totalPricePerSqm": 3584
         },
@@ -1906,16 +1923,16 @@
           "name": "Център",
           "link": "//www.imot.bg/sredni-ceni/prodazhbi-sofiya/tsentar",
           "oneRoom": {
-            "price": 160815,
-            "pricePerSqm": 3991
+            "price": 160240,
+            "pricePerSqm": 3883
           },
           "twoRoom": {
-            "price": 244620,
-            "pricePerSqm": 3420
+            "price": 239509,
+            "pricePerSqm": 3391
           },
           "threeRoom": {
-            "price": 350746,
-            "pricePerSqm": 3449
+            "price": 351247,
+            "pricePerSqm": 3488
           },
           "totalPricePerSqm": 3445
         },
@@ -1923,18 +1940,18 @@
           "name": "Яворов",
           "link": "//www.imot.bg/sredni-ceni/prodazhbi-sofiya/yavorov",
           "oneRoom": {
-            "price": 150319,
-            "pricePerSqm": 3666
+            "price": 197921,
+            "pricePerSqm": 3880
           },
           "twoRoom": {
-            "price": 285607,
-            "pricePerSqm": 4924
+            "price": 280596,
+            "pricePerSqm": 4767
           },
           "threeRoom": {
             "price": 379808,
-            "pricePerSqm": 4119
+            "pricePerSqm": 4175
           },
-          "totalPricePerSqm": 4251
+          "totalPricePerSqm": 4416
         },
         {
           "name": "в.з.Американски колеж",
@@ -1999,10 +2016,27 @@
             "pricePerSqm": null
           },
           "threeRoom": {
-            "price": 220368,
-            "pricePerSqm": 1899
+            "price": 230440,
+            "pricePerSqm": 1986
           },
-          "totalPricePerSqm": 2196
+          "totalPricePerSqm": 2135
+        },
+        {
+          "name": "в.з.Горна баня",
+          "link": "//www.imot.bg/sredni-ceni/prodazhbi-sofiya/v-z-gorna-banya",
+          "oneRoom": {
+            "price": null,
+            "pricePerSqm": null
+          },
+          "twoRoom": {
+            "price": 153947,
+            "pricePerSqm": 2231
+          },
+          "threeRoom": {
+            "price": null,
+            "pricePerSqm": null
+          },
+          "totalPricePerSqm": 2231
         },
         {
           "name": "в.з.Киноцентъра",
@@ -2042,15 +2076,15 @@
           "name": "в.з.Малинова долина",
           "link": "//www.imot.bg/sredni-ceni/prodazhbi-sofiya/v-z-malinova-dolina",
           "oneRoom": {
-            "price": 79669,
-            "pricePerSqm": 2655
+            "price": 99962,
+            "pricePerSqm": 2421
           },
           "twoRoom": {
             "price": 216760,
             "pricePerSqm": 2747
           },
           "threeRoom": {
-            "price": 379858,
+            "price": 375814,
             "pricePerSqm": 2998
           },
           "totalPricePerSqm": 2941
@@ -2080,14 +2114,14 @@
             "pricePerSqm": null
           },
           "twoRoom": {
-            "price": 251778,
-            "pricePerSqm": 3551
+            "price": 251029,
+            "pricePerSqm": 3218
           },
           "threeRoom": {
             "price": 430789,
             "pricePerSqm": 3017
           },
-          "totalPricePerSqm": 3154
+          "totalPricePerSqm": 3187
         },
         {
           "name": "в.з.Черния кос",
@@ -2115,30 +2149,30 @@
           },
           "twoRoom": {
             "price": 145309,
-            "pricePerSqm": 2084
+            "pricePerSqm": 2064
           },
           "threeRoom": {
             "price": 245522,
-            "pricePerSqm": 2369
+            "pricePerSqm": 2392
           },
-          "totalPricePerSqm": 2189
+          "totalPricePerSqm": 2206
         },
         {
           "name": "гр. Бухово",
           "link": "//www.imot.bg/sredni-ceni/prodazhbi-sofiya/gr-buhovo",
           "oneRoom": {
-            "price": null,
-            "pricePerSqm": null
+            "price": 90191,
+            "pricePerSqm": 1802
           },
           "twoRoom": {
-            "price": 92697,
-            "pricePerSqm": 2059
+            "price": 103971,
+            "pricePerSqm": 2370
           },
           "threeRoom": {
             "price": null,
             "pricePerSqm": null
           },
-          "totalPricePerSqm": 2059
+          "totalPricePerSqm": 2054
         },
         {
           "name": "гр. Нови Искър",
@@ -2186,27 +2220,27 @@
             "pricePerSqm": 4336
           },
           "threeRoom": {
-            "price": 471402,
-            "pricePerSqm": 4208
+            "price": 418590,
+            "pricePerSqm": 4108
           },
-          "totalPricePerSqm": 4272
+          "totalPricePerSqm": 4208
         },
         {
           "name": "м-т Гърдова глава",
           "link": "//www.imot.bg/sredni-ceni/prodazhbi-sofiya/m-t-gardova-glava",
           "oneRoom": {
-            "price": 148042,
-            "pricePerSqm": 2589
+            "price": 149617,
+            "pricePerSqm": 2579
           },
           "twoRoom": {
-            "price": 182648,
-            "pricePerSqm": 2538
+            "price": 179902,
+            "pricePerSqm": 2533
           },
           "threeRoom": {
-            "price": 293663,
-            "pricePerSqm": 2518
+            "price": 289728,
+            "pricePerSqm": 2530
           },
-          "totalPricePerSqm": 2518
+          "totalPricePerSqm": 2531
         },
         {
           "name": "м-т Детски град",
@@ -2216,14 +2250,14 @@
             "pricePerSqm": null
           },
           "twoRoom": {
-            "price": 200225,
-            "pricePerSqm": 2988
+            "price": 172767,
+            "pricePerSqm": 2705
           },
           "threeRoom": {
             "price": 312665,
-            "pricePerSqm": 2254
+            "pricePerSqm": 2012
           },
-          "totalPricePerSqm": 2020
+          "totalPricePerSqm": 1955
         },
         {
           "name": "м-т Камбаните",
@@ -2233,14 +2267,14 @@
             "pricePerSqm": 2672
           },
           "twoRoom": {
-            "price": 226222,
+            "price": 221551,
             "pricePerSqm": 3015
           },
           "threeRoom": {
-            "price": 375740,
+            "price": 372389,
             "pricePerSqm": 3007
           },
-          "totalPricePerSqm": 3012
+          "totalPricePerSqm": 3007
         },
         {
           "name": "м-т Киноцентъра",
@@ -2254,8 +2288,8 @@
             "pricePerSqm": null
           },
           "threeRoom": {
-            "price": 515897,
-            "pricePerSqm": 3607
+            "price": 438332,
+            "pricePerSqm": 3589
           },
           "totalPricePerSqm": 3607
         },
@@ -2263,18 +2297,18 @@
           "name": "с. Бистрица",
           "link": "//www.imot.bg/sredni-ceni/prodazhbi-sofiya/s-bistritsa",
           "oneRoom": {
-            "price": 108731,
-            "pricePerSqm": 2369
+            "price": 118244,
+            "pricePerSqm": 2318
           },
           "twoRoom": {
             "price": 170448,
             "pricePerSqm": 2398
           },
           "threeRoom": {
-            "price": 309257,
-            "pricePerSqm": 2454
+            "price": 301601,
+            "pricePerSqm": 2407
           },
-          "totalPricePerSqm": 2629
+          "totalPricePerSqm": 2527
         },
         {
           "name": "с. Владая",
@@ -2288,10 +2322,10 @@
             "pricePerSqm": 1803
           },
           "threeRoom": {
-            "price": 163933,
-            "pricePerSqm": 1934
+            "price": 132166,
+            "pricePerSqm": 1694
           },
-          "totalPricePerSqm": 1982
+          "totalPricePerSqm": 1803
         },
         {
           "name": "с. Герман",
@@ -2305,10 +2339,10 @@
             "pricePerSqm": 1748
           },
           "threeRoom": {
-            "price": 220418,
-            "pricePerSqm": 2020
+            "price": 220368,
+            "pricePerSqm": 1900
           },
-          "totalPricePerSqm": 2139
+          "totalPricePerSqm": 2020
         },
         {
           "name": "с. Желява",
@@ -2373,10 +2407,10 @@
             "pricePerSqm": 2232
           },
           "threeRoom": {
-            "price": 256084,
-            "pricePerSqm": 2405
+            "price": 253308,
+            "pricePerSqm": 2408
           },
-          "totalPricePerSqm": 2375
+          "totalPricePerSqm": 2378
         },
         {
           "name": "с. Мало Бучино",
@@ -2403,14 +2437,14 @@
             "pricePerSqm": null
           },
           "twoRoom": {
-            "price": 218264,
+            "price": 201873,
             "pricePerSqm": 2775
           },
           "threeRoom": {
-            "price": 334311,
-            "pricePerSqm": 2877
+            "price": 321884,
+            "pricePerSqm": 2805
           },
-          "totalPricePerSqm": 2775
+          "totalPricePerSqm": 2756
         },
         {
           "name": "с. Световрачене",
@@ -2436,10 +2470,10 @@
       "key": "plovdiv",
       "slug": "plovdiv",
       "stats": {
-        "avgPricePerSqm": 1642,
-        "medianPricePerSqm": 1540,
+        "avgPricePerSqm": 1624,
+        "medianPricePerSqm": 1513,
         "minPricePerSqm": 1113,
-        "maxPricePerSqm": 3198,
+        "maxPricePerSqm": 2666,
         "neighbourhoodCount": 40
       },
       "neighbourhoods": [
@@ -2455,7 +2489,7 @@
             "pricePerSqm": 1194
           },
           "threeRoom": {
-            "price": 130274,
+            "price": 130271,
             "pricePerSqm": 1154
           },
           "totalPricePerSqm": 1160
@@ -2481,16 +2515,16 @@
           "name": "Въстанически",
           "link": "//www.imot.bg/sredni-ceni/prodazhbi-plovdiv/vastanicheski",
           "oneRoom": {
-            "price": 52110,
-            "pricePerSqm": 1391
+            "price": 52361,
+            "pricePerSqm": 1389
           },
           "twoRoom": {
-            "price": 98710,
-            "pricePerSqm": 1386
+            "price": 98960,
+            "pricePerSqm": 1387
           },
           "threeRoom": {
-            "price": 153219,
-            "pricePerSqm": 1388
+            "price": 152771,
+            "pricePerSqm": 1396
           },
           "totalPricePerSqm": 1385
         },
@@ -2502,14 +2536,14 @@
             "pricePerSqm": 1062
           },
           "twoRoom": {
-            "price": 86934,
-            "pricePerSqm": 1271
+            "price": 86684,
+            "pricePerSqm": 1270
           },
           "threeRoom": {
             "price": 137625,
             "pricePerSqm": 1300
           },
-          "totalPricePerSqm": 1295
+          "totalPricePerSqm": 1294
         },
         {
           "name": "Гладно поле",
@@ -2532,52 +2566,52 @@
           "name": "Западен",
           "link": "//www.imot.bg/sredni-ceni/prodazhbi-plovdiv/zapaden",
           "oneRoom": {
-            "price": 74576,
-            "pricePerSqm": 1694
+            "price": 78375,
+            "pricePerSqm": 1551
           },
           "twoRoom": {
             "price": 109733,
             "pricePerSqm": 1545
           },
           "threeRoom": {
-            "price": 166423,
-            "pricePerSqm": 1437
+            "price": 161485,
+            "pricePerSqm": 1428
           },
-          "totalPricePerSqm": 1545
+          "totalPricePerSqm": 1544
         },
         {
           "name": "Захарна фабрика",
           "link": "//www.imot.bg/sredni-ceni/prodazhbi-plovdiv/zaharna-fabrika",
           "oneRoom": {
-            "price": 59125,
-            "pricePerSqm": 1907
+            "price": null,
+            "pricePerSqm": null
           },
           "twoRoom": {
             "price": 115245,
             "pricePerSqm": 1588
           },
           "threeRoom": {
-            "price": 163347,
-            "pricePerSqm": 1382
+            "price": 164249,
+            "pricePerSqm": 1365
           },
-          "totalPricePerSqm": 1430
+          "totalPricePerSqm": 1416
         },
         {
           "name": "Изгрев",
           "link": "//www.imot.bg/sredni-ceni/prodazhbi-plovdiv/izgrev",
           "oneRoom": {
-            "price": 50106,
-            "pricePerSqm": 1473
+            "price": 51609,
+            "pricePerSqm": 1404
           },
           "twoRoom": {
-            "price": 72554,
+            "price": 69648,
             "pricePerSqm": 1252
           },
           "threeRoom": {
-            "price": 93198,
-            "pricePerSqm": 1318
+            "price": 93348,
+            "pricePerSqm": 1336
           },
-          "totalPricePerSqm": 1282
+          "totalPricePerSqm": 1299
         },
         {
           "name": "Източна дъга",
@@ -2659,8 +2693,8 @@
             "pricePerSqm": null
           },
           "threeRoom": {
-            "price": null,
-            "pricePerSqm": null
+            "price": 250533,
+            "pricePerSqm": 1113
           },
           "totalPricePerSqm": 1113
         },
@@ -2668,18 +2702,18 @@
           "name": "Индустриална зона - Тракия",
           "link": "//www.imot.bg/sredni-ceni/prodazhbi-plovdiv/industrialna-zona-trakiya",
           "oneRoom": {
-            "price": 72153,
-            "pricePerSqm": 2061
+            "price": null,
+            "pricePerSqm": null
           },
           "twoRoom": {
-            "price": 150319,
-            "pricePerSqm": 2312
+            "price": null,
+            "pricePerSqm": null
           },
           "threeRoom": {
             "price": 163167,
             "pricePerSqm": 1406
           },
-          "totalPricePerSqm": 1642
+          "totalPricePerSqm": 1406
         },
         {
           "name": "Институт по овощарство",
@@ -2702,18 +2736,18 @@
           "name": "Каменица 1",
           "link": "//www.imot.bg/sredni-ceni/prodazhbi-plovdiv/kamenitsa-1",
           "oneRoom": {
-            "price": 140298,
-            "pricePerSqm": 2505
+            "price": 150319,
+            "pricePerSqm": 2130
           },
           "twoRoom": {
-            "price": 150318,
+            "price": 154327,
             "pricePerSqm": 2122
           },
           "threeRoom": {
             "price": 235501,
-            "pricePerSqm": 2378
+            "pricePerSqm": 2449
           },
-          "totalPricePerSqm": 2204
+          "totalPricePerSqm": 2221
         },
         {
           "name": "Каменица 2",
@@ -2723,14 +2757,14 @@
             "pricePerSqm": null
           },
           "twoRoom": {
-            "price": 121759,
-            "pricePerSqm": 1701
+            "price": 126524,
+            "pricePerSqm": 1722
           },
           "threeRoom": {
-            "price": 162365,
-            "pricePerSqm": 1601
+            "price": 162706,
+            "pricePerSqm": 1703
           },
-          "totalPricePerSqm": 1700
+          "totalPricePerSqm": 1710
         },
         {
           "name": "Капана",
@@ -2740,8 +2774,8 @@
             "pricePerSqm": null
           },
           "twoRoom": {
-            "price": null,
-            "pricePerSqm": null
+            "price": 180383,
+            "pricePerSqm": 2733
           },
           "threeRoom": {
             "price": null,
@@ -2757,14 +2791,14 @@
             "pricePerSqm": null
           },
           "twoRoom": {
-            "price": 93799,
-            "pricePerSqm": 1254
+            "price": 92134,
+            "pricePerSqm": 1249
           },
           "threeRoom": {
-            "price": 135287,
-            "pricePerSqm": 1204
+            "price": 133784,
+            "pricePerSqm": 1213
           },
-          "totalPricePerSqm": 1252
+          "totalPricePerSqm": 1242
         },
         {
           "name": "Коматевски възел",
@@ -2774,28 +2808,28 @@
             "pricePerSqm": 1435
           },
           "twoRoom": {
-            "price": 121945,
+            "price": 121169,
             "pricePerSqm": 1350
           },
           "threeRoom": {
-            "price": 146766,
-            "pricePerSqm": 1371
+            "price": 148323,
+            "pricePerSqm": 1369
           },
-          "totalPricePerSqm": 1351
+          "totalPricePerSqm": 1350
         },
         {
           "name": "Коматевско шосе",
           "link": "//www.imot.bg/sredni-ceni/prodazhbi-plovdiv/komatevsko-shose",
           "oneRoom": {
-            "price": 74403,
-            "pricePerSqm": 1220
+            "price": 98710,
+            "pricePerSqm": 1495
           },
           "twoRoom": {
             "price": 96884,
-            "pricePerSqm": 1370
+            "pricePerSqm": 1367
           },
           "threeRoom": {
-            "price": 149818,
+            "price": 153727,
             "pricePerSqm": 1302
           },
           "totalPricePerSqm": 1342
@@ -2804,35 +2838,35 @@
           "name": "Кършияка",
           "link": "//www.imot.bg/sredni-ceni/prodazhbi-plovdiv/karshiyaka",
           "oneRoom": {
-            "price": 80756,
+            "price": 84068,
             "pricePerSqm": 1566
           },
           "twoRoom": {
             "price": 113150,
-            "pricePerSqm": 1627
+            "pricePerSqm": 1625
           },
           "threeRoom": {
-            "price": 164349,
-            "pricePerSqm": 1555
+            "price": 164545,
+            "pricePerSqm": 1550
           },
-          "totalPricePerSqm": 1586
+          "totalPricePerSqm": 1582
         },
         {
           "name": "Кючук Париж",
           "link": "//www.imot.bg/sredni-ceni/prodazhbi-plovdiv/kyuchuk-parizh",
           "oneRoom": {
             "price": 60126,
-            "pricePerSqm": 1350
+            "pricePerSqm": 1377
           },
           "twoRoom": {
             "price": 105223,
-            "pricePerSqm": 1544
+            "pricePerSqm": 1531
           },
           "threeRoom": {
-            "price": 156026,
-            "pricePerSqm": 1511
+            "price": 155330,
+            "pricePerSqm": 1507
           },
-          "totalPricePerSqm": 1503
+          "totalPricePerSqm": 1501
         },
         {
           "name": "Мараша",
@@ -2842,14 +2876,14 @@
             "pricePerSqm": 2004
           },
           "twoRoom": {
-            "price": 140298,
+            "price": 151823,
             "pricePerSqm": 2327
           },
           "threeRoom": {
-            "price": 192409,
+            "price": 197420,
             "pricePerSqm": 2155
           },
-          "totalPricePerSqm": 2243
+          "totalPricePerSqm": 2266
         },
         {
           "name": "Младежки Хълм",
@@ -2859,28 +2893,28 @@
             "pricePerSqm": 1638
           },
           "twoRoom": {
-            "price": 137654,
-            "pricePerSqm": 1943
+            "price": 137793,
+            "pricePerSqm": 1952
           },
           "threeRoom": {
-            "price": 181736,
-            "pricePerSqm": 1670
+            "price": 180761,
+            "pricePerSqm": 1790
           },
-          "totalPricePerSqm": 1787
+          "totalPricePerSqm": 1803
         },
         {
           "name": "Остромила",
           "link": "//www.imot.bg/sredni-ceni/prodazhbi-plovdiv/ostromila",
           "oneRoom": {
-            "price": 58071,
-            "pricePerSqm": 1229
+            "price": 59496,
+            "pricePerSqm": 1224
           },
           "twoRoom": {
-            "price": 97407,
-            "pricePerSqm": 1372
+            "price": 97057,
+            "pricePerSqm": 1366
           },
           "threeRoom": {
-            "price": 143567,
+            "price": 143350,
             "pricePerSqm": 1302
           },
           "totalPricePerSqm": 1333
@@ -2893,14 +2927,14 @@
             "pricePerSqm": 1872
           },
           "twoRoom": {
-            "price": 124578,
+            "price": 125294,
             "pricePerSqm": 1554
           },
           "threeRoom": {
-            "price": 213088,
+            "price": 210006,
             "pricePerSqm": 1607
           },
-          "totalPricePerSqm": 1603
+          "totalPricePerSqm": 1605
         },
         {
           "name": "Пазарджишко шосе",
@@ -2931,7 +2965,7 @@
             "pricePerSqm": 1403
           },
           "threeRoom": {
-            "price": 129675,
+            "price": 129043,
             "pricePerSqm": 1254
           },
           "totalPricePerSqm": 1374
@@ -2945,7 +2979,7 @@
           },
           "twoRoom": {
             "price": 89189,
-            "pricePerSqm": 1237
+            "pricePerSqm": 1233
           },
           "threeRoom": {
             "price": 123562,
@@ -2982,10 +3016,10 @@
             "pricePerSqm": 2486
           },
           "threeRoom": {
-            "price": 412557,
-            "pricePerSqm": 3198
+            "price": 321523,
+            "pricePerSqm": 2666
           },
-          "totalPricePerSqm": 3198
+          "totalPricePerSqm": 2666
         },
         {
           "name": "Съдийски",
@@ -2995,31 +3029,31 @@
             "pricePerSqm": 2091
           },
           "twoRoom": {
-            "price": 123111,
-            "pricePerSqm": 1976
+            "price": 125265,
+            "pricePerSqm": 1984
           },
           "threeRoom": {
             "price": 189904,
-            "pricePerSqm": 1937
+            "pricePerSqm": 1918
           },
-          "totalPricePerSqm": 1923
+          "totalPricePerSqm": 1908
         },
         {
           "name": "Тракия",
           "link": "//www.imot.bg/sredni-ceni/prodazhbi-plovdiv/trakiya",
           "oneRoom": {
-            "price": 67141,
-            "pricePerSqm": 1618
+            "price": 67643,
+            "pricePerSqm": 1629
           },
           "twoRoom": {
-            "price": 110955,
-            "pricePerSqm": 1594
+            "price": 110234,
+            "pricePerSqm": 1582
           },
           "threeRoom": {
-            "price": 154829,
-            "pricePerSqm": 1492
+            "price": 153827,
+            "pricePerSqm": 1488
           },
-          "totalPricePerSqm": 1534
+          "totalPricePerSqm": 1525
         },
         {
           "name": "Филипово",
@@ -3046,14 +3080,14 @@
             "pricePerSqm": 1975
           },
           "twoRoom": {
-            "price": 115265,
-            "pricePerSqm": 1557
+            "price": 115244,
+            "pricePerSqm": 1554
           },
           "threeRoom": {
-            "price": 168358,
-            "pricePerSqm": 1549
+            "price": 167786,
+            "pricePerSqm": 1553
           },
-          "totalPricePerSqm": 1562
+          "totalPricePerSqm": 1563
         },
         {
           "name": "Цариградско шосе",
@@ -3080,48 +3114,48 @@
             "pricePerSqm": null
           },
           "twoRoom": {
-            "price": 195415,
-            "pricePerSqm": 1994
+            "price": 161844,
+            "pricePerSqm": 2065
           },
           "threeRoom": {
             "price": 117149,
             "pricePerSqm": 2055
           },
-          "totalPricePerSqm": 2024
+          "totalPricePerSqm": 2055
         },
         {
           "name": "Център",
           "link": "//www.imot.bg/sredni-ceni/prodazhbi-plovdiv/tsentar",
           "oneRoom": {
-            "price": 90181,
+            "price": 91194,
             "pricePerSqm": 2380
           },
           "twoRoom": {
-            "price": 162345,
-            "pricePerSqm": 2431
+            "price": 162295,
+            "pricePerSqm": 2411
           },
           "threeRoom": {
-            "price": 230490,
-            "pricePerSqm": 2295
+            "price": 229988,
+            "pricePerSqm": 2294
           },
-          "totalPricePerSqm": 2317
+          "totalPricePerSqm": 2315
         },
         {
           "name": "Южен",
           "link": "//www.imot.bg/sredni-ceni/prodazhbi-plovdiv/yuzhen",
           "oneRoom": {
-            "price": 58624,
-            "pricePerSqm": 1258
-          },
-          "twoRoom": {
-            "price": 96067,
-            "pricePerSqm": 1330
-          },
-          "threeRoom": {
-            "price": 130276,
+            "price": 59125,
             "pricePerSqm": 1252
           },
-          "totalPricePerSqm": 1297
+          "twoRoom": {
+            "price": 96135,
+            "pricePerSqm": 1335
+          },
+          "threeRoom": {
+            "price": 135287,
+            "pricePerSqm": 1252
+          },
+          "totalPricePerSqm": 1302
         }
       ]
     },
@@ -3130,10 +3164,10 @@
       "key": "varna",
       "slug": "varna",
       "stats": {
-        "avgPricePerSqm": 2105,
+        "avgPricePerSqm": 2120,
         "medianPricePerSqm": 1999,
-        "minPricePerSqm": 1211,
-        "maxPricePerSqm": 3468,
+        "minPricePerSqm": 1102,
+        "maxPricePerSqm": 3854,
         "neighbourhoodCount": 68
       },
       "neighbourhoods": [
@@ -3141,12 +3175,12 @@
           "name": "Автогара",
           "link": "//www.imot.bg/sredni-ceni/prodazhbi-varna/avtogara",
           "oneRoom": {
-            "price": 120533,
-            "pricePerSqm": 2836
+            "price": 120811,
+            "pricePerSqm": 2876
           },
           "twoRoom": {
             "price": 120155,
-            "pricePerSqm": 2862
+            "pricePerSqm": 2863
           },
           "threeRoom": {
             "price": 190304,
@@ -3158,16 +3192,16 @@
           "name": "Аспарухово",
           "link": "//www.imot.bg/sredni-ceni/prodazhbi-varna/asparuhovo",
           "oneRoom": {
-            "price": 94701,
-            "pricePerSqm": 2374
+            "price": 89189,
+            "pricePerSqm": 2296
           },
           "twoRoom": {
             "price": 129275,
-            "pricePerSqm": 1670
+            "pricePerSqm": 1667
           },
           "threeRoom": {
-            "price": 149317,
-            "pricePerSqm": 1517
+            "price": 150314,
+            "pricePerSqm": 1518
           },
           "totalPricePerSqm": 1608
         },
@@ -3179,14 +3213,14 @@
             "pricePerSqm": null
           },
           "twoRoom": {
-            "price": 176365,
-            "pricePerSqm": 2505
+            "price": 195861,
+            "pricePerSqm": 2783
           },
           "threeRoom": {
-            "price": 206439,
+            "price": 207942,
             "pricePerSqm": 2511
           },
-          "totalPricePerSqm": 2485
+          "totalPricePerSqm": 2438
         },
         {
           "name": "Бизнес хотел",
@@ -3200,25 +3234,25 @@
             "pricePerSqm": 2436
           },
           "threeRoom": {
-            "price": 201929,
-            "pricePerSqm": 1983
+            "price": 205437,
+            "pricePerSqm": 1984
           },
-          "totalPricePerSqm": 2086
+          "totalPricePerSqm": 2182
         },
         {
           "name": "Бриз",
           "link": "//www.imot.bg/sredni-ceni/prodazhbi-varna/briz",
           "oneRoom": {
-            "price": 103219,
-            "pricePerSqm": 2225
+            "price": 100714,
+            "pricePerSqm": 2222
           },
           "twoRoom": {
-            "price": 173268,
-            "pricePerSqm": 2402
+            "price": 173368,
+            "pricePerSqm": 2395
           },
           "threeRoom": {
             "price": 281098,
-            "pricePerSqm": 2412
+            "pricePerSqm": 2420
           },
           "totalPricePerSqm": 2405
         },
@@ -3230,11 +3264,11 @@
             "pricePerSqm": null
           },
           "twoRoom": {
-            "price": 165852,
-            "pricePerSqm": 4133
+            "price": 166353,
+            "pricePerSqm": 3674
           },
           "threeRoom": {
-            "price": 265565,
+            "price": 274584,
             "pricePerSqm": 2659
           },
           "totalPricePerSqm": 2779
@@ -3243,52 +3277,52 @@
           "name": "Виница",
           "link": "//www.imot.bg/sredni-ceni/prodazhbi-varna/vinitsa",
           "oneRoom": {
-            "price": 64136,
-            "pricePerSqm": 1741
+            "price": 64890,
+            "pricePerSqm": 1793
           },
           "twoRoom": {
-            "price": 115655,
-            "pricePerSqm": 1738
+            "price": 117394,
+            "pricePerSqm": 1757
           },
           "threeRoom": {
-            "price": 155330,
+            "price": 157776,
             "pricePerSqm": 1592
           },
-          "totalPricePerSqm": 1663
+          "totalPricePerSqm": 1665
         },
         {
           "name": "Владислав Варненчик 1",
           "link": "//www.imot.bg/sredni-ceni/prodazhbi-varna/vladislav-varnenchik-1",
           "oneRoom": {
-            "price": 55314,
+            "price": 55570,
             "pricePerSqm": 1577
           },
           "twoRoom": {
-            "price": 96104,
+            "price": 95904,
             "pricePerSqm": 1487
           },
           "threeRoom": {
-            "price": 130061,
-            "pricePerSqm": 1465
+            "price": 130176,
+            "pricePerSqm": 1479
           },
-          "totalPricePerSqm": 1497
+          "totalPricePerSqm": 1502
         },
         {
           "name": "Владислав Варненчик 2",
           "link": "//www.imot.bg/sredni-ceni/prodazhbi-varna/vladislav-varnenchik-2",
           "oneRoom": {
-            "price": 65128,
-            "pricePerSqm": 1262
+            "price": 64482,
+            "pricePerSqm": 1340
           },
           "twoRoom": {
             "price": 98208,
-            "pricePerSqm": 1717
+            "pricePerSqm": 1705
           },
           "threeRoom": {
-            "price": 136239,
-            "pricePerSqm": 1439
+            "price": 137191,
+            "pricePerSqm": 1514
           },
-          "totalPricePerSqm": 1556
+          "totalPricePerSqm": 1572
         },
         {
           "name": "Възраждане 1",
@@ -3298,12 +3332,12 @@
             "pricePerSqm": 1753
           },
           "twoRoom": {
-            "price": 120155,
-            "pricePerSqm": 1789
+            "price": 119528,
+            "pricePerSqm": 1771
           },
           "threeRoom": {
-            "price": 162794,
-            "pricePerSqm": 1611
+            "price": 162746,
+            "pricePerSqm": 1670
           },
           "totalPricePerSqm": 1704
         },
@@ -3316,11 +3350,11 @@
           },
           "twoRoom": {
             "price": 124264,
-            "pricePerSqm": 1948
+            "pricePerSqm": 1927
           },
           "threeRoom": {
-            "price": 155280,
-            "pricePerSqm": 2080
+            "price": 155330,
+            "pricePerSqm": 2093
           },
           "totalPricePerSqm": 2004
         },
@@ -3329,14 +3363,14 @@
           "link": "//www.imot.bg/sredni-ceni/prodazhbi-varna/vazrazhdane-3",
           "oneRoom": {
             "price": 90181,
-            "pricePerSqm": 1675
+            "pricePerSqm": 1465
           },
           "twoRoom": {
-            "price": 118151,
-            "pricePerSqm": 1859
+            "price": 118652,
+            "pricePerSqm": 1863
           },
           "threeRoom": {
-            "price": 171783,
+            "price": 173215,
             "pricePerSqm": 1764
           },
           "totalPricePerSqm": 1785
@@ -3349,14 +3383,14 @@
             "pricePerSqm": 1434
           },
           "twoRoom": {
-            "price": 112767,
-            "pricePerSqm": 1637
+            "price": 115245,
+            "pricePerSqm": 1642
           },
           "threeRoom": {
             "price": 188400,
             "pricePerSqm": 1832
           },
-          "totalPricePerSqm": 1637
+          "totalPricePerSqm": 1642
         },
         {
           "name": "Галата",
@@ -3366,14 +3400,14 @@
             "pricePerSqm": 2004
           },
           "twoRoom": {
-            "price": 125266,
+            "price": 124965,
             "pricePerSqm": 1806
           },
           "threeRoom": {
-            "price": 184622,
+            "price": 185043,
             "pricePerSqm": 1763
           },
-          "totalPricePerSqm": 1805
+          "totalPricePerSqm": 1806
         },
         {
           "name": "Гранд Мол",
@@ -3383,11 +3417,11 @@
             "pricePerSqm": 2407
           },
           "twoRoom": {
-            "price": 139647,
-            "pricePerSqm": 2377
+            "price": 139296,
+            "pricePerSqm": 2355
           },
           "threeRoom": {
-            "price": 198372,
+            "price": 196868,
             "pricePerSqm": 2434
           },
           "totalPricePerSqm": 2385
@@ -3396,16 +3430,16 @@
           "name": "Гръцка махала",
           "link": "//www.imot.bg/sredni-ceni/prodazhbi-varna/gratska-mahala",
           "oneRoom": {
-            "price": 101716,
-            "pricePerSqm": 3011
+            "price": 115245,
+            "pricePerSqm": 3092
           },
           "twoRoom": {
-            "price": 197921,
-            "pricePerSqm": 3362
+            "price": 197399,
+            "pricePerSqm": 3307
           },
           "threeRoom": {
-            "price": 300629,
-            "pricePerSqm": 3217
+            "price": 300634,
+            "pricePerSqm": 3198
           },
           "totalPricePerSqm": 3217
         },
@@ -3417,8 +3451,8 @@
             "pricePerSqm": 2623
           },
           "twoRoom": {
-            "price": 156783,
-            "pricePerSqm": 2850
+            "price": 155330,
+            "pricePerSqm": 2769
           },
           "threeRoom": {
             "price": 205437,
@@ -3438,10 +3472,10 @@
             "pricePerSqm": 3210
           },
           "threeRoom": {
-            "price": 207441,
+            "price": 219466,
             "pricePerSqm": 2357
           },
-          "totalPricePerSqm": 2618
+          "totalPricePerSqm": 2742
         },
         {
           "name": "Западна промишлена зона",
@@ -3455,10 +3489,10 @@
             "pricePerSqm": 2180
           },
           "threeRoom": {
-            "price": 250533,
-            "pricePerSqm": 2298
+            "price": null,
+            "pricePerSqm": null
           },
-          "totalPricePerSqm": 2298
+          "totalPricePerSqm": 2253
         },
         {
           "name": "Зимно кино Тракия",
@@ -3468,14 +3502,14 @@
             "pricePerSqm": 2389
           },
           "twoRoom": {
-            "price": 135287,
-            "pricePerSqm": 2328
+            "price": 145208,
+            "pricePerSqm": 2329
           },
           "threeRoom": {
-            "price": 205437,
-            "pricePerSqm": 2124
+            "price": 197870,
+            "pricePerSqm": 2114
           },
-          "totalPricePerSqm": 2212
+          "totalPricePerSqm": 2254
         },
         {
           "name": "Изгрев",
@@ -3485,14 +3519,14 @@
             "pricePerSqm": 1588
           },
           "twoRoom": {
-            "price": 118251,
-            "pricePerSqm": 1670
+            "price": 119253,
+            "pricePerSqm": 1684
           },
           "threeRoom": {
             "price": 170362,
-            "pricePerSqm": 1637
+            "pricePerSqm": 1636
           },
-          "totalPricePerSqm": 1636
+          "totalPricePerSqm": 1634
         },
         {
           "name": "Кайсиева градина",
@@ -3502,31 +3536,31 @@
             "pricePerSqm": 1493
           },
           "twoRoom": {
-            "price": 101742,
-            "pricePerSqm": 1545
+            "price": 101716,
+            "pricePerSqm": 1543
           },
           "threeRoom": {
-            "price": 139045,
-            "pricePerSqm": 1449
+            "price": 137036,
+            "pricePerSqm": 1452
           },
-          "totalPricePerSqm": 1490
+          "totalPricePerSqm": 1488
         },
         {
           "name": "Колхозен пазар",
           "link": "//www.imot.bg/sredni-ceni/prodazhbi-varna/kolhozen-pazar",
           "oneRoom": {
-            "price": 70139,
+            "price": 70149,
             "pricePerSqm": 1872
           },
           "twoRoom": {
-            "price": 120255,
-            "pricePerSqm": 1995
+            "price": 120245,
+            "pricePerSqm": 1996
           },
           "threeRoom": {
-            "price": 185394,
+            "price": 182889,
             "pricePerSqm": 1962
           },
-          "totalPricePerSqm": 1919
+          "totalPricePerSqm": 1923
         },
         {
           "name": "Конфуто",
@@ -3537,30 +3571,30 @@
           },
           "twoRoom": {
             "price": 128773,
-            "pricePerSqm": 2069
+            "pricePerSqm": 2076
           },
           "threeRoom": {
-            "price": 195415,
-            "pricePerSqm": 2166
+            "price": 200426,
+            "pricePerSqm": 2168
           },
-          "totalPricePerSqm": 2153
+          "totalPricePerSqm": 2164
         },
         {
           "name": "Левски 1",
           "link": "//www.imot.bg/sredni-ceni/prodazhbi-varna/levski-1",
           "oneRoom": {
-            "price": 91194,
-            "pricePerSqm": 1832
+            "price": 94646,
+            "pricePerSqm": 1849
           },
           "twoRoom": {
-            "price": 137757,
-            "pricePerSqm": 2020
+            "price": 137722,
+            "pricePerSqm": 2024
           },
           "threeRoom": {
             "price": 192910,
-            "pricePerSqm": 2004
+            "pricePerSqm": 2014
           },
-          "totalPricePerSqm": 1993
+          "totalPricePerSqm": 1994
         },
         {
           "name": "Левски 2",
@@ -3570,14 +3604,14 @@
             "pricePerSqm": 1865
           },
           "twoRoom": {
-            "price": 137292,
-            "pricePerSqm": 1981
+            "price": 137286,
+            "pricePerSqm": 1983
           },
           "threeRoom": {
-            "price": 176776,
-            "pricePerSqm": 1853
+            "price": 177577,
+            "pricePerSqm": 1855
           },
-          "totalPricePerSqm": 1926
+          "totalPricePerSqm": 1920
         },
         {
           "name": "Лятно кино Тракия",
@@ -3587,14 +3621,14 @@
             "pricePerSqm": 2721
           },
           "twoRoom": {
-            "price": 145108,
+            "price": 143304,
             "pricePerSqm": 2421
           },
           "threeRoom": {
             "price": 215358,
-            "pricePerSqm": 2173
+            "pricePerSqm": 2219
           },
-          "totalPricePerSqm": 2331
+          "totalPricePerSqm": 2332
         },
         {
           "name": "Младост 1",
@@ -3605,13 +3639,13 @@
           },
           "twoRoom": {
             "price": 119754,
-            "pricePerSqm": 1690
+            "pricePerSqm": 1713
           },
           "threeRoom": {
             "price": 167255,
-            "pricePerSqm": 1827
+            "pricePerSqm": 1843
           },
-          "totalPricePerSqm": 1724
+          "totalPricePerSqm": 1769
         },
         {
           "name": "Младост 2",
@@ -3621,31 +3655,31 @@
             "pricePerSqm": 1876
           },
           "twoRoom": {
-            "price": 124665,
-            "pricePerSqm": 2059
+            "price": 124965,
+            "pricePerSqm": 2035
           },
           "threeRoom": {
-            "price": 151271,
+            "price": 155330,
             "pricePerSqm": 1989
           },
-          "totalPricePerSqm": 2020
+          "totalPricePerSqm": 2004
         },
         {
           "name": "Окръжна болница-Генерали",
           "link": "//www.imot.bg/sredni-ceni/prodazhbi-varna/okrazhna-bolnitsa-generali",
           "oneRoom": {
             "price": 85181,
-            "pricePerSqm": 3006
+            "pricePerSqm": 2910
           },
           "twoRoom": {
-            "price": 157835,
-            "pricePerSqm": 2509
+            "price": 165351,
+            "pricePerSqm": 2559
           },
           "threeRoom": {
-            "price": 235501,
-            "pricePerSqm": 2655
+            "price": 240211,
+            "pricePerSqm": 2585
           },
-          "totalPricePerSqm": 2515
+          "totalPricePerSqm": 2505
         },
         {
           "name": "Операта",
@@ -3655,14 +3689,14 @@
             "pricePerSqm": 2623
           },
           "twoRoom": {
-            "price": 159840,
-            "pricePerSqm": 2532
+            "price": 163848,
+            "pricePerSqm": 2600
           },
           "threeRoom": {
-            "price": 255543,
-            "pricePerSqm": 2597
+            "price": 260253,
+            "pricePerSqm": 2625
           },
-          "totalPricePerSqm": 2550
+          "totalPricePerSqm": 2652
         },
         {
           "name": "Планова промишлена зона",
@@ -3690,30 +3724,30 @@
           },
           "twoRoom": {
             "price": 145309,
-            "pricePerSqm": 2296
+            "pricePerSqm": 2303
           },
           "threeRoom": {
             "price": 210447,
             "pricePerSqm": 2467
           },
-          "totalPricePerSqm": 2319
+          "totalPricePerSqm": 2339
         },
         {
           "name": "Погреби",
           "link": "//www.imot.bg/sredni-ceni/prodazhbi-varna/pogrebi",
           "oneRoom": {
-            "price": 71647,
-            "pricePerSqm": 1748
+            "price": 70094,
+            "pricePerSqm": 1697
           },
           "twoRoom": {
-            "price": 122761,
-            "pricePerSqm": 1806
+            "price": 122260,
+            "pricePerSqm": 1803
           },
           "threeRoom": {
             "price": 179371,
             "pricePerSqm": 1899
           },
-          "totalPricePerSqm": 1837
+          "totalPricePerSqm": 1830
         },
         {
           "name": "Свети Никола",
@@ -3723,14 +3757,14 @@
             "pricePerSqm": null
           },
           "twoRoom": {
-            "price": 160240,
-            "pricePerSqm": 1872
+            "price": 160341,
+            "pricePerSqm": 2016
           },
           "threeRoom": {
             "price": 297633,
             "pricePerSqm": 2015
           },
-          "totalPricePerSqm": 2160
+          "totalPricePerSqm": 2169
         },
         {
           "name": "Спортна зала",
@@ -3740,14 +3774,14 @@
             "pricePerSqm": 2388
           },
           "twoRoom": {
-            "price": 195415,
-            "pricePerSqm": 2960
+            "price": 197820,
+            "pricePerSqm": 3148
           },
           "threeRoom": {
-            "price": 260554,
-            "pricePerSqm": 3279
+            "price": 260053,
+            "pricePerSqm": 3276
           },
-          "totalPricePerSqm": 3006
+          "totalPricePerSqm": 2960
         },
         {
           "name": "Стадион Спартак",
@@ -3764,24 +3798,24 @@
             "price": null,
             "pricePerSqm": null
           },
-          "totalPricePerSqm": 2156
+          "totalPricePerSqm": 2551
         },
         {
           "name": "Трошево",
           "link": "//www.imot.bg/sredni-ceni/prodazhbi-varna/troshevo",
           "oneRoom": {
-            "price": 78667,
-            "pricePerSqm": 2128
+            "price": 78166,
+            "pricePerSqm": 2112
           },
           "twoRoom": {
-            "price": 137292,
-            "pricePerSqm": 2135
+            "price": 137191,
+            "pricePerSqm": 2122
           },
           "threeRoom": {
-            "price": 181135,
-            "pricePerSqm": 2183
+            "price": 180283,
+            "pricePerSqm": 2161
           },
-          "totalPricePerSqm": 2147
+          "totalPricePerSqm": 2137
         },
         {
           "name": "Фестивален комплекс",
@@ -3791,14 +3825,14 @@
             "pricePerSqm": 3468
           },
           "twoRoom": {
-            "price": 255302,
-            "pricePerSqm": 3981
+            "price": 257427,
+            "pricePerSqm": 3985
           },
           "threeRoom": {
             "price": 330703,
-            "pricePerSqm": 3307
+            "pricePerSqm": 3313
           },
-          "totalPricePerSqm": 3468
+          "totalPricePerSqm": 3854
         },
         {
           "name": "ХЕИ",
@@ -3808,14 +3842,14 @@
             "pricePerSqm": 2647
           },
           "twoRoom": {
-            "price": 139196,
-            "pricePerSqm": 2197
+            "price": 140298,
+            "pricePerSqm": 2224
           },
           "threeRoom": {
-            "price": 195415,
-            "pricePerSqm": 2334
+            "price": 192409,
+            "pricePerSqm": 2142
           },
-          "totalPricePerSqm": 2256
+          "totalPricePerSqm": 2251
         },
         {
           "name": "Христо Ботев",
@@ -3825,65 +3859,65 @@
             "pricePerSqm": 1911
           },
           "twoRoom": {
-            "price": 101165,
-            "pricePerSqm": 1449
+            "price": 99110,
+            "pricePerSqm": 1433
           },
           "threeRoom": {
             "price": 169460,
             "pricePerSqm": 1400
           },
-          "totalPricePerSqm": 1465
+          "totalPricePerSqm": 1433
         },
         {
           "name": "Цветен квартал",
           "link": "//www.imot.bg/sredni-ceni/prodazhbi-varna/tsveten-kvartal",
           "oneRoom": {
-            "price": 99662,
-            "pricePerSqm": 2280
+            "price": 108230,
+            "pricePerSqm": 2033
           },
           "twoRoom": {
             "price": 129275,
-            "pricePerSqm": 1972
+            "pricePerSqm": 1973
           },
           "threeRoom": {
             "price": 185394,
-            "pricePerSqm": 1900
+            "pricePerSqm": 1893
           },
-          "totalPricePerSqm": 1920
+          "totalPricePerSqm": 1940
         },
         {
           "name": "Централна поща",
           "link": "//www.imot.bg/sredni-ceni/prodazhbi-varna/tsentralna-poshta",
           "oneRoom": {
-            "price": 99211,
-            "pricePerSqm": 1862
+            "price": 85181,
+            "pricePerSqm": 2028
           },
           "twoRoom": {
-            "price": 185394,
+            "price": 185895,
             "pricePerSqm": 2810
           },
           "threeRoom": {
-            "price": 250533,
-            "pricePerSqm": 2579
+            "price": 267519,
+            "pricePerSqm": 2593
           },
-          "totalPricePerSqm": 2524
+          "totalPricePerSqm": 2579
         },
         {
           "name": "Център",
           "link": "//www.imot.bg/sredni-ceni/prodazhbi-varna/tsentar",
           "oneRoom": {
-            "price": 85181,
-            "pricePerSqm": 2848
+            "price": 89189,
+            "pricePerSqm": 2651
           },
           "twoRoom": {
-            "price": 175373,
-            "pricePerSqm": 2698
+            "price": 176625,
+            "pricePerSqm": 2699
           },
           "threeRoom": {
             "price": 280596,
-            "pricePerSqm": 2748
+            "pricePerSqm": 2708
           },
-          "totalPricePerSqm": 2686
+          "totalPricePerSqm": 2661
         },
         {
           "name": "Чайка",
@@ -3898,24 +3932,24 @@
           },
           "threeRoom": {
             "price": 260053,
-            "pricePerSqm": 2883
+            "pricePerSqm": 2867
           },
-          "totalPricePerSqm": 2786
+          "totalPricePerSqm": 2805
         },
         {
           "name": "Чаталджа",
           "link": "//www.imot.bg/sredni-ceni/prodazhbi-varna/chataldzha",
           "oneRoom": {
             "price": 68094,
-            "pricePerSqm": 2405
+            "pricePerSqm": 2703
           },
           "twoRoom": {
             "price": 172361,
             "pricePerSqm": 2956
           },
           "threeRoom": {
-            "price": 250533,
-            "pricePerSqm": 2753
+            "price": 235501,
+            "pricePerSqm": 2717
           },
           "totalPricePerSqm": 2753
         },
@@ -3941,17 +3975,17 @@
           "link": "//www.imot.bg/sredni-ceni/prodazhbi-varna/k-k-zlatni-pyasatsi",
           "oneRoom": {
             "price": 72012,
-            "pricePerSqm": 1536
+            "pricePerSqm": 1548
           },
           "twoRoom": {
-            "price": 112293,
-            "pricePerSqm": 1547
+            "price": 113360,
+            "pricePerSqm": 1549
           },
           "threeRoom": {
-            "price": 170352,
-            "pricePerSqm": 1784
+            "price": 181385,
+            "pricePerSqm": 1799
           },
-          "totalPricePerSqm": 1548
+          "totalPricePerSqm": 1555
         },
         {
           "name": "к.к. Св.Св. Константин и Елена",
@@ -3961,14 +3995,14 @@
             "pricePerSqm": 2637
           },
           "twoRoom": {
-            "price": 199785,
+            "price": 200376,
             "pricePerSqm": 2920
           },
           "threeRoom": {
-            "price": 295628,
-            "pricePerSqm": 2844
+            "price": 298581,
+            "pricePerSqm": 2826
           },
-          "totalPricePerSqm": 2878
+          "totalPricePerSqm": 2876
         },
         {
           "name": "к.к. Слънчев ден",
@@ -3982,8 +4016,8 @@
             "pricePerSqm": 1816
           },
           "threeRoom": {
-            "price": 299632,
-            "pricePerSqm": 2217
+            "price": 300629,
+            "pricePerSqm": 2230
           },
           "totalPricePerSqm": 1816
         },
@@ -3995,14 +4029,14 @@
             "pricePerSqm": 2093
           },
           "twoRoom": {
-            "price": 135287,
-            "pricePerSqm": 2002
+            "price": 135538,
+            "pricePerSqm": 2023
           },
           "threeRoom": {
             "price": 239509,
-            "pricePerSqm": 2112
+            "pricePerSqm": 2147
           },
-          "totalPricePerSqm": 2061
+          "totalPricePerSqm": 2080
         },
         {
           "name": "м-т Акчелар",
@@ -4012,31 +4046,31 @@
             "pricePerSqm": 1949
           },
           "twoRoom": {
-            "price": 168358,
-            "pricePerSqm": 2023
+            "price": 165852,
+            "pricePerSqm": 1993
           },
           "threeRoom": {
-            "price": 166353,
-            "pricePerSqm": 1861
+            "price": 163675,
+            "pricePerSqm": 1801
           },
-          "totalPricePerSqm": 1993
+          "totalPricePerSqm": 1940
         },
         {
           "name": "м-т Ален мак",
           "link": "//www.imot.bg/sredni-ceni/prodazhbi-varna/m-t-alen-mak",
           "oneRoom": {
             "price": 70149,
-            "pricePerSqm": 1825
+            "pricePerSqm": 1831
           },
           "twoRoom": {
-            "price": 119694,
-            "pricePerSqm": 1735
+            "price": 120145,
+            "pricePerSqm": 1745
           },
           "threeRoom": {
-            "price": 216961,
-            "pricePerSqm": 1848
+            "price": 218690,
+            "pricePerSqm": 1852
           },
-          "totalPricePerSqm": 1782
+          "totalPricePerSqm": 1783
         },
         {
           "name": "м-т Боклук Тарла",
@@ -4076,18 +4110,18 @@
           "name": "м-т Горна Трака",
           "link": "//www.imot.bg/sredni-ceni/prodazhbi-varna/m-t-gorna-traka",
           "oneRoom": {
-            "price": null,
-            "pricePerSqm": null
+            "price": 105223,
+            "pricePerSqm": 2922
           },
           "twoRoom": {
             "price": 140928,
-            "pricePerSqm": 2033
+            "pricePerSqm": 1940
           },
           "threeRoom": {
-            "price": 201505,
-            "pricePerSqm": 1990
+            "price": 205437,
+            "pricePerSqm": 1997
           },
-          "totalPricePerSqm": 1990
+          "totalPricePerSqm": 1980
         },
         {
           "name": "м-т Добрева чешма",
@@ -4114,14 +4148,14 @@
             "pricePerSqm": 1406
           },
           "twoRoom": {
-            "price": 140749,
-            "pricePerSqm": 1946
+            "price": 142302,
+            "pricePerSqm": 1921
           },
           "threeRoom": {
-            "price": 207892,
+            "price": 220469,
             "pricePerSqm": 1904
           },
-          "totalPricePerSqm": 1893
+          "totalPricePerSqm": 1884
         },
         {
           "name": "м-т Евксиноград",
@@ -4131,14 +4165,14 @@
             "pricePerSqm": 2733
           },
           "twoRoom": {
-            "price": 178238,
-            "pricePerSqm": 2678
+            "price": 180383,
+            "pricePerSqm": 2684
           },
           "threeRoom": {
             "price": 250533,
-            "pricePerSqm": 2393
+            "pricePerSqm": 2449
           },
-          "totalPricePerSqm": 2584
+          "totalPricePerSqm": 2626
         },
         {
           "name": "м-т Зеленика",
@@ -4152,8 +4186,8 @@
             "pricePerSqm": 1710
           },
           "threeRoom": {
-            "price": 243818,
-            "pricePerSqm": 1996
+            "price": 245672,
+            "pricePerSqm": 1874
           },
           "totalPricePerSqm": 1748
         },
@@ -4233,14 +4267,14 @@
             "pricePerSqm": 1255
           },
           "twoRoom": {
-            "price": 115144,
-            "pricePerSqm": 1837
+            "price": 117249,
+            "pricePerSqm": 1887
           },
           "threeRoom": {
             "price": 162219,
-            "pricePerSqm": 1810
+            "pricePerSqm": 1785
           },
-          "totalPricePerSqm": 1812
+          "totalPricePerSqm": 1866
         },
         {
           "name": "м-т Салтанат",
@@ -4267,8 +4301,8 @@
             "pricePerSqm": null
           },
           "twoRoom": {
-            "price": 131871,
-            "pricePerSqm": 1967
+            "price": 131879,
+            "pricePerSqm": 1980
           },
           "threeRoom": {
             "price": 198502,
@@ -4288,10 +4322,10 @@
             "pricePerSqm": 1099
           },
           "threeRoom": {
-            "price": 188452,
-            "pricePerSqm": 1411
+            "price": 176980,
+            "pricePerSqm": 1320
           },
-          "totalPricePerSqm": 1211
+          "totalPricePerSqm": 1102
         }
       ]
     },
@@ -4301,10 +4335,10 @@
       "slug": "burgas",
       "stats": {
         "avgPricePerSqm": 1621,
-        "medianPricePerSqm": 1651,
-        "minPricePerSqm": 675,
+        "medianPricePerSqm": 1653,
+        "minPricePerSqm": 737,
         "maxPricePerSqm": 2720,
-        "neighbourhoodCount": 28
+        "neighbourhoodCount": 27
       },
       "neighbourhoods": [
         {
@@ -4345,18 +4379,18 @@
           "name": "Братя Миладинови",
           "link": "//www.imot.bg/sredni-ceni/prodazhbi-burgas/bratya-miladinovi",
           "oneRoom": {
-            "price": 84509,
-            "pricePerSqm": 1836
+            "price": 87686,
+            "pricePerSqm": 1807
           },
           "twoRoom": {
-            "price": 133706,
-            "pricePerSqm": 1938
+            "price": 131523,
+            "pricePerSqm": 1924
           },
           "threeRoom": {
-            "price": 180525,
-            "pricePerSqm": 2086
+            "price": 180668,
+            "pricePerSqm": 2104
           },
-          "totalPricePerSqm": 1991
+          "totalPricePerSqm": 1977
         },
         {
           "name": "Ветрен",
@@ -4370,8 +4404,8 @@
             "pricePerSqm": 1653
           },
           "threeRoom": {
-            "price": 170262,
-            "pricePerSqm": 1653
+            "price": null,
+            "pricePerSqm": null
           },
           "totalPricePerSqm": 1653
         },
@@ -4383,14 +4417,14 @@
             "pricePerSqm": 2049
           },
           "twoRoom": {
-            "price": 146912,
+            "price": 146140,
             "pricePerSqm": 2117
           },
           "threeRoom": {
-            "price": 196417,
-            "pricePerSqm": 2071
+            "price": 197870,
+            "pricePerSqm": 2088
           },
-          "totalPricePerSqm": 2060
+          "totalPricePerSqm": 2087
         },
         {
           "name": "Горно Езерово",
@@ -4430,12 +4464,12 @@
           "name": "Зорница",
           "link": "//www.imot.bg/sredni-ceni/prodazhbi-burgas/zornitsa",
           "oneRoom": {
-            "price": 78166,
+            "price": 79368,
             "pricePerSqm": 2048
           },
           "twoRoom": {
             "price": 157172,
-            "pricePerSqm": 2391
+            "pricePerSqm": 2322
           },
           "threeRoom": {
             "price": 242107,
@@ -4447,18 +4481,18 @@
           "name": "Изгрев",
           "link": "//www.imot.bg/sredni-ceni/prodazhbi-burgas/izgrev",
           "oneRoom": {
-            "price": 79168,
-            "pricePerSqm": 1813
+            "price": 83076,
+            "pricePerSqm": 1978
           },
           "twoRoom": {
             "price": 139085,
-            "pricePerSqm": 1939
+            "pricePerSqm": 1944
           },
           "threeRoom": {
-            "price": 185118,
-            "pricePerSqm": 1844
+            "price": 185394,
+            "pricePerSqm": 1847
           },
-          "totalPricePerSqm": 1896
+          "totalPricePerSqm": 1902
         },
         {
           "name": "Крайморие",
@@ -4475,14 +4509,14 @@
             "price": 220469,
             "pricePerSqm": 2060
           },
-          "totalPricePerSqm": 1811
+          "totalPricePerSqm": 1796
         },
         {
           "name": "Лазур",
           "link": "//www.imot.bg/sredni-ceni/prodazhbi-burgas/lazur",
           "oneRoom": {
-            "price": 102217,
-            "pricePerSqm": 2222
+            "price": 103670,
+            "pricePerSqm": 2224
           },
           "twoRoom": {
             "price": 180383,
@@ -4490,7 +4524,7 @@
           },
           "threeRoom": {
             "price": 245522,
-            "pricePerSqm": 2806
+            "pricePerSqm": 2791
           },
           "totalPricePerSqm": 2720
         },
@@ -4502,14 +4536,14 @@
             "pricePerSqm": 1810
           },
           "twoRoom": {
-            "price": 119450,
-            "pricePerSqm": 1764
+            "price": 119449,
+            "pricePerSqm": 1727
           },
           "threeRoom": {
-            "price": 148215,
-            "pricePerSqm": 1495
+            "price": 149674,
+            "pricePerSqm": 1498
           },
-          "totalPricePerSqm": 1680
+          "totalPricePerSqm": 1681
         },
         {
           "name": "Меден рудник - зона А",
@@ -4520,11 +4554,11 @@
           },
           "twoRoom": {
             "price": 88187,
-            "pricePerSqm": 1331
+            "pricePerSqm": 1338
           },
           "threeRoom": {
             "price": 115245,
-            "pricePerSqm": 1235
+            "pricePerSqm": 1239
           },
           "totalPricePerSqm": 1310
         },
@@ -4532,7 +4566,7 @@
           "name": "Меден рудник - зона Б",
           "link": "//www.imot.bg/sredni-ceni/prodazhbi-burgas/meden-rudnik-zona-b",
           "oneRoom": {
-            "price": 75159,
+            "price": 72654,
             "pricePerSqm": 1670
           },
           "twoRoom": {
@@ -4541,9 +4575,9 @@
           },
           "threeRoom": {
             "price": 120255,
-            "pricePerSqm": 1375
+            "pricePerSqm": 1383
           },
-          "totalPricePerSqm": 1498
+          "totalPricePerSqm": 1466
         },
         {
           "name": "Меден рудник - зона В",
@@ -4553,14 +4587,14 @@
             "pricePerSqm": 1165
           },
           "twoRoom": {
-            "price": 84474,
-            "pricePerSqm": 1253
+            "price": 83723,
+            "pricePerSqm": 1171
           },
           "threeRoom": {
-            "price": 119253,
-            "pricePerSqm": 1156
+            "price": 117942,
+            "pricePerSqm": 1153
           },
-          "totalPricePerSqm": 1199
+          "totalPricePerSqm": 1165
         },
         {
           "name": "Меден рудник - зона Г",
@@ -4587,14 +4621,14 @@
             "pricePerSqm": 1189
           },
           "twoRoom": {
-            "price": 76061,
-            "pricePerSqm": 1118
+            "price": 75159,
+            "pricePerSqm": 1109
           },
           "threeRoom": {
-            "price": 107688,
-            "pricePerSqm": 1031
+            "price": 107909,
+            "pricePerSqm": 1033
           },
-          "totalPricePerSqm": 1104
+          "totalPricePerSqm": 1102
         },
         {
           "name": "Пети километър",
@@ -4604,8 +4638,8 @@
             "pricePerSqm": null
           },
           "twoRoom": {
-            "price": 103219,
-            "pricePerSqm": 1521
+            "price": 112238,
+            "pricePerSqm": 1642
           },
           "threeRoom": {
             "price": 142503,
@@ -4648,23 +4682,6 @@
           "totalPricePerSqm": 1924
         },
         {
-          "name": "Промишлена зона - Юг",
-          "link": "//www.imot.bg/sredni-ceni/prodazhbi-burgas/promishlena-zona-yug",
-          "oneRoom": {
-            "price": null,
-            "pricePerSqm": null
-          },
-          "twoRoom": {
-            "price": null,
-            "pricePerSqm": null
-          },
-          "threeRoom": {
-            "price": 57722,
-            "pricePerSqm": 1649
-          },
-          "totalPricePerSqm": 1649
-        },
-        {
           "name": "Рудник",
           "link": "//www.imot.bg/sredni-ceni/prodazhbi-burgas/rudnik",
           "oneRoom": {
@@ -4685,16 +4702,16 @@
           "name": "Сарафово",
           "link": "//www.imot.bg/sredni-ceni/prodazhbi-burgas/sarafovo",
           "oneRoom": {
-            "price": 70650,
+            "price": 72153,
             "pricePerSqm": 1822
           },
           "twoRoom": {
             "price": 113541,
-            "pricePerSqm": 1820
+            "pricePerSqm": 1815
           },
           "threeRoom": {
             "price": 198422,
-            "pricePerSqm": 1871
+            "pricePerSqm": 1875
           },
           "totalPricePerSqm": 1821
         },
@@ -4707,28 +4724,28 @@
           },
           "twoRoom": {
             "price": 129446,
-            "pricePerSqm": 2049
+            "pricePerSqm": 2034
           },
           "threeRoom": {
-            "price": 185885,
-            "pricePerSqm": 2111
+            "price": 185394,
+            "pricePerSqm": 2108
           },
-          "totalPricePerSqm": 2063
+          "totalPricePerSqm": 2049
         },
         {
           "name": "Хоризонт",
           "link": "//www.imot.bg/sredni-ceni/prodazhbi-burgas/horizont",
           "oneRoom": {
-            "price": 60127,
-            "pricePerSqm": 1641
+            "price": 62132,
+            "pricePerSqm": 1593
           },
           "twoRoom": {
             "price": 98208,
-            "pricePerSqm": 1499
+            "pricePerSqm": 1500
           },
           "threeRoom": {
             "price": 146479,
-            "pricePerSqm": 1551
+            "pricePerSqm": 1546
           },
           "totalPricePerSqm": 1534
         },
@@ -4736,18 +4753,18 @@
           "name": "Център",
           "link": "//www.imot.bg/sredni-ceni/prodazhbi-burgas/tsentar",
           "oneRoom": {
-            "price": 85181,
-            "pricePerSqm": 2505
+            "price": 89936,
+            "pricePerSqm": 2652
           },
           "twoRoom": {
-            "price": 203132,
+            "price": 206138,
             "pricePerSqm": 2858
           },
           "threeRoom": {
             "price": 252036,
-            "pricePerSqm": 2505
+            "pricePerSqm": 2527
           },
-          "totalPricePerSqm": 2605
+          "totalPricePerSqm": 2640
         },
         {
           "name": "Черно море",
@@ -4774,14 +4791,14 @@
             "pricePerSqm": 855
           },
           "twoRoom": {
-            "price": 44093,
-            "pricePerSqm": 612
+            "price": 48603,
+            "pricePerSqm": 675
           },
           "threeRoom": {
             "price": null,
             "pricePerSqm": null
           },
-          "totalPricePerSqm": 675
+          "totalPricePerSqm": 737
         }
       ]
     },
@@ -4790,11 +4807,11 @@
       "key": "ruse",
       "slug": "ruse",
       "stats": {
-        "avgPricePerSqm": 1303,
-        "medianPricePerSqm": 1346,
+        "avgPricePerSqm": 1291,
+        "medianPricePerSqm": 1302,
         "minPricePerSqm": 668,
         "maxPricePerSqm": 1796,
-        "neighbourhoodCount": 25
+        "neighbourhoodCount": 27
       },
       "neighbourhoods": [
         {
@@ -4805,31 +4822,31 @@
             "pricePerSqm": 1682
           },
           "twoRoom": {
-            "price": 90191,
-            "pricePerSqm": 1520
+            "price": 91194,
+            "pricePerSqm": 1538
           },
           "threeRoom": {
             "price": 134285,
             "pricePerSqm": 1459
           },
-          "totalPricePerSqm": 1485
+          "totalPricePerSqm": 1503
         },
         {
           "name": "Възраждане",
           "link": "//www.imot.bg/sredni-ceni/prodazhbi-ruse/vazrazhdane",
           "oneRoom": {
-            "price": 69598,
-            "pricePerSqm": 1773
+            "price": 70049,
+            "pricePerSqm": 1753
           },
           "twoRoom": {
-            "price": 117750,
+            "price": 115245,
             "pricePerSqm": 1587
           },
           "threeRoom": {
             "price": 133283,
-            "pricePerSqm": 1643
+            "pricePerSqm": 1649
           },
-          "totalPricePerSqm": 1622
+          "totalPricePerSqm": 1620
         },
         {
           "name": "ДЗС",
@@ -4856,14 +4873,14 @@
             "pricePerSqm": 1405
           },
           "twoRoom": {
-            "price": 88187,
+            "price": 93699,
             "pricePerSqm": 1422
           },
           "threeRoom": {
-            "price": 155330,
-            "pricePerSqm": 1352
+            "price": 160240,
+            "pricePerSqm": 1353
           },
-          "totalPricePerSqm": 1357
+          "totalPricePerSqm": 1377
         },
         {
           "name": "Дружба 2",
@@ -4877,27 +4894,44 @@
             "pricePerSqm": 1223
           },
           "threeRoom": {
-            "price": 98208,
-            "pricePerSqm": 1002
+            "price": 90191,
+            "pricePerSqm": 997
           },
-          "totalPricePerSqm": 1070
+          "totalPricePerSqm": 1039
         },
         {
           "name": "Дружба 3",
           "link": "//www.imot.bg/sredni-ceni/prodazhbi-ruse/druzhba-3",
           "oneRoom": {
-            "price": 44093,
-            "pricePerSqm": 1147
+            "price": 43091,
+            "pricePerSqm": 1133
           },
           "twoRoom": {
-            "price": 87436,
-            "pricePerSqm": 1325
+            "price": 87185,
+            "pricePerSqm": 1276
           },
           "threeRoom": {
-            "price": 115245,
+            "price": 122307,
             "pricePerSqm": 1252
           },
           "totalPricePerSqm": 1244
+        },
+        {
+          "name": "Захарна фабрика",
+          "link": "//www.imot.bg/sredni-ceni/prodazhbi-ruse/zaharna-fabrika",
+          "oneRoom": {
+            "price": null,
+            "pricePerSqm": null
+          },
+          "twoRoom": {
+            "price": null,
+            "pricePerSqm": null
+          },
+          "threeRoom": {
+            "price": null,
+            "pricePerSqm": null
+          },
+          "totalPricePerSqm": 1202
         },
         {
           "name": "Здравец",
@@ -4907,7 +4941,7 @@
             "pricePerSqm": 1462
           },
           "twoRoom": {
-            "price": 83176,
+            "price": 82926,
             "pricePerSqm": 1352
           },
           "threeRoom": {
@@ -4920,18 +4954,18 @@
           "name": "Здравец Изток",
           "link": "//www.imot.bg/sredni-ceni/prodazhbi-ruse/zdravets-iztok",
           "oneRoom": {
-            "price": 56364,
-            "pricePerSqm": 1367
+            "price": 53113,
+            "pricePerSqm": 1327
           },
           "twoRoom": {
             "price": 85181,
             "pricePerSqm": 1252
           },
           "threeRoom": {
-            "price": 120255,
-            "pricePerSqm": 1227
+            "price": 123262,
+            "pricePerSqm": 1221
           },
-          "totalPricePerSqm": 1283
+          "totalPricePerSqm": 1274
         },
         {
           "name": "Здравец Север 1",
@@ -4941,14 +4975,14 @@
             "pricePerSqm": 1727
           },
           "twoRoom": {
-            "price": 111737,
-            "pricePerSqm": 1632
+            "price": 108731,
+            "pricePerSqm": 1592
           },
           "threeRoom": {
             "price": 147814,
             "pricePerSqm": 1658
           },
-          "totalPricePerSqm": 1727
+          "totalPricePerSqm": 1656
         },
         {
           "name": "Здравец Север 2",
@@ -5002,6 +5036,23 @@
           "totalPricePerSqm": 1110
         },
         {
+          "name": "Промишлена зона - Изток",
+          "link": "//www.imot.bg/sredni-ceni/prodazhbi-ruse/promishlena-zona-iztok",
+          "oneRoom": {
+            "price": 46098,
+            "pricePerSqm": 1152
+          },
+          "twoRoom": {
+            "price": null,
+            "pricePerSqm": null
+          },
+          "threeRoom": {
+            "price": null,
+            "pricePerSqm": null
+          },
+          "totalPricePerSqm": 1152
+        },
+        {
           "name": "Родина 1",
           "link": "//www.imot.bg/sredni-ceni/prodazhbi-ruse/rodina-1",
           "oneRoom": {
@@ -5009,7 +5060,7 @@
             "pricePerSqm": 1395
           },
           "twoRoom": {
-            "price": 86183,
+            "price": 85181,
             "pricePerSqm": 1425
           },
           "threeRoom": {
@@ -5030,10 +5081,10 @@
             "pricePerSqm": 1418
           },
           "threeRoom": {
-            "price": 102718,
-            "pricePerSqm": 1215
+            "price": 103219,
+            "pricePerSqm": 1228
           },
-          "totalPricePerSqm": 1346
+          "totalPricePerSqm": 1350
         },
         {
           "name": "Родина 3",
@@ -5077,14 +5128,14 @@
             "pricePerSqm": null
           },
           "twoRoom": {
-            "price": 134536,
-            "pricePerSqm": 1833
+            "price": 125266,
+            "pricePerSqm": 1803
           },
           "threeRoom": {
-            "price": 154102,
-            "pricePerSqm": 1561
+            "price": 160240,
+            "pricePerSqm": 1599
           },
-          "totalPricePerSqm": 1689
+          "totalPricePerSqm": 1670
         },
         {
           "name": "Цветница",
@@ -5115,10 +5166,10 @@
             "pricePerSqm": null
           },
           "threeRoom": {
-            "price": 102161,
-            "pricePerSqm": 1140
+            "price": 101715,
+            "pricePerSqm": 1135
           },
-          "totalPricePerSqm": 1140
+          "totalPricePerSqm": 1135
         },
         {
           "name": "Централен южен район",
@@ -5132,7 +5183,7 @@
             "pricePerSqm": 1302
           },
           "threeRoom": {
-            "price": 147213,
+            "price": 145609,
             "pricePerSqm": 1302
           },
           "totalPricePerSqm": 1302
@@ -5142,15 +5193,15 @@
           "link": "//www.imot.bg/sredni-ceni/prodazhbi-ruse/tsentar",
           "oneRoom": {
             "price": 88187,
-            "pricePerSqm": 1878
+            "pricePerSqm": 1865
           },
           "twoRoom": {
-            "price": 119754,
-            "pricePerSqm": 1862
+            "price": 120255,
+            "pricePerSqm": 1878
           },
           "threeRoom": {
             "price": 175373,
-            "pricePerSqm": 1810
+            "pricePerSqm": 1802
           },
           "totalPricePerSqm": 1796
         },
@@ -5166,44 +5217,44 @@
             "pricePerSqm": 1099
           },
           "threeRoom": {
-            "price": 104171,
-            "pricePerSqm": 1038
+            "price": 97707,
+            "pricePerSqm": 1002
           },
-          "totalPricePerSqm": 1053
+          "totalPricePerSqm": 1068
         },
         {
           "name": "Чародейка - Юг",
           "link": "//www.imot.bg/sredni-ceni/prodazhbi-ruse/charodeyka-yug",
           "oneRoom": {
-            "price": 47901,
-            "pricePerSqm": 1140
+            "price": null,
+            "pricePerSqm": null
           },
           "twoRoom": {
-            "price": 74045,
+            "price": 74358,
             "pricePerSqm": 1164
           },
           "threeRoom": {
             "price": 103219,
-            "pricePerSqm": 1193
+            "pricePerSqm": 1222
           },
-          "totalPricePerSqm": 1113
+          "totalPricePerSqm": 1103
         },
         {
           "name": "Широк център",
           "link": "//www.imot.bg/sredni-ceni/prodazhbi-ruse/shirok-tsentar",
           "oneRoom": {
-            "price": 67844,
-            "pricePerSqm": 1392
-          },
-          "twoRoom": {
-            "price": 107327,
+            "price": 67543,
             "pricePerSqm": 1390
           },
-          "threeRoom": {
-            "price": 142252,
-            "pricePerSqm": 1440
+          "twoRoom": {
+            "price": 106426,
+            "pricePerSqm": 1392
           },
-          "totalPricePerSqm": 1425
+          "threeRoom": {
+            "price": 140298,
+            "pricePerSqm": 1437
+          },
+          "totalPricePerSqm": 1407
         },
         {
           "name": "Ялта",
@@ -5217,10 +5268,10 @@
             "pricePerSqm": 1789
           },
           "threeRoom": {
-            "price": 149317,
-            "pricePerSqm": 1476
+            "price": 159840,
+            "pricePerSqm": 1610
           },
-          "totalPricePerSqm": 1516
+          "totalPricePerSqm": 1555
         }
       ]
     },
@@ -5229,10 +5280,10 @@
       "key": "stara-zagora",
       "slug": "stara-zagora",
       "stats": {
-        "avgPricePerSqm": 1337,
-        "medianPricePerSqm": 1311,
-        "minPricePerSqm": 948,
-        "maxPricePerSqm": 1823,
+        "avgPricePerSqm": 1326,
+        "medianPricePerSqm": 1312,
+        "minPricePerSqm": 955,
+        "maxPricePerSqm": 1860,
         "neighbourhoodCount": 26
       },
       "neighbourhoods": [
@@ -5244,14 +5295,14 @@
             "pricePerSqm": 1523
           },
           "twoRoom": {
-            "price": 103971,
+            "price": 103720,
             "pricePerSqm": 1313
           },
           "threeRoom": {
-            "price": 152324,
-            "pricePerSqm": 1567
+            "price": 155330,
+            "pricePerSqm": 1535
           },
-          "totalPricePerSqm": 1501
+          "totalPricePerSqm": 1500
         },
         {
           "name": "Била",
@@ -5261,14 +5312,14 @@
             "pricePerSqm": 1635
           },
           "twoRoom": {
-            "price": 89189,
-            "pricePerSqm": 1390
+            "price": 92095,
+            "pricePerSqm": 1398
           },
           "threeRoom": {
             "price": 149317,
-            "pricePerSqm": 1372
+            "pricePerSqm": 1302
           },
-          "totalPricePerSqm": 1372
+          "totalPricePerSqm": 1366
         },
         {
           "name": "Железник - изток",
@@ -5282,10 +5333,10 @@
             "pricePerSqm": 1302
           },
           "threeRoom": {
-            "price": 129776,
-            "pricePerSqm": 1231
+            "price": 137292,
+            "pricePerSqm": 1256
           },
-          "totalPricePerSqm": 1295
+          "totalPricePerSqm": 1297
         },
         {
           "name": "Железник - център",
@@ -5299,8 +5350,8 @@
             "pricePerSqm": 1087
           },
           "threeRoom": {
-            "price": 112739,
-            "pricePerSqm": 1005
+            "price": 112789,
+            "pricePerSqm": 1006
           },
           "totalPricePerSqm": 1031
         },
@@ -5312,14 +5363,14 @@
             "pricePerSqm": null
           },
           "twoRoom": {
-            "price": 100159,
-            "pricePerSqm": 1213
+            "price": 98756,
+            "pricePerSqm": 1228
           },
           "threeRoom": {
-            "price": 161337,
-            "pricePerSqm": 1630
+            "price": 169360,
+            "pricePerSqm": 1628
           },
-          "totalPricePerSqm": 1252
+          "totalPricePerSqm": 1359
         },
         {
           "name": "Зора",
@@ -5330,7 +5381,7 @@
           },
           "twoRoom": {
             "price": 65138,
-            "pricePerSqm": 1202
+            "pricePerSqm": 1178
           },
           "threeRoom": {
             "price": 72153,
@@ -5353,7 +5404,7 @@
             "price": null,
             "pricePerSqm": null
           },
-          "totalPricePerSqm": 1415
+          "totalPricePerSqm": 983
         },
         {
           "name": "Казански",
@@ -5363,11 +5414,11 @@
             "pricePerSqm": null
           },
           "twoRoom": {
-            "price": 96705,
+            "price": 97457,
             "pricePerSqm": 1790
           },
           "threeRoom": {
-            "price": 142703,
+            "price": 140198,
             "pricePerSqm": 1306
           },
           "totalPricePerSqm": 1327
@@ -5380,14 +5431,14 @@
             "pricePerSqm": null
           },
           "twoRoom": {
-            "price": 130277,
-            "pricePerSqm": 1542
+            "price": 120506,
+            "pricePerSqm": 1585
           },
           "threeRoom": {
             "price": 166353,
             "pricePerSqm": 1630
           },
-          "totalPricePerSqm": 1602
+          "totalPricePerSqm": 1630
         },
         {
           "name": "Кольо Ганчев",
@@ -5397,14 +5448,14 @@
             "pricePerSqm": 1377
           },
           "twoRoom": {
-            "price": 55117,
-            "pricePerSqm": 1408
+            "price": 92897,
+            "pricePerSqm": 2061
           },
           "threeRoom": {
-            "price": 92697,
-            "pricePerSqm": 1853
+            "price": 93198,
+            "pricePerSqm": 1863
           },
-          "totalPricePerSqm": 1823
+          "totalPricePerSqm": 1860
         },
         {
           "name": "Лозенец",
@@ -5431,7 +5482,7 @@
             "pricePerSqm": null
           },
           "twoRoom": {
-            "price": 80170,
+            "price": 78166,
             "pricePerSqm": 1399
           },
           "threeRoom": {
@@ -5461,8 +5512,8 @@
           "name": "Никола Петков",
           "link": "//www.imot.bg/sredni-ceni/prodazhbi-stara-zagora/nikola-petkov",
           "oneRoom": {
-            "price": null,
-            "pricePerSqm": null
+            "price": 52110,
+            "pricePerSqm": 1447
           },
           "twoRoom": {
             "price": 70004,
@@ -5472,14 +5523,14 @@
             "price": 106657,
             "pricePerSqm": 1101
           },
-          "totalPricePerSqm": 1101
+          "totalPricePerSqm": 1102
         },
         {
           "name": "ОРБ",
           "link": "//www.imot.bg/sredni-ceni/prodazhbi-stara-zagora/orb",
           "oneRoom": {
             "price": 87786,
-            "pricePerSqm": 1773
+            "pricePerSqm": 1791
           },
           "twoRoom": {
             "price": 93799,
@@ -5489,7 +5540,7 @@
             "price": 118301,
             "pricePerSqm": 1207
           },
-          "totalPricePerSqm": 1245
+          "totalPricePerSqm": 1209
         },
         {
           "name": "Операта",
@@ -5517,13 +5568,13 @@
           },
           "twoRoom": {
             "price": 96204,
-            "pricePerSqm": 1352
+            "pricePerSqm": 1377
           },
           "threeRoom": {
-            "price": 122260,
-            "pricePerSqm": 1522
+            "price": 120255,
+            "pricePerSqm": 1524
           },
-          "totalPricePerSqm": 1505
+          "totalPricePerSqm": 1512
         },
         {
           "name": "Ремиза",
@@ -5533,14 +5584,14 @@
             "pricePerSqm": 1878
           },
           "twoRoom": {
-            "price": 98108,
-            "pricePerSqm": 1503
+            "price": 98409,
+            "pricePerSqm": 1498
           },
           "threeRoom": {
             "price": 135287,
-            "pricePerSqm": 1624
+            "pricePerSqm": 1599
           },
-          "totalPricePerSqm": 1511
+          "totalPricePerSqm": 1530
         },
         {
           "name": "Самара 1",
@@ -5584,14 +5635,14 @@
             "pricePerSqm": 1174
           },
           "twoRoom": {
-            "price": 85331,
+            "price": 85181,
             "pricePerSqm": 1211
           },
           "threeRoom": {
-            "price": 122159,
-            "pricePerSqm": 1252
+            "price": 122095,
+            "pricePerSqm": 1250
           },
-          "totalPricePerSqm": 1250
+          "totalPricePerSqm": 1248
         },
         {
           "name": "Студентско градче",
@@ -5618,14 +5669,14 @@
             "pricePerSqm": null
           },
           "twoRoom": {
-            "price": 63635,
-            "pricePerSqm": 1196
+            "price": 62382,
+            "pricePerSqm": 1202
           },
           "threeRoom": {
-            "price": 94200,
-            "pricePerSqm": 905
+            "price": 95993,
+            "pricePerSqm": 949
           },
-          "totalPricePerSqm": 948
+          "totalPricePerSqm": 955
         },
         {
           "name": "Три чучура - център",
@@ -5640,9 +5691,9 @@
           },
           "threeRoom": {
             "price": 118251,
-            "pricePerSqm": 1307
+            "pricePerSqm": 1301
           },
-          "totalPricePerSqm": 1241
+          "totalPricePerSqm": 1218
         },
         {
           "name": "Три чучура - юг",
@@ -5652,12 +5703,12 @@
             "pricePerSqm": 1501
           },
           "twoRoom": {
-            "price": 85081,
+            "price": 82124,
             "pricePerSqm": 1575
           },
           "threeRoom": {
             "price": 105223,
-            "pricePerSqm": 1548
+            "pricePerSqm": 1560
           },
           "totalPricePerSqm": 1516
         },
@@ -5669,14 +5720,14 @@
             "pricePerSqm": 1609
           },
           "twoRoom": {
-            "price": 100213,
-            "pricePerSqm": 1529
+            "price": 100212,
+            "pricePerSqm": 1533
           },
           "threeRoom": {
             "price": 145309,
-            "pricePerSqm": 1519
+            "pricePerSqm": 1520
           },
-          "totalPricePerSqm": 1514
+          "totalPricePerSqm": 1518
         }
       ]
     },
@@ -5685,10 +5736,10 @@
       "key": "pleven",
       "slug": "pleven",
       "stats": {
-        "avgPricePerSqm": 1308,
-        "medianPricePerSqm": 1336,
+        "avgPricePerSqm": 1311,
+        "medianPricePerSqm": 1338,
         "minPricePerSqm": 705,
-        "maxPricePerSqm": 1622,
+        "maxPricePerSqm": 1625,
         "neighbourhoodCount": 11
       },
       "neighbourhoods": [
@@ -5700,31 +5751,31 @@
             "pricePerSqm": 1361
           },
           "twoRoom": {
-            "price": 110234,
-            "pricePerSqm": 1540
+            "price": 113240,
+            "pricePerSqm": 1541
           },
           "threeRoom": {
             "price": 135037,
-            "pricePerSqm": 1421
+            "pricePerSqm": 1407
           },
-          "totalPricePerSqm": 1445
+          "totalPricePerSqm": 1431
         },
         {
           "name": "Дружба 1",
           "link": "//www.imot.bg/sredni-ceni/prodazhbi-pleven/druzhba-1",
           "oneRoom": {
-            "price": 49906,
-            "pricePerSqm": 1259
+            "price": 66040,
+            "pricePerSqm": 1386
           },
           "twoRoom": {
-            "price": 80993,
-            "pricePerSqm": 1200
+            "price": 80862,
+            "pricePerSqm": 1198
           },
           "threeRoom": {
-            "price": 117174,
-            "pricePerSqm": 1112
+            "price": 117178,
+            "pricePerSqm": 1118
           },
-          "totalPricePerSqm": 1151
+          "totalPricePerSqm": 1153
         },
         {
           "name": "Дружба 2",
@@ -5734,14 +5785,14 @@
             "pricePerSqm": 1463
           },
           "twoRoom": {
-            "price": 83797,
+            "price": 84431,
             "pricePerSqm": 1289
           },
           "threeRoom": {
-            "price": 129275,
-            "pricePerSqm": 1282
+            "price": 129970,
+            "pricePerSqm": 1427
           },
-          "totalPricePerSqm": 1293
+          "totalPricePerSqm": 1309
         },
         {
           "name": "Дружба 3",
@@ -5758,7 +5809,7 @@
             "price": 115245,
             "pricePerSqm": 1321
           },
-          "totalPricePerSqm": 1302
+          "totalPricePerSqm": 1300
         },
         {
           "name": "Дружба 4",
@@ -5768,31 +5819,31 @@
             "pricePerSqm": 1302
           },
           "twoRoom": {
-            "price": 60578,
-            "pricePerSqm": 1026
+            "price": 61130,
+            "pricePerSqm": 1033
           },
           "threeRoom": {
             "price": 86684,
             "pricePerSqm": 1012
           },
-          "totalPricePerSqm": 1033
+          "totalPricePerSqm": 1046
         },
         {
           "name": "Идеален център",
           "link": "//www.imot.bg/sredni-ceni/prodazhbi-pleven/idealen-tsentar",
           "oneRoom": {
-            "price": 51860,
-            "pricePerSqm": 1884
+            "price": 62132,
+            "pricePerSqm": 1878
           },
           "twoRoom": {
             "price": 115245,
-            "pricePerSqm": 1610
+            "pricePerSqm": 1628
           },
           "threeRoom": {
-            "price": 154829,
+            "price": 154528,
             "pricePerSqm": 1622
           },
-          "totalPricePerSqm": 1622
+          "totalPricePerSqm": 1625
         },
         {
           "name": "Индустриална зона",
@@ -5819,14 +5870,14 @@
             "pricePerSqm": null
           },
           "twoRoom": {
-            "price": 101215,
-            "pricePerSqm": 1510
+            "price": 95202,
+            "pricePerSqm": 1511
           },
           "threeRoom": {
-            "price": 130277,
-            "pricePerSqm": 1503
+            "price": 130778,
+            "pricePerSqm": 1506
           },
-          "totalPricePerSqm": 1506
+          "totalPricePerSqm": 1509
         },
         {
           "name": "Мара Денчева",
@@ -5837,30 +5888,30 @@
           },
           "twoRoom": {
             "price": 117033,
-            "pricePerSqm": 1559
+            "pricePerSqm": 1560
           },
           "threeRoom": {
             "price": 184857,
             "pricePerSqm": 1603
           },
-          "totalPricePerSqm": 1589
+          "totalPricePerSqm": 1593
         },
         {
           "name": "Сторгозия",
           "link": "//www.imot.bg/sredni-ceni/prodazhbi-pleven/storgoziya",
           "oneRoom": {
-            "price": 63134,
-            "pricePerSqm": 1344
+            "price": 60127,
+            "pricePerSqm": 1336
           },
           "twoRoom": {
-            "price": 83667,
-            "pricePerSqm": 1333
+            "price": 84179,
+            "pricePerSqm": 1336
           },
           "threeRoom": {
-            "price": 119053,
-            "pricePerSqm": 1300
+            "price": 121759,
+            "pricePerSqm": 1306
           },
-          "totalPricePerSqm": 1336
+          "totalPricePerSqm": 1338
         },
         {
           "name": "Широк център",
@@ -5870,14 +5921,14 @@
             "pricePerSqm": 1434
           },
           "twoRoom": {
-            "price": 98810,
-            "pricePerSqm": 1370
+            "price": 99211,
+            "pricePerSqm": 1381
           },
           "threeRoom": {
-            "price": 146110,
+            "price": 146311,
             "pricePerSqm": 1438
           },
-          "totalPricePerSqm": 1407
+          "totalPricePerSqm": 1411
         }
       ]
     },
@@ -5886,10 +5937,10 @@
       "key": "blagoevgrad",
       "slug": "blagoevgrad",
       "stats": {
-        "avgPricePerSqm": 1160,
-        "medianPricePerSqm": 1106,
+        "avgPricePerSqm": 1195,
+        "medianPricePerSqm": 1110,
         "minPricePerSqm": 999,
-        "maxPricePerSqm": 1503,
+        "maxPricePerSqm": 1773,
         "neighbourhoodCount": 13
       },
       "neighbourhoods": [
@@ -5901,8 +5952,8 @@
             "pricePerSqm": null
           },
           "twoRoom": {
-            "price": 60528,
-            "pricePerSqm": 983
+            "price": 62182,
+            "pricePerSqm": 992
           },
           "threeRoom": {
             "price": 99190,
@@ -5952,14 +6003,14 @@
             "pricePerSqm": null
           },
           "twoRoom": {
-            "price": null,
-            "pricePerSqm": null
+            "price": 115245,
+            "pricePerSqm": 1773
           },
           "threeRoom": {
-            "price": 133283,
-            "pricePerSqm": 1374
+            "price": 124264,
+            "pricePerSqm": 1573
           },
-          "totalPricePerSqm": 1374
+          "totalPricePerSqm": 1773
         },
         {
           "name": "Грамада",
@@ -5982,18 +6033,18 @@
           "name": "Еленово 1",
           "link": "//www.imot.bg/sredni-ceni/prodazhbi-blagoevgrad/elenovo-1",
           "oneRoom": {
-            "price": 61480,
-            "pricePerSqm": 1360
+            "price": 68846,
+            "pricePerSqm": 1128
           },
           "twoRoom": {
-            "price": 68846,
-            "pricePerSqm": 1033
+            "price": 69497,
+            "pricePerSqm": 1128
           },
           "threeRoom": {
-            "price": 97707,
-            "pricePerSqm": 1110
+            "price": 96334,
+            "pricePerSqm": 1106
           },
-          "totalPricePerSqm": 1106
+          "totalPricePerSqm": 1110
         },
         {
           "name": "Еленово 2",
@@ -6007,10 +6058,10 @@
             "pricePerSqm": 1042
           },
           "threeRoom": {
-            "price": 98910,
-            "pricePerSqm": 1171
+            "price": 99361,
+            "pricePerSqm": 1172
           },
-          "totalPricePerSqm": 1097
+          "totalPricePerSqm": 1102
         },
         {
           "name": "Запад",
@@ -6041,10 +6092,10 @@
             "pricePerSqm": 1682
           },
           "threeRoom": {
-            "price": 135287,
-            "pricePerSqm": 1471
+            "price": 140298,
+            "pricePerSqm": 1484
           },
-          "totalPricePerSqm": 1503
+          "totalPricePerSqm": 1505
         },
         {
           "name": "Орлова чука",
@@ -6067,52 +6118,52 @@
           "name": "Освобождение",
           "link": "//www.imot.bg/sredni-ceni/prodazhbi-blagoevgrad/osvobozhdenie",
           "oneRoom": {
-            "price": 42590,
-            "pricePerSqm": 1028
+            "price": 45095,
+            "pricePerSqm": 1002
           },
           "twoRoom": {
-            "price": 66716,
-            "pricePerSqm": 927
+            "price": 66291,
+            "pricePerSqm": 949
           },
           "threeRoom": {
-            "price": 104101,
-            "pricePerSqm": 1030
+            "price": 103084,
+            "pricePerSqm": 1052
           },
-          "totalPricePerSqm": 1002
+          "totalPricePerSqm": 1004
         },
         {
           "name": "Струмско",
           "link": "//www.imot.bg/sredni-ceni/prodazhbi-blagoevgrad/strumsko",
           "oneRoom": {
-            "price": 51108,
-            "pricePerSqm": 1265
+            "price": 50106,
+            "pricePerSqm": 1211
           },
           "twoRoom": {
             "price": 81753,
-            "pricePerSqm": 1160
+            "pricePerSqm": 1225
           },
           "threeRoom": {
-            "price": 103870,
+            "price": 103144,
             "pricePerSqm": 970
           },
-          "totalPricePerSqm": 1002
+          "totalPricePerSqm": 1016
         },
         {
           "name": "Широк център",
           "link": "//www.imot.bg/sredni-ceni/prodazhbi-blagoevgrad/shirok-tsentar",
           "oneRoom": {
             "price": 75159,
-            "pricePerSqm": 1713
+            "pricePerSqm": 1705
           },
           "twoRoom": {
             "price": 82174,
-            "pricePerSqm": 1453
+            "pricePerSqm": 1508
           },
           "threeRoom": {
             "price": 135287,
-            "pricePerSqm": 1346
+            "pricePerSqm": 1362
           },
-          "totalPricePerSqm": 1352
+          "totalPricePerSqm": 1382
         }
       ]
     },
@@ -6121,8 +6172,8 @@
       "key": "veliko-tarnovo",
       "slug": "veliko-tarnovo",
       "stats": {
-        "avgPricePerSqm": 1506,
-        "medianPricePerSqm": 1497,
+        "avgPricePerSqm": 1519,
+        "medianPricePerSqm": 1600,
         "minPricePerSqm": 1111,
         "maxPricePerSqm": 2171,
         "neighbourhoodCount": 11
@@ -6141,7 +6192,7 @@
           },
           "threeRoom": {
             "price": 165351,
-            "pricePerSqm": 1702
+            "pricePerSqm": 1713
           },
           "totalPricePerSqm": 1675
         },
@@ -6166,8 +6217,8 @@
           "name": "Бузлуджа",
           "link": "//www.imot.bg/sredni-ceni/prodazhbi-veliko-tarnovo/buzludzha",
           "oneRoom": {
-            "price": 43592,
-            "pricePerSqm": 1821
+            "price": 55117,
+            "pricePerSqm": 1789
           },
           "twoRoom": {
             "price": 102718,
@@ -6177,7 +6228,7 @@
             "price": 149317,
             "pricePerSqm": 1339
           },
-          "totalPricePerSqm": 1354
+          "totalPricePerSqm": 1355
         },
         {
           "name": "Варуша",
@@ -6192,7 +6243,7 @@
           },
           "threeRoom": {
             "price": 180383,
-            "pricePerSqm": 1333
+            "pricePerSqm": 1431
           },
           "totalPricePerSqm": 1158
         },
@@ -6204,29 +6255,29 @@
             "pricePerSqm": 1822
           },
           "twoRoom": {
-            "price": 100213,
-            "pricePerSqm": 1410
+            "price": 100641,
+            "pricePerSqm": 1407
           },
           "threeRoom": {
-            "price": 130176,
-            "pricePerSqm": 1332
+            "price": 140298,
+            "pricePerSqm": 1384
           },
-          "totalPricePerSqm": 1384
+          "totalPricePerSqm": 1387
         },
         {
           "name": "Картала",
           "link": "//www.imot.bg/sredni-ceni/prodazhbi-veliko-tarnovo/kartala",
           "oneRoom": {
             "price": 75159,
-            "pricePerSqm": 1708
+            "pricePerSqm": 1694
           },
           "twoRoom": {
             "price": 118251,
-            "pricePerSqm": 1713
+            "pricePerSqm": 1738
           },
           "threeRoom": {
-            "price": 152324,
-            "pricePerSqm": 1570
+            "price": 149768,
+            "pricePerSqm": 1569
           },
           "totalPricePerSqm": 1670
         },
@@ -6235,17 +6286,17 @@
           "link": "//www.imot.bg/sredni-ceni/prodazhbi-veliko-tarnovo/kolyu-ficheto",
           "oneRoom": {
             "price": 88187,
-            "pricePerSqm": 2204
+            "pricePerSqm": 2167
           },
           "twoRoom": {
             "price": 120255,
-            "pricePerSqm": 1785
+            "pricePerSqm": 1797
           },
           "threeRoom": {
-            "price": 158837,
-            "pricePerSqm": 1840
+            "price": 155330,
+            "pricePerSqm": 1882
           },
-          "totalPricePerSqm": 1768
+          "totalPricePerSqm": 1800
         },
         {
           "name": "Света гора",
@@ -6262,7 +6313,7 @@
             "price": 199574,
             "pricePerSqm": 1456
           },
-          "totalPricePerSqm": 1497
+          "totalPricePerSqm": 1600
         },
         {
           "name": "Стара част",
@@ -6285,18 +6336,18 @@
           "name": "Център",
           "link": "//www.imot.bg/sredni-ceni/prodazhbi-veliko-tarnovo/tsentar",
           "oneRoom": {
-            "price": 93448,
-            "pricePerSqm": 2250
+            "price": 89690,
+            "pricePerSqm": 2129
           },
           "twoRoom": {
             "price": 99211,
-            "pricePerSqm": 1753
+            "pricePerSqm": 1730
           },
           "threeRoom": {
-            "price": 160187,
-            "pricePerSqm": 1664
+            "price": 159339,
+            "pricePerSqm": 1670
           },
-          "totalPricePerSqm": 1613
+          "totalPricePerSqm": 1614
         },
         {
           "name": "Чолаковци",
@@ -6306,14 +6357,14 @@
             "pricePerSqm": null
           },
           "twoRoom": {
-            "price": 84179,
-            "pricePerSqm": 1618
+            "price": 80170,
+            "pricePerSqm": 1683
           },
           "threeRoom": {
             "price": 82174,
             "pricePerSqm": 1084
           },
-          "totalPricePerSqm": 1162
+          "totalPricePerSqm": 1169
         }
       ]
     },
@@ -6322,10 +6373,10 @@
       "key": "shumen",
       "slug": "shumen",
       "stats": {
-        "avgPricePerSqm": 1587,
-        "medianPricePerSqm": 1597,
-        "minPricePerSqm": 1164,
-        "maxPricePerSqm": 1885,
+        "avgPricePerSqm": 1586,
+        "medianPricePerSqm": 1584,
+        "minPricePerSqm": 1171,
+        "maxPricePerSqm": 1878,
         "neighbourhoodCount": 22
       },
       "neighbourhoods": [
@@ -6354,8 +6405,8 @@
             "pricePerSqm": 1685
           },
           "twoRoom": {
-            "price": 94701,
-            "pricePerSqm": 1450
+            "price": 93949,
+            "pricePerSqm": 1448
           },
           "threeRoom": {
             "price": 136514,
@@ -6384,18 +6435,18 @@
           "name": "Болницата",
           "link": "//www.imot.bg/sredni-ceni/prodazhbi-shumen/bolnitsata",
           "oneRoom": {
-            "price": 74408,
-            "pricePerSqm": 1765
+            "price": 74137,
+            "pricePerSqm": 1655
           },
           "twoRoom": {
-            "price": 96204,
-            "pricePerSqm": 1533
+            "price": 96705,
+            "pricePerSqm": 1554
           },
           "threeRoom": {
-            "price": 158336,
-            "pricePerSqm": 1642
+            "price": 158837,
+            "pricePerSqm": 1651
           },
-          "totalPricePerSqm": 1609
+          "totalPricePerSqm": 1631
         },
         {
           "name": "Боян Българанов 1",
@@ -6405,31 +6456,31 @@
             "pricePerSqm": 1503
           },
           "twoRoom": {
-            "price": 89390,
-            "pricePerSqm": 1384
+            "price": 88588,
+            "pricePerSqm": 1359
           },
           "threeRoom": {
-            "price": 120155,
-            "pricePerSqm": 1503
+            "price": 125166,
+            "pricePerSqm": 1550
           },
-          "totalPricePerSqm": 1466
+          "totalPricePerSqm": 1453
         },
         {
           "name": "Боян Българанов 2",
           "link": "//www.imot.bg/sredni-ceni/prodazhbi-shumen/boyan-balgaranov-2",
           "oneRoom": {
-            "price": 60879,
-            "pricePerSqm": 1467
+            "price": 61631,
+            "pricePerSqm": 1503
           },
           "twoRoom": {
-            "price": 88588,
-            "pricePerSqm": 1312
+            "price": 87489,
+            "pricePerSqm": 1302
           },
           "threeRoom": {
-            "price": 124965,
-            "pricePerSqm": 1411
+            "price": 120055,
+            "pricePerSqm": 1405
           },
-          "totalPricePerSqm": 1359
+          "totalPricePerSqm": 1328
         },
         {
           "name": "Бялата пръст",
@@ -6460,10 +6511,10 @@
             "pricePerSqm": 1555
           },
           "threeRoom": {
-            "price": 133283,
-            "pricePerSqm": 1549
+            "price": 133734,
+            "pricePerSqm": 1550
           },
-          "totalPricePerSqm": 1577
+          "totalPricePerSqm": 1603
         },
         {
           "name": "Гривица",
@@ -6477,10 +6528,10 @@
             "pricePerSqm": 1513
           },
           "threeRoom": {
-            "price": 150319,
-            "pricePerSqm": 1693
+            "price": 146843,
+            "pricePerSqm": 1505
           },
-          "totalPricePerSqm": 1653
+          "totalPricePerSqm": 1513
         },
         {
           "name": "Дивизионна болница",
@@ -6508,13 +6559,13 @@
           },
           "twoRoom": {
             "price": 110234,
-            "pricePerSqm": 1601
+            "pricePerSqm": 1603
           },
           "threeRoom": {
-            "price": 139296,
-            "pricePerSqm": 1562
+            "price": 138294,
+            "pricePerSqm": 1564
           },
-          "totalPricePerSqm": 1616
+          "totalPricePerSqm": 1618
         },
         {
           "name": "Еверест",
@@ -6525,13 +6576,13 @@
           },
           "twoRoom": {
             "price": 75159,
-            "pricePerSqm": 1171
+            "pricePerSqm": 1191
           },
           "threeRoom": {
             "price": 130277,
             "pricePerSqm": 1402
           },
-          "totalPricePerSqm": 1164
+          "totalPricePerSqm": 1171
         },
         {
           "name": "Куршун чешма",
@@ -6541,14 +6592,14 @@
             "pricePerSqm": 1753
           },
           "twoRoom": {
-            "price": 117800,
-            "pricePerSqm": 1620
+            "price": 108230,
+            "pricePerSqm": 1568
           },
           "threeRoom": {
-            "price": 151823,
-            "pricePerSqm": 1588
+            "price": 155831,
+            "pricePerSqm": 1788
           },
-          "totalPricePerSqm": 1382
+          "totalPricePerSqm": 1518
         },
         {
           "name": "Математическа гимназия",
@@ -6558,14 +6609,14 @@
             "pricePerSqm": 2039
           },
           "twoRoom": {
-            "price": 92196,
-            "pricePerSqm": 1692
+            "price": 98208,
+            "pricePerSqm": 1644
           },
           "threeRoom": {
             "price": 142302,
-            "pricePerSqm": 1527
+            "pricePerSqm": 1521
           },
-          "totalPricePerSqm": 1550
+          "totalPricePerSqm": 1521
         },
         {
           "name": "Мътница",
@@ -6592,31 +6643,31 @@
             "pricePerSqm": 1577
           },
           "twoRoom": {
-            "price": 111347,
-            "pricePerSqm": 1689
+            "price": 111292,
+            "pricePerSqm": 1688
           },
           "threeRoom": {
-            "price": 190405,
-            "pricePerSqm": 1747
+            "price": 180383,
+            "pricePerSqm": 1700
           },
-          "totalPricePerSqm": 1699
+          "totalPricePerSqm": 1677
         },
         {
           "name": "Пожарната",
           "link": "//www.imot.bg/sredni-ceni/prodazhbi-shumen/pozharnata",
           "oneRoom": {
-            "price": 74658,
-            "pricePerSqm": 1493
+            "price": null,
+            "pricePerSqm": null
           },
           "twoRoom": {
-            "price": 105434,
-            "pricePerSqm": 1487
+            "price": 106331,
+            "pricePerSqm": 1488
           },
           "threeRoom": {
-            "price": 157835,
-            "pricePerSqm": 1684
+            "price": 154929,
+            "pricePerSqm": 1585
           },
-          "totalPricePerSqm": 1379
+          "totalPricePerSqm": 1468
         },
         {
           "name": "Томбул джамия",
@@ -6630,27 +6681,27 @@
             "pricePerSqm": 2067
           },
           "threeRoom": {
-            "price": 130026,
+            "price": 129776,
             "pricePerSqm": 1707
           },
-          "totalPricePerSqm": 1885
+          "totalPricePerSqm": 1878
         },
         {
           "name": "Тракия",
           "link": "//www.imot.bg/sredni-ceni/prodazhbi-shumen/trakiya",
           "oneRoom": {
-            "price": 79418,
-            "pricePerSqm": 1866
+            "price": 79669,
+            "pricePerSqm": 1853
           },
           "twoRoom": {
-            "price": 103445,
-            "pricePerSqm": 1551
+            "price": 100213,
+            "pricePerSqm": 1548
           },
           "threeRoom": {
-            "price": 133086,
-            "pricePerSqm": 1557
+            "price": 130277,
+            "pricePerSqm": 1515
           },
-          "totalPricePerSqm": 1585
+          "totalPricePerSqm": 1564
         },
         {
           "name": "Херсон",
@@ -6664,27 +6715,27 @@
             "pricePerSqm": 1883
           },
           "threeRoom": {
-            "price": 172867,
-            "pricePerSqm": 1927
+            "price": 144671,
+            "pricePerSqm": 1777
           },
-          "totalPricePerSqm": 1862
+          "totalPricePerSqm": 1831
         },
         {
           "name": "Център",
           "link": "//www.imot.bg/sredni-ceni/prodazhbi-shumen/tsentar",
           "oneRoom": {
             "price": 79168,
-            "pricePerSqm": 1757
+            "pricePerSqm": 1737
           },
           "twoRoom": {
-            "price": 119253,
-            "pricePerSqm": 1618
+            "price": 118572,
+            "pricePerSqm": 1592
           },
           "threeRoom": {
-            "price": 155330,
-            "pricePerSqm": 1758
+            "price": 155148,
+            "pricePerSqm": 1753
           },
-          "totalPricePerSqm": 1717
+          "totalPricePerSqm": 1703
         },
         {
           "name": "в.з. Смесе",
@@ -6710,10 +6761,10 @@
       "key": "dobrich",
       "slug": "dobrich",
       "stats": {
-        "avgPricePerSqm": 1007,
-        "medianPricePerSqm": 986,
-        "minPricePerSqm": 491,
-        "maxPricePerSqm": 1391,
+        "avgPricePerSqm": 1004,
+        "medianPricePerSqm": 993,
+        "minPricePerSqm": 443,
+        "maxPricePerSqm": 1367,
         "neighbourhoodCount": 23
       },
       "neighbourhoods": [
@@ -6738,35 +6789,35 @@
           "name": "Балик",
           "link": "//www.imot.bg/sredni-ceni/prodazhbi-dobrich/balik",
           "oneRoom": {
-            "price": 41588,
-            "pricePerSqm": 958
+            "price": 40085,
+            "pricePerSqm": 871
           },
           "twoRoom": {
-            "price": 61631,
-            "pricePerSqm": 944
+            "price": 62132,
+            "pricePerSqm": 948
           },
           "threeRoom": {
-            "price": 72153,
-            "pricePerSqm": 846
+            "price": 71732,
+            "pricePerSqm": 826
           },
-          "totalPricePerSqm": 874
+          "totalPricePerSqm": 872
         },
         {
           "name": "Градска болница",
           "link": "//www.imot.bg/sredni-ceni/prodazhbi-dobrich/gradska-bolnitsa",
           "oneRoom": {
-            "price": 51609,
+            "price": 52611,
             "pricePerSqm": 1169
           },
           "twoRoom": {
-            "price": 95202,
-            "pricePerSqm": 1464
+            "price": null,
+            "pricePerSqm": null
           },
           "threeRoom": {
             "price": 70149,
             "pricePerSqm": 855
           },
-          "totalPricePerSqm": 1158
+          "totalPricePerSqm": 1146
         },
         {
           "name": "Добротица - Албенска",
@@ -6783,7 +6834,7 @@
             "price": 120255,
             "pricePerSqm": 1414
           },
-          "totalPricePerSqm": 1391
+          "totalPricePerSqm": 1337
         },
         {
           "name": "Добротица - Варненска",
@@ -6793,14 +6844,14 @@
             "pricePerSqm": null
           },
           "twoRoom": {
-            "price": 102187,
-            "pricePerSqm": 1161
+            "price": null,
+            "pricePerSqm": null
           },
           "threeRoom": {
-            "price": 115245,
-            "pricePerSqm": 1272
+            "price": 110234,
+            "pricePerSqm": 1259
           },
-          "totalPricePerSqm": 1161
+          "totalPricePerSqm": 1167
         },
         {
           "name": "Дружба 1",
@@ -6823,8 +6874,8 @@
           "name": "Дружба 2",
           "link": "//www.imot.bg/sredni-ceni/prodazhbi-dobrich/druzhba-2",
           "oneRoom": {
-            "price": 48102,
-            "pricePerSqm": 1023
+            "price": 44093,
+            "pricePerSqm": 1000
           },
           "twoRoom": {
             "price": 59626,
@@ -6834,7 +6885,7 @@
             "price": 73155,
             "pricePerSqm": 892
           },
-          "totalPricePerSqm": 961
+          "totalPricePerSqm": 967
         },
         {
           "name": "Дружба 3",
@@ -6844,14 +6895,14 @@
             "pricePerSqm": null
           },
           "twoRoom": {
-            "price": 60127,
-            "pricePerSqm": 875
+            "price": 56620,
+            "pricePerSqm": 802
           },
           "threeRoom": {
             "price": 76663,
             "pricePerSqm": 831
           },
-          "totalPricePerSqm": 842
+          "totalPricePerSqm": 831
         },
         {
           "name": "Дружба 4",
@@ -6879,13 +6930,13 @@
           },
           "twoRoom": {
             "price": 60127,
-            "pricePerSqm": 985
+            "pricePerSqm": 1019
           },
           "threeRoom": {
             "price": 65138,
             "pricePerSqm": 930
           },
-          "totalPricePerSqm": 986
+          "totalPricePerSqm": 1043
         },
         {
           "name": "Енергоразпределение",
@@ -6899,34 +6950,34 @@
             "pricePerSqm": 892
           },
           "threeRoom": {
-            "price": 122761,
-            "pricePerSqm": 1203
+            "price": 115996,
+            "pricePerSqm": 1382
           },
-          "totalPricePerSqm": 945
+          "totalPricePerSqm": 930
         },
         {
           "name": "ЖП Гара",
           "link": "//www.imot.bg/sredni-ceni/prodazhbi-dobrich/zhp-gara",
           "oneRoom": {
-            "price": 44093,
-            "pricePerSqm": 881
-          },
-          "twoRoom": {
             "price": null,
             "pricePerSqm": null
+          },
+          "twoRoom": {
+            "price": 90191,
+            "pricePerSqm": 1326
           },
           "threeRoom": {
             "price": 73756,
             "pricePerSqm": 824
           },
-          "totalPricePerSqm": 858
+          "totalPricePerSqm": 835
         },
         {
           "name": "Иглика",
           "link": "//www.imot.bg/sredni-ceni/prodazhbi-dobrich/iglika",
           "oneRoom": {
-            "price": 39083,
-            "pricePerSqm": 868
+            "price": 37579,
+            "pricePerSqm": 835
           },
           "twoRoom": {
             "price": 60127,
@@ -6947,13 +6998,13 @@
           },
           "twoRoom": {
             "price": 67142,
-            "pricePerSqm": 959
+            "pricePerSqm": 973
           },
           "threeRoom": {
             "price": 92032,
             "pricePerSqm": 989
           },
-          "totalPricePerSqm": 974
+          "totalPricePerSqm": 987
         },
         {
           "name": "Кралска зона",
@@ -6980,14 +7031,14 @@
             "pricePerSqm": 966
           },
           "twoRoom": {
-            "price": 46098,
-            "pricePerSqm": 823
+            "price": 68144,
+            "pricePerSqm": 1055
           },
           "threeRoom": {
             "price": null,
             "pricePerSqm": null
           },
-          "totalPricePerSqm": 878
+          "totalPricePerSqm": 933
         },
         {
           "name": "Промишлена зона - Запад",
@@ -6997,14 +7048,14 @@
             "pricePerSqm": null
           },
           "twoRoom": {
-            "price": 66140,
-            "pricePerSqm": 1017
+            "price": null,
+            "pricePerSqm": null
           },
           "threeRoom": {
             "price": null,
             "pricePerSqm": null
           },
-          "totalPricePerSqm": 579
+          "totalPricePerSqm": 577
         },
         {
           "name": "Промишлена зона - Север",
@@ -7014,31 +7065,31 @@
             "pricePerSqm": 421
           },
           "twoRoom": {
-            "price": 31266,
-            "pricePerSqm": 539
+            "price": 28159,
+            "pricePerSqm": 491
           },
           "threeRoom": {
             "price": null,
             "pricePerSqm": null
           },
-          "totalPricePerSqm": 491
+          "totalPricePerSqm": 443
         },
         {
           "name": "Свети Георги",
           "link": "//www.imot.bg/sredni-ceni/prodazhbi-dobrich/sveti-georgi",
           "oneRoom": {
-            "price": 77364,
-            "pricePerSqm": 1152
+            "price": 77565,
+            "pricePerSqm": 901
           },
           "twoRoom": {
             "price": 88688,
             "pricePerSqm": 1102
           },
           "threeRoom": {
-            "price": 116748,
-            "pricePerSqm": 1109
+            "price": 115245,
+            "pricePerSqm": 1105
           },
-          "totalPricePerSqm": 1105
+          "totalPricePerSqm": 1103
         },
         {
           "name": "Строител",
@@ -7048,31 +7099,31 @@
             "pricePerSqm": 777
           },
           "twoRoom": {
-            "price": 70149,
-            "pricePerSqm": 1131
+            "price": 67643,
+            "pricePerSqm": 1082
           },
           "threeRoom": {
-            "price": 82174,
-            "pricePerSqm": 936
+            "price": 79003,
+            "pricePerSqm": 900
           },
-          "totalPricePerSqm": 1081
+          "totalPricePerSqm": 1067
         },
         {
           "name": "Христо Ботев",
           "link": "//www.imot.bg/sredni-ceni/prodazhbi-dobrich/hristo-botev",
           "oneRoom": {
-            "price": 52110,
-            "pricePerSqm": 1158
+            "price": 50106,
+            "pricePerSqm": 1125
           },
           "twoRoom": {
-            "price": 74157,
-            "pricePerSqm": 1085
+            "price": 75510,
+            "pricePerSqm": 1103
           },
           "threeRoom": {
-            "price": 78166,
-            "pricePerSqm": 955
+            "price": 77164,
+            "pricePerSqm": 921
           },
-          "totalPricePerSqm": 1022
+          "totalPricePerSqm": 993
         },
         {
           "name": "Център",
@@ -7082,14 +7133,14 @@
             "pricePerSqm": 1244
           },
           "twoRoom": {
-            "price": 86408,
-            "pricePerSqm": 1183
+            "price": 87410,
+            "pricePerSqm": 1192
           },
           "threeRoom": {
-            "price": 118752,
-            "pricePerSqm": 1205
+            "price": 116247,
+            "pricePerSqm": 1203
           },
-          "totalPricePerSqm": 1165
+          "totalPricePerSqm": 1162
         },
         {
           "name": "Червената пръст",
@@ -7106,7 +7157,7 @@
             "price": 99211,
             "pricePerSqm": 1102
           },
-          "totalPricePerSqm": 1102
+          "totalPricePerSqm": 1104
         }
       ]
     },
@@ -7115,8 +7166,8 @@
       "key": "pazardzhik",
       "slug": "pazardzhik",
       "stats": {
-        "avgPricePerSqm": 1039,
-        "medianPricePerSqm": 1039,
+        "avgPricePerSqm": 1048,
+        "medianPricePerSqm": 1071,
         "minPricePerSqm": 668,
         "maxPricePerSqm": 1227,
         "neighbourhoodCount": 13
@@ -7126,18 +7177,18 @@
           "name": "Запад",
           "link": "//www.imot.bg/sredni-ceni/prodazhbi-pazardzhik/zapad",
           "oneRoom": {
-            "price": 46098,
-            "pricePerSqm": 1049
+            "price": 45095,
+            "pricePerSqm": 1048
           },
           "twoRoom": {
             "price": 63134,
-            "pricePerSqm": 1073
+            "pricePerSqm": 1080
           },
           "threeRoom": {
-            "price": 100213,
-            "pricePerSqm": 1002
+            "price": 99211,
+            "pricePerSqm": 1012
           },
-          "totalPricePerSqm": 1017
+          "totalPricePerSqm": 1022
         },
         {
           "name": "Идеален център",
@@ -7148,20 +7199,20 @@
           },
           "twoRoom": {
             "price": 90196,
-            "pricePerSqm": 1157
+            "pricePerSqm": 1205
           },
           "threeRoom": {
             "price": 115245,
             "pricePerSqm": 1154
           },
-          "totalPricePerSqm": 1157
+          "totalPricePerSqm": 1168
         },
         {
           "name": "Изток",
           "link": "//www.imot.bg/sredni-ceni/prodazhbi-pazardzhik/iztok",
           "oneRoom": {
-            "price": 52969,
-            "pricePerSqm": 1081
+            "price": 40085,
+            "pricePerSqm": 977
           },
           "twoRoom": {
             "price": 58374,
@@ -7171,7 +7222,7 @@
             "price": 89690,
             "pricePerSqm": 1038
           },
-          "totalPricePerSqm": 956
+          "totalPricePerSqm": 967
         },
         {
           "name": "Младост",
@@ -7181,12 +7232,12 @@
             "pricePerSqm": null
           },
           "twoRoom": {
-            "price": 65138,
-            "pricePerSqm": 986
+            "price": 60127,
+            "pricePerSqm": 1023
           },
           "threeRoom": {
-            "price": 120255,
-            "pricePerSqm": 1233
+            "price": 107729,
+            "pricePerSqm": 1327
           },
           "totalPricePerSqm": 1098
         },
@@ -7202,10 +7253,10 @@
             "pricePerSqm": 1050
           },
           "threeRoom": {
-            "price": 97206,
-            "pricePerSqm": 1185
+            "price": 99461,
+            "pricePerSqm": 1107
           },
-          "totalPricePerSqm": 1091
+          "totalPricePerSqm": 1050
         },
         {
           "name": "Окръжна болница",
@@ -7215,14 +7266,14 @@
             "pricePerSqm": null
           },
           "twoRoom": {
-            "price": 68659,
-            "pricePerSqm": 1044
+            "price": 71159,
+            "pricePerSqm": 1071
           },
           "threeRoom": {
-            "price": 97171,
-            "pricePerSqm": 1019
+            "price": 97136,
+            "pricePerSqm": 1004
           },
-          "totalPricePerSqm": 1039
+          "totalPricePerSqm": 1071
         },
         {
           "name": "Промишлена зона",
@@ -7232,12 +7283,12 @@
             "pricePerSqm": null
           },
           "twoRoom": {
-            "price": 86483,
-            "pricePerSqm": 955
+            "price": 82826,
+            "pricePerSqm": 974
           },
           "threeRoom": {
-            "price": 107127,
-            "pricePerSqm": 973
+            "price": 103620,
+            "pricePerSqm": 972
           },
           "totalPricePerSqm": 973
         },
@@ -7283,31 +7334,31 @@
             "pricePerSqm": null
           },
           "twoRoom": {
-            "price": 70650,
-            "pricePerSqm": 1089
+            "price": 80170,
+            "pricePerSqm": 1260
           },
           "threeRoom": {
             "price": 109312,
             "pricePerSqm": 1102
           },
-          "totalPricePerSqm": 1013
+          "totalPricePerSqm": 1102
         },
         {
           "name": "Устрем",
           "link": "//www.imot.bg/sredni-ceni/prodazhbi-pazardzhik/ustrem",
           "oneRoom": {
-            "price": 58123,
-            "pricePerSqm": 1383
+            "price": null,
+            "pricePerSqm": null
           },
           "twoRoom": {
-            "price": 75911,
-            "pricePerSqm": 1112
+            "price": 79168,
+            "pricePerSqm": 1160
           },
           "threeRoom": {
-            "price": 96524,
+            "price": 101355,
             "pricePerSqm": 1156
           },
-          "totalPricePerSqm": 1156
+          "totalPricePerSqm": 1158
         },
         {
           "name": "Център",
@@ -7317,14 +7368,14 @@
             "pricePerSqm": 1439
           },
           "twoRoom": {
-            "price": 78166,
-            "pricePerSqm": 1157
+            "price": 79168,
+            "pricePerSqm": 1202
           },
           "threeRoom": {
-            "price": 108675,
-            "pricePerSqm": 1131
+            "price": 110234,
+            "pricePerSqm": 1150
           },
-          "totalPricePerSqm": 1135
+          "totalPricePerSqm": 1152
         },
         {
           "name": "Ябълките",
@@ -7334,14 +7385,14 @@
             "pricePerSqm": null
           },
           "twoRoom": {
-            "price": 67393,
-            "pricePerSqm": 1022
+            "price": 67142,
+            "pricePerSqm": 980
           },
           "threeRoom": {
-            "price": 102017,
-            "pricePerSqm": 1042
+            "price": 99812,
+            "pricePerSqm": 977
           },
-          "totalPricePerSqm": 977
+          "totalPricePerSqm": 967
         }
       ]
     },
@@ -7350,11 +7401,11 @@
       "key": "haskovo",
       "slug": "haskovo",
       "stats": {
-        "avgPricePerSqm": 1034,
-        "medianPricePerSqm": 1109,
+        "avgPricePerSqm": 1079,
+        "medianPricePerSqm": 1113,
         "minPricePerSqm": 709,
-        "maxPricePerSqm": 1265,
-        "neighbourhoodCount": 19
+        "maxPricePerSqm": 1910,
+        "neighbourhoodCount": 20
       },
       "neighbourhoods": [
         {
@@ -7365,14 +7416,31 @@
             "pricePerSqm": null
           },
           "twoRoom": {
-            "price": 78980,
-            "pricePerSqm": 1173
+            "price": 77990,
+            "pricePerSqm": 1098
           },
           "threeRoom": {
             "price": 107905,
             "pricePerSqm": 1183
           },
-          "totalPricePerSqm": 1154
+          "totalPricePerSqm": 1130
+        },
+        {
+          "name": "Болярово",
+          "link": "//www.imot.bg/sredni-ceni/prodazhbi-haskovo/bolyarovo",
+          "oneRoom": {
+            "price": null,
+            "pricePerSqm": null
+          },
+          "twoRoom": {
+            "price": null,
+            "pricePerSqm": null
+          },
+          "threeRoom": {
+            "price": 225479,
+            "pricePerSqm": 1910
+          },
+          "totalPricePerSqm": 1910
         },
         {
           "name": "Воеводски",
@@ -7395,18 +7463,18 @@
           "name": "Възраждане",
           "link": "//www.imot.bg/sredni-ceni/prodazhbi-haskovo/vazrazhdane",
           "oneRoom": {
-            "price": 42089,
-            "pricePerSqm": 1137
+            "price": null,
+            "pricePerSqm": null
           },
           "twoRoom": {
-            "price": 69146,
-            "pricePerSqm": 1066
+            "price": 66641,
+            "pricePerSqm": 1051
           },
           "threeRoom": {
             "price": 105223,
             "pricePerSqm": 1178
           },
-          "totalPricePerSqm": 1127
+          "totalPricePerSqm": 1117
         },
         {
           "name": "Дружба 1",
@@ -7420,7 +7488,7 @@
             "pricePerSqm": 1160
           },
           "threeRoom": {
-            "price": 120255,
+            "price": 110234,
             "pricePerSqm": 1293
           },
           "totalPricePerSqm": 1265
@@ -7514,18 +7582,18 @@
           "name": "Овчарски",
           "link": "//www.imot.bg/sredni-ceni/prodazhbi-haskovo/ovcharski",
           "oneRoom": {
-            "price": null,
-            "pricePerSqm": null
+            "price": 47100,
+            "pricePerSqm": 1884
           },
           "twoRoom": {
             "price": 91472,
             "pricePerSqm": 1203
           },
           "threeRoom": {
-            "price": 124633,
-            "pricePerSqm": 1202
+            "price": 126954,
+            "pricePerSqm": 1205
           },
-          "totalPricePerSqm": 1181
+          "totalPricePerSqm": 1198
         },
         {
           "name": "Орфей",
@@ -7539,8 +7607,8 @@
             "pricePerSqm": 1205
           },
           "threeRoom": {
-            "price": 111488,
-            "pricePerSqm": 1207
+            "price": 119880,
+            "pricePerSqm": 1206
           },
           "totalPricePerSqm": 1205
         },
@@ -7607,10 +7675,10 @@
             "pricePerSqm": 1265
           },
           "threeRoom": {
-            "price": 185194,
-            "pricePerSqm": 1102
+            "price": 162745,
+            "pricePerSqm": 1000
           },
-          "totalPricePerSqm": 901
+          "totalPricePerSqm": 900
         },
         {
           "name": "Училищни",
@@ -7654,14 +7722,14 @@
             "pricePerSqm": null
           },
           "twoRoom": {
-            "price": 86333,
-            "pricePerSqm": 1337
+            "price": 88335,
+            "pricePerSqm": 1468
           },
           "threeRoom": {
-            "price": 114443,
-            "pricePerSqm": 1203
+            "price": 117249,
+            "pricePerSqm": 1204
           },
-          "totalPricePerSqm": 1225
+          "totalPricePerSqm": 1252
         },
         {
           "name": "Червена стена",
@@ -7687,9 +7755,9 @@
       "key": "sliven",
       "slug": "sliven",
       "stats": {
-        "avgPricePerSqm": 1189,
+        "avgPricePerSqm": 1191,
         "medianPricePerSqm": 1143,
-        "minPricePerSqm": 923,
+        "minPricePerSqm": 934,
         "maxPricePerSqm": 1551,
         "neighbourhoodCount": 11
       },
@@ -7741,9 +7809,9 @@
           },
           "threeRoom": {
             "price": 119253,
-            "pricePerSqm": 1325
+            "pricePerSqm": 1402
           },
-          "totalPricePerSqm": 1327
+          "totalPricePerSqm": 1366
         },
         {
           "name": "Клуцохор",
@@ -7753,14 +7821,14 @@
             "pricePerSqm": null
           },
           "twoRoom": {
-            "price": 68094,
-            "pricePerSqm": 1125
+            "price": 64036,
+            "pricePerSqm": 1067
           },
           "threeRoom": {
             "price": 90191,
             "pricePerSqm": 990
           },
-          "totalPricePerSqm": 1016
+          "totalPricePerSqm": 990
         },
         {
           "name": "Колю Фичето",
@@ -7770,14 +7838,14 @@
             "pricePerSqm": null
           },
           "twoRoom": {
-            "price": 62132,
-            "pricePerSqm": 920
+            "price": 60127,
+            "pricePerSqm": 923
           },
           "threeRoom": {
             "price": 100213,
             "pricePerSqm": 1033
           },
-          "totalPricePerSqm": 923
+          "totalPricePerSqm": 934
         },
         {
           "name": "Комлука",
@@ -7838,14 +7906,14 @@
             "pricePerSqm": null
           },
           "twoRoom": {
-            "price": 75159,
-            "pricePerSqm": 1252
+            "price": 77664,
+            "pricePerSqm": 1277
           },
           "threeRoom": {
             "price": 172366,
             "pricePerSqm": 1499
           },
-          "totalPricePerSqm": 1302
+          "totalPricePerSqm": 1361
         },
         {
           "name": "Стоян Заимов",
@@ -7862,7 +7930,7 @@
             "price": 108230,
             "pricePerSqm": 1369
           },
-          "totalPricePerSqm": 1369
+          "totalPricePerSqm": 1306
         },
         {
           "name": "Център",
@@ -7877,7 +7945,7 @@
           },
           "threeRoom": {
             "price": 150319,
-            "pricePerSqm": 1448
+            "pricePerSqm": 1452
           },
           "totalPricePerSqm": 1551
         }
@@ -7888,30 +7956,13 @@
       "key": "pernik",
       "slug": "pernik",
       "stats": {
-        "avgPricePerSqm": 1440,
-        "medianPricePerSqm": 1409,
+        "avgPricePerSqm": 1447,
+        "medianPricePerSqm": 1422,
         "minPricePerSqm": 901,
         "maxPricePerSqm": 1952,
-        "neighbourhoodCount": 22
+        "neighbourhoodCount": 21
       },
       "neighbourhoods": [
-        {
-          "name": "Байкушева махала",
-          "link": "//www.imot.bg/sredni-ceni/prodazhbi-pernik/baykusheva-mahala",
-          "oneRoom": {
-            "price": null,
-            "pricePerSqm": null
-          },
-          "twoRoom": {
-            "price": null,
-            "pricePerSqm": null
-          },
-          "threeRoom": {
-            "price": 75158,
-            "pricePerSqm": 1105
-          },
-          "totalPricePerSqm": 1105
-        },
         {
           "name": "Бели брег",
           "link": "//www.imot.bg/sredni-ceni/prodazhbi-pernik/beli-breg",
@@ -7955,28 +8006,28 @@
           },
           "twoRoom": {
             "price": 83678,
-            "pricePerSqm": 1372
+            "pricePerSqm": 1377
           },
           "threeRoom": {
-            "price": 110234,
-            "pricePerSqm": 1322
+            "price": 111737,
+            "pricePerSqm": 1347
           },
-          "totalPricePerSqm": 1362
+          "totalPricePerSqm": 1371
         },
         {
           "name": "Изток",
           "link": "//www.imot.bg/sredni-ceni/prodazhbi-pernik/iztok",
           "oneRoom": {
-            "price": 68445,
-            "pricePerSqm": 1471
+            "price": 74047,
+            "pricePerSqm": 1603
           },
           "twoRoom": {
-            "price": 102317,
+            "price": 101666,
             "pricePerSqm": 1401
           },
           "threeRoom": {
-            "price": 143354,
-            "pricePerSqm": 1352
+            "price": 142127,
+            "pricePerSqm": 1354
           },
           "totalPricePerSqm": 1382
         },
@@ -7992,10 +8043,10 @@
             "pricePerSqm": null
           },
           "threeRoom": {
-            "price": 140298,
-            "pricePerSqm": 1776
+            "price": 130277,
+            "pricePerSqm": 1714
           },
-          "totalPricePerSqm": 1776
+          "totalPricePerSqm": 1714
         },
         {
           "name": "Кристал",
@@ -8040,7 +8091,7 @@
           },
           "twoRoom": {
             "price": 80070,
-            "pricePerSqm": 1213
+            "pricePerSqm": 1215
           },
           "threeRoom": {
             "price": 89184,
@@ -8052,15 +8103,15 @@
           "name": "Мошино",
           "link": "//www.imot.bg/sredni-ceni/prodazhbi-pernik/moshino",
           "oneRoom": {
-            "price": 63134,
-            "pricePerSqm": 2069
+            "price": 64136,
+            "pricePerSqm": 1861
           },
           "twoRoom": {
-            "price": 95201,
-            "pricePerSqm": 1587
+            "price": 117703,
+            "pricePerSqm": 1596
           },
           "threeRoom": {
-            "price": 154027,
+            "price": 153476,
             "pricePerSqm": 1463
           },
           "totalPricePerSqm": 1575
@@ -8158,14 +8209,14 @@
             "pricePerSqm": 696
           },
           "twoRoom": {
-            "price": 104221,
-            "pricePerSqm": 1579
+            "price": 82174,
+            "pricePerSqm": 1353
           },
           "threeRoom": {
             "price": null,
             "pricePerSqm": null
           },
-          "totalPricePerSqm": 1535
+          "totalPricePerSqm": 1422
         },
         {
           "name": "Твърди ливади",
@@ -8175,14 +8226,14 @@
             "pricePerSqm": null
           },
           "twoRoom": {
-            "price": 117750,
-            "pricePerSqm": 1480
+            "price": 107228,
+            "pricePerSqm": 1503
           },
           "threeRoom": {
-            "price": 94701,
-            "pricePerSqm": 1293
+            "price": 99211,
+            "pricePerSqm": 1346
           },
-          "totalPricePerSqm": 1427
+          "totalPricePerSqm": 1430
         },
         {
           "name": "Тева",
@@ -8192,14 +8243,14 @@
             "pricePerSqm": 1300
           },
           "twoRoom": {
-            "price": 80120,
-            "pricePerSqm": 1178
+            "price": 73155,
+            "pricePerSqm": 1100
           },
           "threeRoom": {
             "price": 110234,
-            "pricePerSqm": 1265
+            "pricePerSqm": 1287
           },
-          "totalPricePerSqm": 1224
+          "totalPricePerSqm": 1196
         },
         {
           "name": "Христо Ботев",
@@ -8209,14 +8260,14 @@
             "pricePerSqm": 1039
           },
           "twoRoom": {
-            "price": 53111,
-            "pricePerSqm": 1041
+            "price": null,
+            "pricePerSqm": null
           },
           "threeRoom": {
             "price": null,
             "pricePerSqm": null
           },
-          "totalPricePerSqm": 1040
+          "totalPricePerSqm": 1039
         },
         {
           "name": "Хумни дол",
@@ -8240,17 +8291,17 @@
           "link": "//www.imot.bg/sredni-ceni/prodazhbi-pernik/tsentar",
           "oneRoom": {
             "price": 75662,
-            "pricePerSqm": 1861
+            "pricePerSqm": 1683
           },
           "twoRoom": {
-            "price": 120255,
-            "pricePerSqm": 1834
+            "price": 119754,
+            "pricePerSqm": 1819
           },
           "threeRoom": {
             "price": 168358,
-            "pricePerSqm": 1784
+            "pricePerSqm": 1770
           },
-          "totalPricePerSqm": 1803
+          "totalPricePerSqm": 1800
         },
         {
           "name": "Църква",
@@ -8276,9 +8327,9 @@
       "key": "yambol",
       "slug": "yambol",
       "stats": {
-        "avgPricePerSqm": 1363,
-        "medianPricePerSqm": 1377,
-        "minPricePerSqm": 801,
+        "avgPricePerSqm": 1365,
+        "medianPricePerSqm": 1392,
+        "minPricePerSqm": 827,
         "maxPricePerSqm": 1906,
         "neighbourhoodCount": 15
       },
@@ -8291,14 +8342,14 @@
             "pricePerSqm": null
           },
           "twoRoom": {
-            "price": 84990,
-            "pricePerSqm": 1224
+            "price": 81172,
+            "pricePerSqm": 1246
           },
           "threeRoom": {
-            "price": 123021,
-            "pricePerSqm": 1218
+            "price": 149197,
+            "pricePerSqm": 1486
           },
-          "totalPricePerSqm": 1218
+          "totalPricePerSqm": 1246
         },
         {
           "name": "Боровец",
@@ -8325,8 +8376,8 @@
             "pricePerSqm": 1786
           },
           "twoRoom": {
-            "price": 77915,
-            "pricePerSqm": 1503
+            "price": 77665,
+            "pricePerSqm": 1725
           },
           "threeRoom": {
             "price": null,
@@ -8372,18 +8423,18 @@
           "name": "Георги Бенковски",
           "link": "//www.imot.bg/sredni-ceni/prodazhbi-yambol/georgi-benkovski",
           "oneRoom": {
-            "price": 36076,
-            "pricePerSqm": 801
+            "price": 34573,
+            "pricePerSqm": 794
           },
           "twoRoom": {
-            "price": 45095,
-            "pricePerSqm": 751
+            "price": 47350,
+            "pricePerSqm": 757
           },
           "threeRoom": {
-            "price": 83678,
-            "pricePerSqm": 1065
+            "price": 78667,
+            "pricePerSqm": 1008
           },
-          "totalPricePerSqm": 801
+          "totalPricePerSqm": 827
         },
         {
           "name": "Граф Игнатиев",
@@ -8397,10 +8448,10 @@
             "pricePerSqm": 1565
           },
           "threeRoom": {
-            "price": null,
-            "pricePerSqm": null
+            "price": 165351,
+            "pricePerSqm": 1777
           },
-          "totalPricePerSqm": 1377
+          "totalPricePerSqm": 1469
         },
         {
           "name": "Д-р Дончев",
@@ -8434,7 +8485,7 @@
             "price": 171965,
             "pricePerSqm": 1910
           },
-          "totalPricePerSqm": 1447
+          "totalPricePerSqm": 1513
         },
         {
           "name": "Златен рог",
@@ -8445,13 +8496,13 @@
           },
           "twoRoom": {
             "price": 78166,
-            "pricePerSqm": 1265
+            "pricePerSqm": 1260
           },
           "threeRoom": {
             "price": null,
             "pricePerSqm": null
           },
-          "totalPricePerSqm": 1349
+          "totalPricePerSqm": 1269
         },
         {
           "name": "Зорница",
@@ -8461,14 +8512,14 @@
             "pricePerSqm": null
           },
           "twoRoom": {
-            "price": 91394,
-            "pricePerSqm": 1233
+            "price": 85782,
+            "pricePerSqm": 1217
           },
           "threeRoom": {
             "price": 147914,
             "pricePerSqm": 1202
           },
-          "totalPricePerSqm": 1217
+          "totalPricePerSqm": 1202
         },
         {
           "name": "Изток",
@@ -8512,31 +8563,31 @@
             "pricePerSqm": 1258
           },
           "twoRoom": {
-            "price": 76663,
-            "pricePerSqm": 1079
+            "price": 75660,
+            "pricePerSqm": 1058
           },
           "threeRoom": {
             "price": 120255,
             "pricePerSqm": 1522
           },
-          "totalPricePerSqm": 1258
+          "totalPricePerSqm": 1162
         },
         {
           "name": "Център",
           "link": "//www.imot.bg/sredni-ceni/prodazhbi-yambol/tsentar",
           "oneRoom": {
-            "price": 67643,
-            "pricePerSqm": 1519
+            "price": 72654,
+            "pricePerSqm": 1562
           },
           "twoRoom": {
             "price": 101014,
-            "pricePerSqm": 1758
+            "pricePerSqm": 1670
           },
           "threeRoom": {
-            "price": 132726,
-            "pricePerSqm": 1278
+            "price": 133859,
+            "pricePerSqm": 1412
           },
-          "totalPricePerSqm": 1478
+          "totalPricePerSqm": 1494
         }
       ]
     }
